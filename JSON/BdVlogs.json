@@ -1,0 +1,32 @@
+[
+    {
+        "id": "vlog-1",
+        "categoria": "Experiencias",
+        "titulo": "Una tarde inolvidable en Shibuya",
+        "autor": "Guía: Kenji",
+        "fecha": "15 Marzo 2026",
+        "imagen": "../Recursos/tokio-foto.jpg",
+        "resumen": "Acompañé a un grupo de argentinos a recorrer el cruce más transitado del mundo y probar el mejor ramen.",
+        "contenido": "Empezamos nuestro recorrido en la famosa estatua de Hachiko. El grupo estaba fascinado con la cantidad de gente. Después fuimos a un callejón oculto donde comimos un ramen espectacular."
+    },
+    {
+        "id": "vlog-2",
+        "categoria": "Tips",
+        "titulo": "Cómo moverse en el Tren Bala",
+        "autor": "Guía: Akira",
+        "fecha": "10 Febrero 2026",
+        "imagen": "../Recursos/kioto-foto.jpg",
+        "resumen": "Todo lo que tenés que saber para no perderte en las estaciones de tren japonesas.",
+        "contenido": "Muchos turistas le tienen miedo a las estaciones de tren gigantes. La clave está en seguir las líneas de colores en el piso y siempre tener a mano tu pase."
+    },
+    {
+        "id": "vlog-3",
+        "categoria": "Noticias",
+        "titulo": "¡Los cerezos ya están floreciendo en Kioto!",
+        "autor": "Admin ArigaTours",
+        "fecha": "2 Abril 2026",
+        "imagen": "../Recursos/osaka-foto.jpg",
+        "resumen": "Temporada de Sakura 2026: Las mejores fotos de nuestros últimos recorridos.",
+        "contenido": "La primavera llegó a Japón y Kioto se tiñó de rosa. Aconsejamos a todos nuestros viajeros que reserven sus guías con anticipación."
+    }
+]

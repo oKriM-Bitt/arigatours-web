@@ -40,8 +40,8 @@ body {
    2. BARRA DE NAVEGACIÓN (HEADER)
    ========================================= */
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 1rem 5%;
     background-color: #000000; 
@@ -50,6 +50,18 @@ body {
     z-index: 1000;
 }
 
+/* El logo se tira hacia la izquierda */
+.navbar > a.logo {
+    justify-self: start;
+}
+
+/* Las acciones (redes e idioma) se tiran hacia la derecha */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-self: end;
+}
 .logo img {
     height: 60px;
     width: auto;

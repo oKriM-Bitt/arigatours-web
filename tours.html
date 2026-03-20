@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos y Tours - ArigaTours</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
+<body>
 
-<header class="navbar">
+    <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="../Recursos/arigaLOGO.png" alt="Logo ArigaTours">
+            <img src="Recursos/arigaLOGO.png" alt="Logo ArigaTours">
         </a>
         
         <nav>
-                       <ul class="nav-links">
+            <ul class="nav-links">
                 
                 <li><a href="index.html" class="active">Inicio</a></li>
     
@@ -28,75 +29,75 @@
                     
                         <div id="destinos-todos" class="mega-menu-content tab-pane active-pane grid-layout">
                             <div class="menu-column">
-                                <img src="../Recursos/mapa-hokkaido.png" alt="Hokkaido" class="region-map">
+                                <img src="Recursos/mapa-hokkaido.png" alt="Hokkaido" class="region-map">
                                 <h3>Hokkaido</h3>
                             </div>
                             <div class="menu-column">
-                                <img src="../Recursos/mapa-tohoku.png" alt="Tohoku" class="region-map">
+                                <img src="Recursos/mapa-tohoku.png" alt="Tohoku" class="region-map">
                                 <h3>Tohoku</h3>
                                 <ul>
-                                    <li><a href="#">Aomori</a></li>
-                                    <li><a href="#">Akita</a></li>
+                                    <li><a href="tours.html?ciudad=Aomori">Aomori</a></li>
+                                    <li><a href="tours.html?ciudad=Akita">Akita</a></li>
                                 </ul>
                             </div>
                             <div class="menu-column">
-                                <img src="../Recursos/mapa-hokuriku.png" alt="Hokuriku" class="region-map">
+                                <img src="Recursos/mapa-hokuriku.png" alt="Hokuriku" class="region-map">
                                 <h3>Hokuriku Shinetsu</h3>
                                 <ul>
-                                    <li><a href="#">Niigata</a></li>
-                                    <li><a href="#">Nagano</a></li>
+                                    <li><a href="tours.html?ciudad=Niigata">Niigata</a></li>
+                                    <li><a href="tours.html?ciudad=Nagano">Nagano</a></li>
                                 </ul>
                             </div>
                             <div class="menu-column">
-                                <img src="../Recursos/mapa-kanto.png" alt="Kanto" class="region-map">
+                                <img src="Recursos/mapa-kanto.png" alt="Kanto" class="region-map">
                                 <h3>Kanto</h3>
                                 <ul>
-                                    <li><a href="tours.html?tour=tour-tokio">Tokio</a></li>
-                                    <li><a href="#">Kanagawa</a></li>
+                                    <li><a href="tours.html?ciudad=Tokio">Tokio</a></li>
+                                    <li><a href="tours.html?ciudad=Kanagawa">Kanagawa</a></li>
                                 </ul>
                             </div>
                             <div class="menu-column">
-                                <img src="../Recursos/mapa-tokai.png" alt="Tokai" class="region-map">
+                                <img src="Recursos/mapa-tokai.png" alt="Tokai" class="region-map">
                                 <h3>Tokai</h3>
                                 <ul>
-                                    <li><a href="tours.html?tour=tour-osaka">Osaka</a></li>
-                                    <li><a href="#">Gifu</a></li>
+                                    <li><a href="tours.html?ciudad=Osaka">Osaka</a></li>
+                                    <li><a href="tours.html?ciudad=Gifu">Gifu</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div id="destinos-ciudades" class="mega-menu-content tab-pane grid-layout">
                             <div class="menu-column">
-                                <a href="tours.html?tour=tour-tokio" style="text-decoration: none; color: inherit; display: block;">
-                                    <img src="../Recursos/tokio-foto.jpg" alt="Tokio" class="region-map" style="border-radius: 8px;">
+                                <a href="tours.html?ciudad=Tokio" style="text-decoration: none; color: inherit; display: block;">
+                                    <img src="Recursos/tokio-foto.jpg" alt="Tokio" class="region-map" style="border-radius: 8px;">
                                     <h3>Tokio</h3>
                                     <p style="font-size: 0.9rem; color: #666;">La capital metropolitana llena de tecnología y luces.</p>
                                 </a>
                             </div>
                             <div class="menu-column">
-                                <a href="tours.html?tour=tour-kioto" style="text-decoration: none; color: inherit; display: block;">
-                                    <img src="../Recursos/kioto-foto.jpg" alt="Kioto" class="region-map" style="border-radius: 8px;">
+                                <a href="tours.html?ciudad=Kioto" style="text-decoration: none; color: inherit; display: block;">
+                                    <img src="Recursos/kioto-foto.jpg" alt="Kioto" class="region-map" style="border-radius: 8px;">
                                     <h3>Kioto</h3>
                                     <p style="font-size: 0.9rem; color: #666;">El corazón tradicional de Japón, templos y geishas.</p>
                                 </a>
                             </div>
                             <div class="menu-column">
-                                <a href="tours.html?tour=tour-osaka" style="text-decoration: none; color: inherit; display: block;">
-                                    <img src="../Recursos/osaka-foto.jpg" alt="Osaka" class="region-map" style="border-radius: 8px;">
+                                <a href="tours.html?ciudad=Osaka" style="text-decoration: none; color: inherit; display: block;">
+                                    <img src="Recursos/osaka-foto.jpg" alt="Osaka" class="region-map" style="border-radius: 8px;">
                                     <h3>Osaka</h3>
                                     <p style="font-size: 0.9rem; color: #666;">La capital de la gastronomía y la diversión nocturna.</p>
                                 </a>
                             </div>
                             <div class="menu-column">
-                                <img src="../Recursos/nara-foto.jpg" alt="Nara" class="region-map" style="border-radius: 8px;">
-                                <h3>Nara</h3>
-                                <p style="font-size: 0.9rem; color: #666;">Famosa por sus ciervos en libertad y el gran Buda.</p>
+                                <a href="tours.html?ciudad=Nara" style="text-decoration: none; color: inherit; display: block;">
+                                    <img src="Recursos/nara-foto.jpg" alt="Nara" class="region-map" style="border-radius: 8px;">
+                                    <h3>Nara</h3>
+                                    <p style="font-size: 0.9rem; color: #666;">Famosa por sus ciervos en libertad y el gran Buda.</p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </li>
-
-                
 
                 <li class="nav-item-dropdown">
                     <a href="Vlogs.html">Vlogs</a>
@@ -120,9 +121,17 @@
         
         <div class="header-actions">
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/arigatourss/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.tiktok.com/@arigatourss?_r=1&_t=ZS-92UDj3dUVqD&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVqbCueaRXkLYG85JknYHpFwakfw4-gaIXThzdjjiMvN932AiRM8n9niTrXY_aem_WsLHdxzmNEvHBb3mhrnTOQ" target="_blank" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
             </div>
 
             <div class="language-selector">
@@ -140,9 +149,7 @@
         
     </header>
 
-<body>
-
-    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Recursos/fondo-templo.jpg');">
+    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/fondo-templo.jpg');">
         <h1>Nuestros Destinos</h1>
         <p>Elegí la aventura que más te guste y descubrí los detalles</p>
     </section>
@@ -166,7 +173,7 @@
         </div>
 
         <div class="tours-grid" id="contenedor-grilla-tours">
-            </div>
+        </div>
 
         <div class="tour-details-container" id="zona-detalles">
             
@@ -180,9 +187,46 @@
         </div>
     </main>
 
-    <script src="../JS/bdtours.js"></script>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ArigaTours</h4>
+                <p>Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tours.html">Destinos</a></li>
+                    <li><a href="Vlogs.html">Vlogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: info@arigatours.com</p>
+                <p>Tel: +81 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ArigaTours. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/bdtours.js"></script>
     
-<script src="../JS/main.js"></script>
-    <script src="../JS/bdtours.js"></script>
+    <div id="google_translate_element" style="display:none;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'es,en,ja',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>

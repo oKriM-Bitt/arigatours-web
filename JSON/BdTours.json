@@ -4,7 +4,7 @@
         "ciudad": "Tokio",
         "tematica": "Arte y cultura",
         "titulo": "Tokio Tradicional y Galerías",
-        "imagen": "../Recursos/tokio-foto.jpg",
+        "imagen": "Recursos/tokio-foto.jpg",
         "descripcion": "Recorré los museos más fascinantes de Tokio y los barrios históricos con un experto. Entenderás la historia de cada templo sin la barrera del idioma.",
         "incluye": [
             "Guía experto en español o inglés",
@@ -17,7 +17,7 @@
         "ciudad": "Tokio",
         "tematica": "Gastronomía",
         "titulo": "Sabores Ocultos de Tokio",
-        "imagen": "../Recursos/tokio-foto.jpg",
+        "imagen": "Recursos/tokio-foto.jpg",
         "descripcion": "Sumergite en los callejones de Shinjuku. Un guía te acompañará a degustar la mejor comida callejera y te ayudará a entender los menús locales.",
         "incluye": [
             "Acompañante bilingüe",
@@ -30,13 +30,14 @@
         "ciudad": "Kioto",
         "tematica": "Relajación",
         "titulo": "Kioto Zen y Milenario",
-        "imagen": "../Recursos/kioto-foto.jpg",
+        "imagen": "Recursos/kioto-foto.jpg",
         "descripcion": "Descubrí el Japón más auténtico paseando por bosques de bambú y templos dorados, asegurando que entiendas cada detalle cultural.",
         "incluye": [
             "Guía privado en tu idioma",
             "Explicación histórica profunda",
             "Ayuda con la etiqueta local en santuarios"
         ]
+       
     }
 ]
 

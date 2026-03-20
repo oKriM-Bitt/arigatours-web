@@ -1,27 +1,8 @@
 let todosLosTours = [];
+let fechaGlobal = null; // Variable para atrapar la fecha de la URL
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Conectar y leer la base de datos JSON
-    fetch('../JSON/BdTours.json')
-        .then(respuesta => respuesta.json())
-        .then(datos => {
-            todosLosTours = datos;
-            renderizarGrilla(todosLosTours); // Dibuja todos los tours al cargar
-            
-            // Revisar si venimos del index con un tour específico en la URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const tourSolicitado = urlParams.get('tour');
-            if (tourSolicitado) {
-                const tourEncontrado = todosLosTours.find(t => t.id === tourSolicitado);
-                if (tourEncontrado) {
-                    mostrarDetalle(tourEncontrado);
-                }
-            }
-        })
-        .catch(error => console.error("Error cargando el JSON:", error));
-
-    // 2. Lógica de los filtros
     const filtroCiudad = document.getElementById('filtro-ciudad');
     const filtroTematica = document.getElementById('filtro-tematica');
 
@@ -34,18 +15,43 @@ document.addEventListener('DOMContentLoaded', () => {
             const coincideTematica = tematica === 'todas' || tour.tematica === tematica;
             return coincideCiudad && coincideTematica;
         });
-
         renderizarGrilla(toursFiltrados);
     }
 
-    filtroCiudad.addEventListener('change', aplicarFiltros);
-    filtroTematica.addEventListener('change', aplicarFiltros);
+    if(filtroCiudad && filtroTematica) {
+        filtroCiudad.addEventListener('change', aplicarFiltros);
+        filtroTematica.addEventListener('change', aplicarFiltros);
+    }
+
+    fetch('JSON/BdTours.json') 
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            todosLosTours = datos;
+            renderizarGrilla(todosLosTours); 
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const tourSolicitado = urlParams.get('tour');
+            const ciudadSolicitada = urlParams.get('ciudad');
+            
+            // ATRAPAMOS LA FECHA
+            fechaGlobal = urlParams.get('fecha'); 
+
+            if (tourSolicitado) {
+                const tourEncontrado = todosLosTours.find(t => t.id === tourSolicitado);
+                if (tourEncontrado) mostrarDetalle(tourEncontrado);
+            }
+
+            if (ciudadSolicitada && filtroCiudad) {
+                filtroCiudad.value = ciudadSolicitada; 
+                aplicarFiltros(); 
+            }
+        })
+        .catch(error => console.error("Error cargando el JSON:", error));
 });
 
-// 3. Función para dibujar las tarjetas en pantalla
 function renderizarGrilla(tours) {
     const contenedor = document.getElementById('contenedor-grilla-tours');
-    contenedor.innerHTML = ''; // Limpiamos lo que haya antes
+    contenedor.innerHTML = ''; 
 
     if (tours.length === 0) {
         contenedor.innerHTML = '<p style="text-align:center; width:100%;">No hay guías disponibles con esos filtros.</p>';
@@ -64,12 +70,9 @@ function renderizarGrilla(tours) {
             </div>
         `;
 
-        // Evento: Al hacer clic en la tarjeta, mostramos sus detalles
         tarjeta.addEventListener('click', () => {
-            // Remarcamos la tarjeta activa
             document.querySelectorAll('.tour-card').forEach(c => c.classList.remove('active-card'));
             tarjeta.classList.add('active-card');
-            
             mostrarDetalle(tour);
         });
 
@@ -77,12 +80,10 @@ function renderizarGrilla(tours) {
     });
 }
 
-// 4. Función para inyectar el detalle del tour en la parte de abajo
 function mostrarDetalle(tour) {
-    document.getElementById('mensaje-default').style.display = 'none'; // Ocultamos el mensaje inicial
+    document.getElementById('mensaje-default').style.display = 'none'; 
     const contenedorDetalle = document.getElementById('detalle-dinamico');
 
-    // Armamos la lista de "incluye"
     let listaHTML = '';
     tour.incluye.forEach(item => {
         listaHTML += `<li>✔️ ${item}</li>`;
@@ -103,7 +104,9 @@ function mostrarDetalle(tour) {
                         ${listaHTML}
                     </ul>
                     
-                    <button class="btn-primary">Consultar disponibilidad</button>
+                    <button id="btn-wsp-tour" class="btn-primary" style="display: flex; align-items: center; gap: 8px; font-weight: bold; background-color: #25D366; border: none;">
+                        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Consultar disponibilidad
+                    </button>
                 </div>
                 <div class="detail-image">
                     <img src="${tour.imagen}" alt="Guía en ${tour.ciudad}">
@@ -112,6 +115,40 @@ function mostrarDetalle(tour) {
         </div>
     `;
 
-    // Hacemos scroll suave hacia los detalles
+    // LÓGICA DE WHATSAPP AL HACER CLIC
+    document.getElementById('btn-wsp-tour').addEventListener('click', () => {
+        const langSwitch = document.getElementById('lang-switch');
+        const idioma = langSwitch ? langSwitch.value : 'es'; // Leemos en qué idioma está la página
+        
+        let fechaTexto = "";
+        if (fechaGlobal) {
+            // Pasamos de 2026-03-21 a 21/03/2026
+            const [year, month, day] = fechaGlobal.split('-');
+            fechaTexto = `${day}/${month}/${year}`;
+        }
+
+        let mensaje = "";
+
+        // Elegimos el mensaje según el idioma
+        if (idioma === 'en') {
+            mensaje = `Hello! I would like to check the availability for the "${tour.titulo}" tour`;
+            if (fechaTexto) mensaje += ` for the date ${fechaTexto}`;
+            mensaje += `.`;
+        } else if (idioma === 'ja') {
+            mensaje = `こんにちは、「${tour.titulo}」ツアーの空き状況を確認したいです。`;
+            if (fechaTexto) mensaje += `希望日は ${fechaTexto} です。`;
+        } else {
+            mensaje = `Hola, quiero consultar la disponibilidad del tour "${tour.titulo}"`;
+            if (fechaTexto) mensaje += ` para el día ${fechaTexto}`;
+            mensaje += `.`;
+        }
+
+        // Armamos el enlace final con tu número
+        const urlWsp = `https://wa.me/51994846285?text=${encodeURIComponent(mensaje)}`;
+        
+        // Abrimos WhatsApp en una pestaña nueva
+        window.open(urlWsp, '_blank');
+    });
+
     document.getElementById('zona-detalles').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

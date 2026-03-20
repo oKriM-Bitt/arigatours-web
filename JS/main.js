@@ -84,3 +84,49 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseleave', () => {
     florCerezo.style.opacity = '0';
 });
+
+
+// --- LÓGICA DEL SELECTOR DE IDIOMAS (CON GOOGLE TRANSLATE) ---
+// --- LÓGICA DEL SELECTOR DE IDIOMAS (CON MEMORIA LOCAL) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const langSwitch = document.getElementById('lang-switch');
+    
+    if (langSwitch) {
+        // 1. Al cargar la página, nos fijamos si ya había un idioma guardado en la memoria
+        const idiomaGuardado = localStorage.getItem('idiomaAriga');
+        
+        // Si había uno guardado, actualizamos el botón visualmente
+        if (idiomaGuardado) {
+            langSwitch.value = idiomaGuardado;
+        }
+
+        // 2. Función para darle la orden a Google Translate
+        const traducirConGoogle = (idioma) => {
+            // Como Google a veces tarda un milisegundo en cargar, lo buscamos con un intervalo
+            const buscarGoogle = setInterval(() => {
+                const googleSelect = document.querySelector('.goog-te-combo');
+                if (googleSelect) {
+                    googleSelect.value = idioma;
+                    googleSelect.dispatchEvent(new Event('change')); // Damos la orden
+                    clearInterval(buscarGoogle); // Apagamos el buscador
+                }
+            }, 100);
+        };
+
+        // 3. Si hay un idioma guardado (y no es español), traducimos la página automáticamente al entrar
+        if (idiomaGuardado && idiomaGuardado !== 'es') {
+            traducirConGoogle(idiomaGuardado);
+        }
+
+        // 4. Qué pasa cuando el usuario elige un idioma nuevo con sus propias manos
+        langSwitch.addEventListener('change', (e) => {
+            const nuevoIdioma = e.target.value;
+            
+            // Guardamos el nuevo idioma en la memoria del navegador
+            localStorage.setItem('idiomaAriga', nuevoIdioma);
+            
+            // Mandamos a traducir
+            traducirConGoogle(nuevoIdioma);
+        });
+    }
+});

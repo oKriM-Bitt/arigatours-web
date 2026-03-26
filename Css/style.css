@@ -626,3 +626,215 @@ body {
     border: none !important; 
     box-shadow: none !important;
 }
+
+/* --- DISEÑO MODERNO DE DETALLES DEL TOUR (TIPO CIVITATIS) --- */
+.modern-tour-detail {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-top: 1rem;
+}
+
+/* Encabezado: Título, Precio y Botón en la misma línea */
+.modern-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.modern-header h2 { font-size: 2.2rem; color: #222; margin: 0; }
+.modern-header-actions { display: flex; align-items: center; gap: 15px; }
+.modern-price { font-size: 1.6rem; font-weight: bold; color: var(--rojo-ariga); }
+
+/* Imagen destacada */
+.modern-gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+/* Navegación por pestañas */
+/* Navegación por pestañas */
+.tabs-nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 2rem;
+    padding: 0;
+    overflow-x: auto; 
+    -ms-overflow-style: none;  /* Oculta scrollbar en IE y Edge */
+    scrollbar-width: none;  /* Oculta scrollbar en Firefox */
+}
+.tabs-nav::-webkit-scrollbar {
+    display: none; /* Oculta scrollbar en Chrome/Safari */
+}
+
+/* NOMBRES ÚNICOS PARA EVITAR CONFLICTO CON EL MEGA MENÚ */
+.tour-tab-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    padding-bottom: 12px;
+    position: relative;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+.tour-tab-link:hover { color: #333; }
+.tour-tab-link.active-tour-tab { color: var(--rojo-ariga); }
+.tour-tab-link.active-tour-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--rojo-ariga);
+    border-radius: 3px 3px 0 0;
+}
+
+/* Contenido de las pestañas */
+.tour-tab-pane { display: none; animation: fadeIn 0.4s ease; }
+.tour-tab-pane.active-tour-tab { display: block; }
+
+/* Lista de detalles con iconos */
+.details-list { list-style: none; padding: 0; margin: 0; }
+.details-list > li {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0;
+    align-items: flex-start;
+}
+.details-list > li:last-child { border-bottom: none; }
+.details-list > li > i {
+    font-size: 1.4rem;
+    color: #555;
+    margin-top: 2px;
+    min-width: 30px;
+    text-align: center;
+}
+.details-list .details-content strong { display: block; margin-bottom: 8px; font-size: 1.1rem; color: #222; }
+.details-list ul { margin: 0; padding-left: 20px; list-style: disc; color: #444; line-height: 1.6; }
+.details-list ul li { margin-bottom: 5px; }
+
+/* Animación de aparición */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --- NUEVA GALERÍA: CARRUSEL + LIGHTBOX (PANTALLA COMPLETA) --- */
+
+/* 1. Estilos del Carrusel en la página del Tour */
+.tour-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tour-carousel-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.tour-carousel-slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sigue cubriendo el área, pero ahora es interactivo */
+    flex-shrink: 0;
+    cursor: zoom-in; /* Indica que se puede agrandar */
+}
+
+/* Botones de navegación del carrusel */
+.tour-car-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tour-car-btn:hover { background: rgba(255, 255, 255, 0.9); }
+.tour-car-prev { left: 20px; }
+.tour-car-next { right: 20px; }
+
+/* 2. Estilos del Lightbox (El panel negro a pantalla completa) */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fondo negro tipo tu captura */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 99999; /* Por encima de absolutamente todo */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Imagen dentro del Lightbox */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90vh; /* Ocupa casi toda la altura de la pantalla */
+    object-fit: contain; /* ¡CLAVE! Muestra la foto sin cortar, cuerpo completo */
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+/* Botones dentro del Lightbox */
+.lightbox-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white; /* Flechas blancas como en tu captura */
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.2s;
+    z-index: 10;
+}
+.lightbox-btn:hover { opacity: 1; transform: scale(1.1); }
+.lightbox-close { top: 20px; right: 30px; font-size: 2.5rem; } /* X para cerrar */
+.lightbox-prev { left: 30px; }
+.lightbox-next { right: 30px; }
+
+@keyframes zoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+@keyframes zoomOut { from { transform: scale(1); opacity: 1; } to { transform: scale(0.9); opacity: 0; } }
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .tour-carousel-container { height: 300px; }
+    .lightbox-btn { font-size: 2rem; }
+    .lightbox-close { top: 15px; right: 20px; }
+    .lightbox-prev { left: 15px; }
+    .lightbox-next { right: 15px; }
+}

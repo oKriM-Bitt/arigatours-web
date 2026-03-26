@@ -36,11 +36,11 @@
         "ciudad": "Tokio",
         "tematica": "Arte y cultura",
         "titulo": "Tokio todo en un día",
-        "imagen": "Recursos/tokioundia.jpg",
+        "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
-            "Recursos/tokioundia.jpg",
-            "Recursos/tokioundia2.jpg",
-            "Recursos/tokioundia3.jpg"
+            "Recursos/Tokioundia.jpg",
+            "Recursos/Tokioundia2.jpg",
+            "Recursos/Tokioundia3.jpg"
           
         ],
         "duracion": "8 horas",
@@ -65,14 +65,14 @@
         "ciudad": "Tokio",
         "tematica": "Arte y cultura",
         "titulo": "Tokio Vice (Tour Nocturno)",
-        "imagen": "Recursos/tokiovicerojo.jpg",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
         "galeria": [
-            "Recursos/tokiovicerojo.jpg",
-            "Recursos/tokiovicerojo2.jpg",
-            "Recursos/tokiovicerojo3.jpg",
-            "Recursos/tokiovicerojo4.jpg",
-                "Recursos/tokiovicerojo5.jpg",
-                "Recursos/tokiovicerojo6.jpg"
+            "Recursos/Tokiovicerojo.jpg",
+            "Recursos/Tokiovicerojo2.jpg",
+            "Recursos/Tokiovicerojo3.jpg",
+            "Recursos/Tokiovicerojo4.jpg",
+                "Recursos/Tokiovicerojo5.jpg",
+                "Recursos/Tokiovicerojo6.jpg"
           
         ],
         "duracion": "2.5 o 3.5 horas (según opción de cena)",
@@ -125,12 +125,12 @@
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",
         "titulo": "Kioto Histórico",
-         "imagen": "Recursos/kyoto.jpg",
+         "imagen": "Recursos/kYOTO.jpg",
         "galeria": [
-            "Recursos/kyoto.jpg",
-            "Recursos/kyoto2.jpg",
-            "Recursos/kyoto3.jpg",
-            "Recursos/kyoto4.jpg"
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
             
         ],
         "duracion": "3 horas",

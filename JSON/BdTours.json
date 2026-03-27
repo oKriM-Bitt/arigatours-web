@@ -1,0 +1,154 @@
+[
+
+    
+{
+        "id": "tour-kamakura",
+        "ciudad": "Kanagawa",
+        "tematica": "Arte y cultura",
+        "titulo": "Kamakura Clásico",
+        "imagen": "Recursos/kamakura1.jpg",
+        "galeria": [
+            "Recursos/kamakura1.jpg",
+            "Recursos/Kamakura2.jpg",
+            "Recursos/kamakura3.jpg",
+            "Recursos/kamakura4.jpg"
+        ],
+        "duracion": "4 horas",
+        "precio": "25 € (Adultos) / 5 € (Niños)",
+        "puntoEncuentro": "Salida Marunouchi North Exit (Estación de Tokio) a las 9:00 AM",
+        "descripcion": "Escapa con nosotros del ruido de la megalópolis y adéntrate en la ciudad que fue el centro del poder samurái durante más de un siglo. Este tour de una mañana está diseñado para quien quiere lo esencial de Kamakura y sentir el peso de la historia, y comprender por qué este pequeño rincón costero cambió para siempre el destino de Japón.<br><br><strong>Itinerario:</strong><br>Saldremos a las 9:00 AM desde la estación de Tokio para llegar a la ciudad. Comenzaremos en Hase-dera, el templo de la diosa Kannon. Desde allí nos trasladaremos al Kotoku-in para encontrarnos cara a cara con el Gran Buda, el Daibutsu. Cerraremos el recorrido en el Tsurugaoka Hachiman-gu, el gran santuario shintoísta que durante siglos fue el corazón espiritual y político del shogunato. Para la hora de la comida, la calle Komachi-dori nos espera con sus puestos, dulces tradicionales y pequeños restaurantes; el lugar perfecto para acabar el tour.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour privado",
+            "Explicaciones históricas de los puntos visitados",
+            "Entradas a dos templos incluidas"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+         
+        ]
+    },
+
+    {
+        "id": "tour-tokio-todo-en-un-dia",
+        "ciudad": "Tokio",
+        "tematica": "Arte y cultura",
+        "titulo": "Tokio todo en un día",
+        "imagen": "Recursos/Tokioundia.jpg",
+        "galeria": [
+            "Recursos/Tokioundia.jpg",
+            "Recursos/tokioundia2.jpg",
+            "Recursos/tokioeundia3.jpg"
+          
+        ],
+        "duracion": "8 horas",
+        "precio": "120 € (Adultos)",
+        "puntoEncuentro": "Al lado del edificio de información turística de Asakusa a las 9:00 AM",
+        "descripcion": "Descubre con nosotros la ciudad que nunca deja de sorprender. Este tour de un día está diseñado para quien quiere entender Tokio, no solo verla, sino sentirla y comprender por qué millones de personas la consideran la ciudad más fascinante del planeta.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 9:00 AM en Asakusa, el último barrio que conserva el alma de Tokio. Pasearemos por el Nakamise, hasta llegar al Senso-ji, el templo budista que lleva más de mil años recibiendo peregrinos. Desde allí nos trasladaremos al histórico Santuario Meiji. A pocos pasos, cruzaremos al otro lado del espejo: Harajuku y su calle Takeshita. Haremos una pausa de una hora para comer al mediodía y luego iremos a Shibuya, el cruce más fotografiado del mundo. Terminaremos en Shinjuku, donde Tokio se despide a lo grande.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante todo el tour privado",
+            "Explicaciones históricas y culturales de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos (se da 1 hora libre para comer)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+
+{
+        "id": "tour-tokio-vice",
+        "ciudad": "Tokio",
+        "tematica": "Arte y cultura",
+        "titulo": "Tokio Vice (Tour Nocturno)",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "galeria": [
+            "Recursos/Tokiovicerojo.jpg",
+            "Recursos/Tokiovicerojo2.jpg",
+            "Recursos/Tokiovicerojo3.jpg",
+            "Recursos/Tokiovicerojo4.jpg",
+                "Recursos/Tokiovicerojo5.jpg",
+                "Recursos/Tokiovicerojo6.jpg"
+          
+        ],
+        "duracion": "2.5 o 3.5 horas (según opción de cena)",
+        "precio": "60 € (Sin cena) / 80 € (Con cena)",
+        "puntoEncuentro": "Parque Umayamichi, salida Este (Estación de Yoyogi) a las 18:00 horas",
+        "descripcion": "Adéntrate con nosotros en el lado más crudo y fascinante de Tokio con este tour nocturno inspirado en artículos y series como Tokyo Vice. Exploraremos juntos el distrito de Shinjuku y su cara más enigmática: Kabukicho, el barrio que nunca duerme.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 18:00 en el parque Umayamichi a pocos pasos de la estación de Yoyogi. Desde aquí nos adentraremos en un recorrido que nos permitirá comprender cómo funciona realmente el mundo nocturno japonés: sus códigos no escritos, sus luces de neón y las estructuras sociales que operan en la sombra. Analizamos la evolución histórica del barrio tras la posguerra en Omoide Yokocho, su transformación en epicentro del entretenimiento adulto en las principales avenidas de Kabukicho y la influencia de la yakuza, la mafia japonesa. Visitaremos lugares emblemáticos como el gato gigante de Shinjuku, el mismísimo Godzilla y lugares a los que solo los tokiotas más locales saben llegar.<br><br><strong>Opción con cena:</strong><br>Shinjuku es conocido como el lugar donde los trabajadores japoneses vienen a desestresarse después de una larga jornada laboral. Iremos a un restaurante típico izakaya donde podréis probar variedades de yakitori, brochetas de pollo, karaage, gyoza entre muchos. En caso de elegir tour con cena, la finalización del tour será a las 21:00 horas.<br><br><strong>Aviso importante:</strong><br>Dado que por los temas que tratarán durante este tour y que se visitará el barrio rojo, este tour <strong>no es recomendado para menores de 18 años</strong>.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado y protección.",
+        "incluye": [
+            "Guía en español durante todo el recorrido nocturno",
+            "Explicaciones históricas y culturales de los puntos visitados",
+            "Cena en restaurante típico Izakaya (Solo si se reserva la opción de 80 €)"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos durante el tour (la cena es al finalizar)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+ {
+        "id": "tour-osaka-presentation",
+        "ciudad": "Osaka",
+        "tematica": "Arte y cultura",
+        "titulo": "Osaka Presentation",
+         "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "60 € (Adultos)",
+        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
+        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>El recorrido pasa por escalones pequeños. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour",
+            "Explicaciones históricas de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Entradas a lugares que lo requieran",
+            "Recogida en el hotel (disponible por tarifa agregada)"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+    
+    {
+        "id": "tour-kioto-historico",
+        "ciudad": "Kioto",
+        "tematica": "Arte y cultura",
+        "titulo": "Kioto Histórico",
+         "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+            
+        ],
+        "duracion": "3 horas",
+        "precio": "60 € (Adultos)",
+        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
+        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este recorrido pasa por cuestas largas y escalones grandes. No es recomendado para personas con dificultad de movimiento. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour",
+            "Explicaciones históricas de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Entradas a lugares que lo requieran",
+            "Recogida en el hotel (disponible por tarifa agregada)"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    }
+]
+

@@ -838,3 +838,60 @@ body {
     .lightbox-prev { left: 15px; }
     .lightbox-next { right: 15px; }
 }
+
+
+/* --- SCROLLER VERTICAL DE TOURS EN EL INICIO --- */
+.tours-vertical-scroller {
+    height: 75vh; /* Ocupa el 75% de la pantalla */
+    min-height: 550px;
+    max-height: 800px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Hace que el scroll "salte" y se clave en cada tour */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background: #fff;
+    /* Ocultar barra de scroll para que se vea más limpio */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.tours-vertical-scroller::-webkit-scrollbar {
+    display: none; 
+}
+
+.tour-scroll-slide {
+    height: 100%; /* Cada tour ocupa el 100% de la ventana */
+    width: 100%;
+    scroll-snap-align: start; /* Acá es donde se "clava" el scroll */
+    display: flex;
+    flex-direction: column; /* Foto arriba, texto abajo */
+    position: relative;
+}
+
+.tour-scroll-img-box {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.tour-scroll-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-scroll-content {
+    height: 50%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .tour-scroll-content { padding: 1.5rem; }
+    .tours-vertical-scroller { height: 85vh; }
+}

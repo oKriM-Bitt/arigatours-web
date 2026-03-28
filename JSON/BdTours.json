@@ -40,14 +40,11 @@
         "galeria": [
             "Recursos/Tokioundia.jpg",
             "Recursos/tokioundia2.jpg",
-<<<<<<< HEAD
             "Recursos/tokioundia3.jpg",
             "Recursos/tokioundia4.jpg",
             "Recursos/tokioundia5.jpg",
             "Recursos/tokioundia6.jpg"
-=======
-            "Recursos/tokioeundia3.jpg"
->>>>>>> 23d97a8a18d7f670b5fc7a9baf7f7c97b28b5ec6
+          
           
         ],
         "duracion": "8 horas",

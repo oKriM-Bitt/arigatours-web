@@ -469,10 +469,7 @@ body {
     /* Mostrar la hamburguesa */
     .hamburger {
         display: block;
-<<<<<<< HEAD
         margin-left: auto;
-=======
->>>>>>> 23d97a8a18d7f670b5fc7a9baf7f7c97b28b5ec6
     }
 
     /* Ocultar acciones del header (redes, idioma) para simplificar */
@@ -898,7 +895,6 @@ body {
 @media (max-width: 768px) {
     .tour-scroll-content { padding: 1.5rem; }
     .tours-vertical-scroller { height: 85vh; }
-<<<<<<< HEAD
 }
 
 /* --- HEADER FIJO (STICKY NAVBAR) --- */
@@ -998,6 +994,4 @@ body {
     .destination-menu-card {
         height: 130px;
     }
-=======
->>>>>>> 23d97a8a18d7f670b5fc7a9baf7f7c97b28b5ec6
 }

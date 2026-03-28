@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         })
         .catch(error => console.error("Error cargando los tours en el inicio:", error));
+<<<<<<< HEAD
 });
 
 
@@ -284,4 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Error cargando el menú dinámico:", error);
             contenedorDropdown.innerHTML = '<p style="text-align:center; color:#888; width:100%;">No pudimos cargar los destinos.</p>';
         });
+=======
+>>>>>>> 23d97a8a18d7f670b5fc7a9baf7f7c97b28b5ec6
 });

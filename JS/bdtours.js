@@ -2,6 +2,7 @@ let todosLosTours = [];
 let fechaGlobal = null; // Variable para atrapar la fecha de la URL
 
 document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< HEAD
     // --- MAGIA: CARRUSEL DE FONDO EN LA CABECERA DE DESTINOS ---
     const cabeceraDestinos = document.querySelector('.page-header');
     if (cabeceraDestinos) {
@@ -25,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cabeceraDestinos.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/${fotosFondo[indiceFondo]}')`;
         }, 4000);
     }
+=======
+>>>>>>> 23d97a8a18d7f670b5fc7a9baf7f7c97b28b5ec6
     
     const filtroCiudad = document.getElementById('filtro-ciudad');
     const filtroTematica = document.getElementById('filtro-tematica');

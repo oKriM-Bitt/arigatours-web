@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs y Experiencias - ArigaTours</title>
-    <link rel="icon" href="../Recursos/arigaLOGO.png" type="image/png">
+    <link rel="icon" href="Recursos/arigaLOGO.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../Css/style.css">
 </head>
@@ -79,38 +79,23 @@
         
     </header>
 
-    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/Paginavlogs.jpg');">
+   <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/Paginavlogs.jpg');">
         <h1>Diario de Viajeros</h1>
-        <p>Noticias, tips y experiencias reales contadas por nuestros guías</p>
+        <p>Nos esperan increíbles aventuras...</p>
     </section>
 
-    <main class="tours-page">
-        
-        <div class="filtros-container" style="flex-wrap: wrap;">
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-                <input type="text" id="buscador-vlogs" placeholder="Buscar palabras clave (ej. Tren, Sakura...)">
-            </div>
-
-            <select id="filtro-categoria">
-                <option value="todas">Todas las categorías</option>
-                <option value="Experiencias">Experiencias</option>
-                <option value="Tips">Tips y Recomendaciones</option>
-                <option value="Noticias">Noticias</option>
-            </select>
+<main class="tours-page" style="display: flex; justify-content: center; align-items: center; min-height: 45vh; text-align: center; padding: 3rem 1rem;">
+        <div style="background: #fff; padding: 3rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); max-width: 600px; width: 100%;">
+            <i class="fas fa-pencil-alt" style="font-size: 4rem; color: var(--rojo-ariga); margin-bottom: 1.5rem;"></i>
+            <h2 style="font-size: 2.2rem; color: #333; margin-bottom: 1rem;">¡Sección de Blogs en construcción!</h2>
+            <p style="font-size: 1.1rem; color: #666; line-height: 1.6; margin-bottom: 2rem;">
+                Estamos preparando los mejores artículos, tips de viaje y galerías de fotos exclusivas de nuestros recorridos por Japón. ¡Volvé pronto para descubrir todo el contenido que estamos creando para vos!
+            </p>
+            <a href="index.html" class="btn-primary" style="text-decoration: none; padding: 12px 30px; font-size: 1.1rem; display: inline-block;">
+                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Volver al Inicio
+            </a>
         </div>
-
-        <div class="tours-grid" id="contenedor-vlogs"></div>
-
-        <div class="tour-details-container" id="zona-lectura">
-            <div class="tour-detail-content active" id="mensaje-default-vlog">
-                <h2 style="text-align: center; color: #888;">Seleccioná un artículo para empezar a leer</h2>
-            </div>
-            <div id="articulo-dinamico"></div>
-        </div>
-
     </main>
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -139,7 +124,7 @@
  
     <script src="JS/Java.js"></script>
     <script src="../JS/main.js"></script>
-    <script src="../JS/bdvlogs.js"></script>
+
 
     <div id="google_translate_element" style="display:none;"></div>
     <script type="text/javascript">

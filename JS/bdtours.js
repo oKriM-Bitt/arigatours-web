@@ -2,6 +2,29 @@ let todosLosTours = [];
 let fechaGlobal = null; // Variable para atrapar la fecha de la URL
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- MAGIA: CARRUSEL DE FONDO EN LA CABECERA DE DESTINOS ---
+    const cabeceraDestinos = document.querySelector('.page-header');
+    if (cabeceraDestinos) {
+        // Tu lista de fotos (las mismas que en el inicio)
+        const fotosFondo = [
+            "kamakura1.jpg", "Kamakura2.jpg", "kamakura3.jpg", "kamakura4.jpg",
+            "kYOTO.jpg", "kYOTO2.jpg", "kYOTO3.jpg", "kYOTO4.jpg",
+            "osaka.jpg", "osaka1.jpg",
+            "Tokioundia.jpg", "tokioundia2.jpg", "tokioundia3.jpg",
+            "Tokiovicerojo.jpg", "Tokiovicerojo2.jpg", "Tokiovicerojo3.jpg"
+        ];
+        
+        // Mezclamos las fotos al azar
+        fotosFondo.sort(() => 0.5 - Math.random());
+        let indiceFondo = 0;
+
+        // Le decimos que cambie la foto cada 4 segundos
+        setInterval(() => {
+            indiceFondo = (indiceFondo + 1) % fotosFondo.length;
+            // Mantenemos el filtro negro para que las letras blancas resalten
+            cabeceraDestinos.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/${fotosFondo[indiceFondo]}')`;
+        }, 4000);
+    }
     
     const filtroCiudad = document.getElementById('filtro-ciudad');
     const filtroTematica = document.getElementById('filtro-tematica');

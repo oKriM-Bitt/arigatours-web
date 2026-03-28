@@ -469,6 +469,7 @@ body {
     /* Mostrar la hamburguesa */
     .hamburger {
         display: block;
+        margin-left: auto;
     }
 
     /* Ocultar acciones del header (redes, idioma) para simplificar */
@@ -837,4 +838,160 @@ body {
     .lightbox-close { top: 15px; right: 20px; }
     .lightbox-prev { left: 15px; }
     .lightbox-next { right: 15px; }
+}
+
+
+/* --- SCROLLER VERTICAL DE TOURS EN EL INICIO --- */
+.tours-vertical-scroller {
+    height: 75vh; /* Ocupa el 75% de la pantalla */
+    min-height: 550px;
+    max-height: 800px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Hace que el scroll "salte" y se clave en cada tour */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background: #fff;
+    /* Ocultar barra de scroll para que se vea más limpio */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.tours-vertical-scroller::-webkit-scrollbar {
+    display: none; 
+}
+
+.tour-scroll-slide {
+    height: 100%; /* Cada tour ocupa el 100% de la ventana */
+    width: 100%;
+    scroll-snap-align: start; /* Acá es donde se "clava" el scroll */
+    display: flex;
+    flex-direction: column; /* Foto arriba, texto abajo */
+    position: relative;
+}
+
+.tour-scroll-img-box {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.tour-scroll-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-scroll-content {
+    height: 50%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    .tour-scroll-content { padding: 1.5rem; }
+    .tours-vertical-scroller { height: 85vh; }
+}
+
+/* --- HEADER FIJO (STICKY NAVBAR) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el menú tape a cualquier otra foto o tour al scrollear */
+    background-color: #000; /* Fondo negro sólido para que no se mezcle con las fotos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombrita elegante abajo del menú */
+}
+
+/* Compensamos el espacio que ahora ocupa el menú flotante */
+body {
+    padding-top: 85px; 
+}
+
+/* Transición suave para cuando cambie la foto de la cabecera de destinos */
+.page-header {
+    transition: background-image 1s ease-in-out;
+}
+
+
+/* --- ESTILOS PARA EL MEGA MENU DINÁMICO --- */
+
+/* La grilla principal que acomoda las tarjetas (4 por fila en PC) */
+.dynamic-destinations .dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* La tarjeta individual: foto de fondo con texto superpuesto */
+.destination-menu-card {
+    position: relative;
+    height: 160px; /* Altura de la caja */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* La imagen de fondo */
+.destination-menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Súper importante para que no se deforme la foto */
+    transition: transform 0.5s ease;
+}
+
+/* El degradado oscuro para que el texto blanco se lea bien */
+.destination-menu-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; /* Degradado desde la mitad para abajo */
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    align-items: flex-end; /* Texto abajo */
+    padding: 15px;
+    z-index: 2;
+}
+
+/* Estilo del título */
+.destination-menu-overlay h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize; /* Convierte 'tokio' en 'Tokio' */
+}
+
+/* Efectos al pasar el mouse (Hover) */
+.destination-menu-card:hover {
+    transform: translateY(-3px); /* Levanta la tarjeta */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra elegante */
+}
+
+.destination-menu-card:hover img {
+    transform: scale(1.1); /* Efecto zoom suave en la foto */
+}
+
+/* Ajustes para celulares y tablets (2 por fila) */
+@media (max-width: 768px) {
+    .dynamic-destinations .dropdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+    .destination-menu-card {
+        height: 130px;
+    }
 }

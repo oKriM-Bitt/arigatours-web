@@ -39,8 +39,11 @@
         "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
             "Recursos/Tokioundia.jpg",
-            "Recursos/Tokioundia2.jpg",
-            "Recursos/Tokioundia3.jpg"
+            "Recursos/tokioundia2.jpg",
+            "Recursos/tokioundia3.jpg",
+            "Recursos/tokioundia4.jpg",
+            "Recursos/tokioundia5.jpg",
+            "Recursos/tokioundia6.jpg"
           
         ],
         "duracion": "8 horas",

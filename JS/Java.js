@@ -209,10 +209,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         </span>
                     </div>
                     <div class="tour-scroll-content">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                            <h3 style="margin: 0; font-size: 1.8rem; color: #333;">${tour.titulo}</h3>
-                            <span style="font-weight: bold; color: var(--rojo-ariga); font-size: 1.3rem;">${tour.precio ? tour.precio.split(' ')[0] + ' €' : ''}</span>
+                        <div class="tour-scroll-encabezado">
+                            <h3>${tour.titulo}</h3>
+                            <span>${tour.precio ? tour.precio.split(' ')[0] + ' €' : ''}</span>
                         </div>
+                        
                         <p style="color: #666; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">${resumenCorto}</p>
                         
                         <div>

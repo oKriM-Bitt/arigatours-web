@@ -24,6 +24,11 @@
     --fuente-principal: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Agregado para que los enlaces internos bajen suavemente */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +39,7 @@ body {
     font-family: var(--fuente-principal);
     background-color: #f9f9f9;
     overflow-x: hidden; /* Evita el scroll horizontal en móviles */
+    padding-top: 85px; /* Compensamos el espacio del header fijo */
 }
 
 /* =========================================
@@ -45,9 +51,12 @@ body {
     align-items: center;
     padding: 1rem 5%;
     background-color: #000000; 
-    position: relative; 
+    position: fixed; /* HEADER FIJO */
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* El logo se tira hacia la izquierda */
@@ -55,13 +64,6 @@ body {
     justify-self: start;
 }
 
-/* Las acciones (redes e idioma) se tiran hacia la derecha */
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    justify-self: end;
-}
 .logo img {
     height: 60px;
     width: auto;
@@ -86,10 +88,12 @@ body {
     color: var(--rojo-ariga);
 }
 
+/* Las acciones (redes e idioma) se tiran hacia la derecha */
 .header-actions {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    justify-self: end;
 }
 
 .social-icons {
@@ -129,7 +133,7 @@ body {
     color: white;
     font-size: 1.8rem;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 10001; /* Muy alto para que quede sobre el menú oscuro */
 }
 
 
@@ -137,7 +141,7 @@ body {
    3. MEGA MENÚS DESPLEGABLES
    ========================================= */
 .nav-item-dropdown {
-    position: static; /* Necesario para que el mega menu ocupe el ancho total */
+    position: static; 
 }
 
 .mega-menu {
@@ -161,124 +165,6 @@ body {
     transform: translateY(0);
 }
 
-.mega-menu-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #eee;
-}
-
-.mega-menu-tabs .tab {
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--texto-oscuro);
-    cursor: pointer;
-    position: relative;
-}
-
-.mega-menu-tabs .tab.active {
-    color: var(--rojo-ariga);
-}
-
-.mega-menu-tabs .tab.active::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--rojo-ariga);
-}
-
-.mega-menu-content {
-    display: flex;
-    justify-content: center;
-    gap: 4rem; 
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.mega-menu-content.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
-    text-align: left;
-}
-
-.region-map {
-    height: 40px; 
-    margin-bottom: 0.5rem;
-    opacity: 0.8;
-}
-
-.menu-column h3 {
-    color: var(--rojo-ariga); 
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-}
-
-.menu-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-column ul li {
-    margin-bottom: 0.8rem;
-}
-
-.menu-column ul li a {
-    color: var(--texto-oscuro) !important; 
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.menu-column ul li a:hover {
-    color: var(--rojo-ariga) !important;
-}
-
-/* Submenú de actividades */
-.tabs-grey {
-    background-color: #f4f4f4; 
-    border-radius: 30px;
-    padding: 0.5rem 1rem;
-    display: inline-flex; 
-    border-bottom: none;
-    margin-bottom: 2rem;
-}
-
-.tabs-grey .tab { padding: 0.5rem 1.5rem; margin: 0; }
-.tabs-grey .tab.active::after { bottom: -0.5rem; height: 4px; }
-
-.mega-menu-actividades {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.actividades-listas { display: flex; gap: 3rem; flex: 1; }
-.actividades-listas ul { list-style: none; width: 50%; }
-.actividades-listas li { margin-bottom: 1rem; }
-.actividades-listas a { color: var(--texto-oscuro) !important; text-decoration: none; }
-.actividades-listas a:hover { color: var(--rojo-ariga) !important; }
-
-.actividades-imagenes { display: flex; gap: 1.5rem; flex: 1; }
-.actividad-card {
-    flex: 1; height: 120px; border-radius: 8px; background-size: cover;
-    background-position: center; position: relative; display: flex;
-    align-items: flex-end; padding: 1rem; cursor: pointer;
-    transition: transform 0.3s ease; box-shadow: inset 0 -40px 30px -10px rgba(0,0,0,0.7); 
-}
-.actividad-card:hover { transform: scale(1.05); }
-.actividad-card span { color: white; font-weight: bold; font-size: 0.9rem; z-index: 2; }
-
 /* Submenú Pequeño Vlogs */
 .mega-menu-small {
     width: auto; 
@@ -288,17 +174,69 @@ body {
     border-radius: 0 0 8px 8px;
 }
 
-/* Lógica JS Pestañas */
-.tab-pane { display: none !important; }
-.tab-pane.active-pane.grid-layout { display: grid !important; }
-.tab-pane.active-pane.flex-layout { display: flex !important; }
+/* --- MEGA MENU DINÁMICO --- */
+.dynamic-destinations .dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-menu-card {
+    position: relative;
+    height: 160px; 
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-menu-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+
+.destination-menu-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; 
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    display: flex;
+    align-items: flex-end; 
+    padding: 15px;
+    z-index: 2;
+}
+
+.destination-menu-overlay h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize; 
+}
+
+.destination-menu-card:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.destination-menu-card:hover img {
+    transform: scale(1.1); 
+}
 
 /* =========================================
    4. SECCIÓN HERO (CARRUSEL E INICIO)
    ========================================= */
 .hero {
-    height: 100vh; 
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Recursos/fondo-hero.jpg') center/cover no-repeat;
+    height: calc(100vh - 85px); /* Restamos el alto del header */
     display: flex; align-items: center; justify-content: center; text-align: center;
 }
 
@@ -322,7 +260,7 @@ body {
     background-color: #b2151b; transform: translateY(-3px);
 }
 
-.carousel-container { position: relative; height: 100vh; overflow: hidden; background-color: #000; }
+.carousel-container { position: relative; height: calc(100vh - 85px); overflow: hidden; background-color: #000; }
 .carousel-slide {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover;
     background-position: center; background-repeat: no-repeat; opacity: 0; 
@@ -342,50 +280,110 @@ body {
 .dot { width: 12px; height: 12px; background-color: rgba(255, 255, 255, 0.4); border-radius: 50%; cursor: pointer; transition: background-color 0.3s; }
 .dot.active, .dot:hover { background-color: var(--texto-claro); }
 
-/* =========================================
-   5. SECCIÓN REGIONES Y CLIMA
-   ========================================= */
-.region-weather-section { padding: 5rem 5%; background-color: #f9f9f9; }
-.section-header { text-align: center; margin-bottom: 3rem; }
-.section-header h2 { font-size: 2.5rem; color: var(--texto-oscuro); margin-bottom: 0.5rem; }
-.section-header p { color: #666; font-size: 1.1rem; }
-.region-carousel-container {
-    max-width: 1100px; margin: 0 auto; background: #fff; border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden; position: relative; padding-bottom: 4rem; 
+/* --- SCROLLER VERTICAL DE TOURS EN EL INICIO --- */
+.tours-vertical-scroller {
+    height: 75vh; 
+    min-height: 550px;
+    max-height: 800px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background: #fff;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
-.region-slide { display: none; flex-wrap: wrap; }
-.region-slide.active { display: flex; animation: fadeIn 0.5s ease; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.region-image-col { flex: 1; min-width: 300px; background-color: #eaeaea; }
-.region-image-col img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.region-info-col { flex: 1; min-width: 350px; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-.region-tag { color: var(--rojo-ariga); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: inline-block; }
-.region-info-col h3 { font-size: 1.8rem; color: var(--texto-oscuro); margin-bottom: 1rem; }
-.region-info-col p { color: #555; line-height: 1.6; margin-bottom: 2rem; }
-.weather-section h4 { color: var(--texto-oscuro); margin-bottom: 1rem; border-bottom: 2px solid var(--rosa-fondo); padding-bottom: 0.5rem; display: inline-block; }
-.weather-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.weather-card { background: #f4f4f4; padding: 1rem; border-radius: 8px; display: flex; flex-direction: column; border-left: 4px solid var(--rosa-sakura); }
-.weather-card .season { font-size: 0.85rem; color: #666; margin-bottom: 0.3rem; }
-.weather-card .temp { font-size: 1.1rem; font-weight: bold; color: var(--rojo-texto); }
-.region-controls { position: absolute; bottom: 0; left: 0; width: 100%; display: flex; border-top: 1px solid #eee; }
-.region-nav-btn { flex: 1; padding: 1rem; background: #fff; border: none; cursor: pointer; font-weight: bold; color: var(--texto-oscuro); transition: background 0.3s, color 0.3s; }
-.region-nav-btn:hover { background: var(--rojo-ariga); color: #fff; }
-.region-nav-btn:first-child { border-right: 1px solid #eee; }
+.tours-vertical-scroller::-webkit-scrollbar {
+    display: none; 
+}
+
+.tour-scroll-slide {
+    height: 100%; 
+    width: 100%;
+    scroll-snap-align: start; 
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+}
+
+.tour-scroll-img-box {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.tour-scroll-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-scroll-content {
+    height: 50%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /* =========================================
-   6. PÁGINA DE TOURS Y VLOGS
+   5. CALENDARIO Y DISPONIBILIDAD
+   ========================================= */
+.calendario-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; 
+    padding: 10px 0;
+    scrollbar-width: thin; 
+}
+
+.calendario-carousel::-webkit-scrollbar { height: 8px; }
+.calendario-carousel::-webkit-scrollbar-thumb { background: #e60000; border-radius: 10px; }
+
+.dia-caja {
+    min-width: 80px;
+    height: 100px;
+    border: 3px solid #000;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.dia-caja:hover { transform: translateY(-5px); }
+
+.dia-rojo { background-color: #e60000; color: white; border-color: #a30000; }
+.dia-verde { background-color: #28a745; color: white; border-color: #1e7e34; }
+.dia-gris { background-color: #e0e0e0; color: #666; border-color: #ccc; }
+
+
+/* =========================================
+   6. PÁGINA DE TOURS Y DETALLES
    ========================================= */
 .page-header {
     height: 40vh; background-size: cover; background-position: center; display: flex;
     flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--texto-claro); margin-bottom: 3rem;
+    transition: background-image 1s ease-in-out;
 }
-.page-header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-.page-header p { font-size: 1.2rem; }
+.page-header h1 { font-size: 3rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
+.page-header p { font-size: 1.2rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.6); }
+
 .tours-page { max-width: 1200px; margin: 0 auto; padding: 0 5% 5rem; }
+
 .filtros-container { display: flex; justify-content: center; gap: 2rem; margin-bottom: 3rem; }
 .filtros-container select { padding: 0.8rem 1.5rem; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; font-family: var(--fuente-principal); cursor: pointer; background-color: #fff; outline: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 .filtros-container select:focus { border-color: var(--rojo-ariga); }
-.badge-tematica { display: inline-block; background-color: var(--rosa-fondo); color: var(--rojo-ariga); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 0.8rem; }
+
 .tours-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
 .tour-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 3px solid transparent; }
 .tour-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
@@ -394,27 +392,94 @@ body {
 .tour-card-info { padding: 1.5rem; text-align: center; }
 .tour-card-info h3 { color: var(--texto-oscuro); margin-bottom: 0.5rem; }
 .tour-card-info p { color: var(--rojo-texto); font-weight: bold; }
-.tour-details-container { background: #f9f9f9; border-radius: 15px; padding: 3rem; min-height: 400px; box-shadow: inset 0 0 20px rgba(0,0,0,0.05); }
-.tour-detail-content { display: none; }
-.tour-detail-content.active { display: block; animation: fadeIn 0.5s ease; }
-.detail-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ddd; padding-bottom: 1rem; margin-bottom: 2rem; }
-.detail-header h2 { color: var(--rojo-ariga); font-size: 2rem; }
-.price-tag { font-size: 1.5rem; font-weight: bold; color: var(--texto-oscuro); }
-.detail-body { display: flex; gap: 3rem; align-items: flex-start; }
-.detail-text { flex: 1; }
-.detail-text h3, .detail-text h4 { color: var(--texto-oscuro); margin-bottom: 1rem; }
-.detail-text p { color: #555; line-height: 1.6; margin-bottom: 2rem; }
-.includes-list { list-style: none; padding: 0; margin-bottom: 2rem; }
-.includes-list li { margin-bottom: 0.8rem; color: #444; }
-.detail-image { flex: 1; }
-.detail-image img { width: 100%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
-/* Vlogs específicos */
-.search-box { display: flex; align-items: center; background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 0.5rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); flex: 1; min-width: 250px; }
-.search-box:focus-within { border-color: var(--rojo-ariga); }
-.search-box i { color: #888; margin-right: 0.8rem; }
-.search-box input { border: none; outline: none; width: 100%; font-size: 1rem; font-family: var(--fuente-principal); }
-.articulo-vlog-completo { background: #fff; padding: 3rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.tour-details-container { background: #f9f9f9; border-radius: 15px; padding: 3rem; min-height: 400px; box-shadow: inset 0 0 20px rgba(0,0,0,0.05); }
+
+/* Diseño Moderno Detalle de Tour */
+.modern-tour-detail {
+    background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-top: 1rem;
+}
+
+.modern-header {
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;
+}
+.modern-header h2 { font-size: 2.2rem; color: #222; margin: 0; }
+.modern-header-actions { display: flex; align-items: center; gap: 15px; }
+.modern-price { font-size: 1.6rem; font-weight: bold; color: var(--rojo-ariga); }
+
+.tabs-nav {
+    display: flex; list-style: none; gap: 2rem; border-bottom: 2px solid #eaeaea; margin-bottom: 2rem;
+    padding: 0; overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; 
+}
+.tabs-nav::-webkit-scrollbar { display: none; }
+
+.tour-tab-link {
+    font-size: 1.1rem; font-weight: 600; color: #666; cursor: pointer; padding-bottom: 12px;
+    position: relative; white-space: nowrap; transition: color 0.3s;
+}
+.tour-tab-link:hover { color: #333; }
+.tour-tab-link.active-tour-tab { color: var(--rojo-ariga); }
+.tour-tab-link.active-tour-tab::after {
+    content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px;
+    background-color: var(--rojo-ariga); border-radius: 3px 3px 0 0;
+}
+
+.tour-tab-pane { display: none; animation: fadeIn 0.4s ease; }
+.tour-tab-pane.active-tour-tab { display: block; }
+
+.details-list { list-style: none; padding: 0; margin: 0; }
+.details-list > li { display: flex; gap: 20px; border-bottom: 1px solid #f0f0f0; padding: 20px 0; align-items: flex-start; }
+.details-list > li:last-child { border-bottom: none; }
+.details-list > li > i { font-size: 1.4rem; color: #555; margin-top: 2px; min-width: 30px; text-align: center; }
+.details-list .details-content strong { display: block; margin-bottom: 8px; font-size: 1.1rem; color: #222; }
+.details-list ul { margin: 0; padding-left: 20px; list-style: disc; color: #444; line-height: 1.6; }
+
+
+/* --- GALERÍA CARRUSEL + LIGHTBOX --- */
+.tour-carousel-container {
+    position: relative; width: 100%; height: 450px; border-radius: 12px; overflow: hidden;
+    margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tour-carousel-slides {
+    display: flex; width: 100%; height: 100%; transition: transform 0.4s ease-in-out;
+}
+
+.tour-carousel-slides img {
+    width: 100%; height: 100%; object-fit: cover; flex-shrink: 0; cursor: zoom-in; 
+}
+
+.tour-car-btn {
+    position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.7);
+    color: #333; border: none; font-size: 1.5rem; padding: 10px 15px; border-radius: 50%;
+    cursor: pointer; transition: background 0.3s; z-index: 10; display: flex; align-items: center; justify-content: center;
+}
+.tour-car-btn:hover { background: rgba(255, 255, 255, 0.9); }
+.tour-car-prev { left: 20px; }
+.tour-car-next { right: 20px; }
+
+.lightbox-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); 
+    display: none; justify-content: center; align-items: center; z-index: 99999; opacity: 0; transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active { display: flex; opacity: 1; }
+
+.lightbox-img {
+    max-width: 90%; max-height: 90vh; object-fit: contain; border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5); animation: zoomIn 0.3s ease;
+}
+
+.lightbox-btn {
+    position: absolute; background: none; border: none; color: white; font-size: 3rem;
+    cursor: pointer; opacity: 0.7; transition: opacity 0.3s, transform 0.2s; z-index: 10;
+}
+.lightbox-btn:hover { opacity: 1; transform: scale(1.1); }
+.lightbox-close { top: 20px; right: 30px; font-size: 2.5rem; } 
+.lightbox-prev { left: 30px; }
+.lightbox-next { right: 30px; }
+
 
 /* =========================================
    7. PÁGINA DE CONTACTO
@@ -451,30 +516,56 @@ body {
 .footer-section ul li a { color: #ccc; text-decoration: none; transition: color 0.3s; }
 .footer-section ul li a:hover { color: var(--rosa-sakura); }
 .footer-bottom { text-align: center; border-top: 1px solid #444; padding-top: 1.5rem; color: #888; font-size: 0.9rem; }
-
-/* Ocultar hamburguesa en escritorio */
-.hamburger {
-    display: none; /* ESTO ES LO QUE LA OCULTA EN LA PC */
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    z-index: 1001;
+.tour-tab-link {
+    /* ... tus estilos actuales ... */
+    white-space: nowrap; /* Evita que el texto de una pestaña baje de línea */
+    min-width: max-content; /* Fuerza a la pestaña a tener el ancho de su texto */
 }
-
 /* ==========================================================================
    9. DISEÑO RESPONSIVE (CELULARES Y TABLETS)
    ========================================================================== */
+
+
+   /* --- ARREGLO TITULO Y PRECIO EN EL SCROLLER DE INICIO --- */
+.tour-scroll-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.tour-scroll-encabezado h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+.tour-scroll-encabezado span {
+    font-weight: bold;
+    color: var(--rojo-ariga);
+    font-size: 1.3rem;
+    white-space: nowrap; /* Esto evita que el símbolo del € se caiga a otra línea */
+}
+
+@media (max-width: 768px) {
+    .tour-scroll-encabezado {
+        flex-direction: column; /* En celular, apilamos título y precio */
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .tour-scroll-encabezado h3 {
+        font-size: 1.4rem; /* Achicamos el título para que entre bien */
+    }
+}
 @media (max-width: 992px) {
     
     /* Mostrar la hamburguesa */
     .hamburger {
         display: block;
         margin-left: auto;
-    }
-
-    /* Ocultar acciones del header (redes, idioma) para simplificar */
-    .header-actions {
-        display: none; 
     }
 
     /* Convertir el menú de escritorio a un panel lateral móvil */
@@ -490,7 +581,7 @@ body {
         padding: 100px 5% 20px;
         transition: right 0.4s ease; /* Animación de entrada */
         overflow-y: auto; /* Para poder hacer scroll si el menú es muy largo */
-        z-index: 999;
+        z-index: 10000;
     }
 
     /* Clase que se activa con el JS para que el menú entre en pantalla */
@@ -503,6 +594,52 @@ body {
         border-bottom: 1px solid #333;
         padding: 1rem 0;
     }
+    
+    /* --- LA MAGIA: REDES E IDIOMA DENTRO DEL MENÚ MÓVIL --- */
+    /* Apilamos y ocultamos por defecto el contenedor de acciones */
+    .header-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        gap: 1.5rem;
+        /* Inicialmente oculto afuera de la pantalla igual que .nav-links */
+        position: fixed;
+        bottom: 50px;
+        right: -100%; 
+        width: 75%;
+        padding-left: 5%;
+        transition: right 0.4s ease;
+        z-index: 10000;
+    }
+    
+    /* Cuando el menú (.nav-active) se abre por JS, también metemos las redes */
+    .header-actions.nav-active {
+        right: 0;
+    }
+    
+    .social-icons {
+        gap: 2rem;
+    }
+
+    .social-icons a i {
+        font-size: 1.5rem;
+    }
+
+    .language-selector {
+        width: 80%;
+    }
+
+    .language-selector select {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        border-color: var(--rojo-ariga);
+    }
+    /* --- FIN DE LA MAGIA --- */
 
     /* Adaptación del Mega Menú en Móviles (Se vuelve una lista acordeón) */
     .mega-menu {
@@ -521,26 +658,19 @@ body {
         display: block;
     }
 
-    .mega-menu-content.grid-layout {
-        grid-template-columns: 1fr; /* 1 sola columna en celular */
-        gap: 1.5rem;
-    }
-
-    .mega-menu-tabs {
-        flex-direction: column;
-        gap: 1rem;
-        border-bottom: none;
+    .dynamic-destinations .dropdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px 0;
     }
     
-    .mega-menu-actividades {
-        flex-direction: column;
+    .destination-menu-card {
+        height: 100px;
     }
 
-    .actividades-listas {
-        flex-direction: column;
-        gap: 1.5rem;
+    .destination-menu-overlay h3 {
+        font-size: 0.9rem;
     }
-    .actividades-listas ul { width: 100%; }
 
     /* Achicar títulos principales */
     .hero-content h1 { font-size: 2.8rem; }
@@ -552,446 +682,137 @@ body {
     .detail-header { flex-direction: column; text-align: center; gap: 1rem; }
     .tour-details-container { padding: 1.5rem; }
     .filtros-container { flex-direction: column; gap: 1rem; }
-
-    /* Adaptar Contacto */
-    .contacto-container { flex-direction: column; gap: 2rem; }
-    .contacto-info h2 { font-size: 2.2rem; }
-}
-
-
-/* --- CALENDARIO CARRUSEL --- */
-.calendario-carousel {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto; /* Esto permite deslizar horizontalmente */
-    padding: 10px 0;
-    scrollbar-width: thin; /* Para que la barra de scroll sea finita */
-}
-
-/* Diseño de la barra de scroll abajo de los días */
-.calendario-carousel::-webkit-scrollbar { height: 8px; }
-.calendario-carousel::-webkit-scrollbar-thumb { background: #e60000; border-radius: 10px; }
-
-/* La cajita de cada día (inspirada en tu dibujo) */
-.dia-caja {
-    min-width: 80px;
-    height: 100px;
-    border: 3px solid #000;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-    background-color: #fff;
-    color: #000;
-    font-weight: bold;
-}
-
-.dia-caja:hover { transform: translateY(-5px); }
-
-/* Los colores de estado */
-.dia-rojo { 
-    background-color: #e60000; 
-    color: white; 
-    border-color: #a30000; 
-} /* Agotado / Cerrado */
-
-.dia-verde { 
-    background-color: #28a745; 
-    color: white; 
-    border-color: #1e7e34; 
-} /* Disponible */
-
-.dia-gris { 
-    background-color: #e0e0e0; 
-    color: #666; 
-    border-color: #ccc; 
-} /* Sin info / Pasado */
-/* --- TRUCOS PARA OCULTAR LA BARRA DE GOOGLE TRANSLATE --- */
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
-}
-body {
-    top: 0px !important; 
-}
-.goog-tooltip {
-    display: none !important;
-}
-.goog-tooltip:hover {
-    display: none !important;
-}
-.goog-text-highlight {
-    background-color: transparent !important;
-    border: none !important; 
-    box-shadow: none !important;
-}
-
-/* --- DISEÑO MODERNO DE DETALLES DEL TOUR (TIPO CIVITATIS) --- */
-.modern-tour-detail {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    margin-top: 1rem;
-}
-
-/* Encabezado: Título, Precio y Botón en la misma línea */
-.modern-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eaeaea;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.modern-header h2 { font-size: 2.2rem; color: #222; margin: 0; }
-.modern-header-actions { display: flex; align-items: center; gap: 15px; }
-.modern-price { font-size: 1.6rem; font-weight: bold; color: var(--rojo-ariga); }
-
-/* Imagen destacada */
-.modern-gallery img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-}
-
-/* Navegación por pestañas */
-/* Navegación por pestañas */
-.tabs-nav {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    border-bottom: 2px solid #eaeaea;
-    margin-bottom: 2rem;
-    padding: 0;
-    overflow-x: auto; 
-    -ms-overflow-style: none;  /* Oculta scrollbar en IE y Edge */
-    scrollbar-width: none;  /* Oculta scrollbar en Firefox */
-}
-.tabs-nav::-webkit-scrollbar {
-    display: none; /* Oculta scrollbar en Chrome/Safari */
-}
-
-/* NOMBRES ÚNICOS PARA EVITAR CONFLICTO CON EL MEGA MENÚ */
-.tour-tab-link {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #666;
-    cursor: pointer;
-    padding-bottom: 12px;
-    position: relative;
-    white-space: nowrap;
-    transition: color 0.3s;
-}
-.tour-tab-link:hover { color: #333; }
-.tour-tab-link.active-tour-tab { color: var(--rojo-ariga); }
-.tour-tab-link.active-tour-tab::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--rojo-ariga);
-    border-radius: 3px 3px 0 0;
-}
-
-/* Contenido de las pestañas */
-.tour-tab-pane { display: none; animation: fadeIn 0.4s ease; }
-.tour-tab-pane.active-tour-tab { display: block; }
-
-/* Lista de detalles con iconos */
-.details-list { list-style: none; padding: 0; margin: 0; }
-.details-list > li {
-    display: flex;
-    gap: 20px;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 20px 0;
-    align-items: flex-start;
-}
-.details-list > li:last-child { border-bottom: none; }
-.details-list > li > i {
-    font-size: 1.4rem;
-    color: #555;
-    margin-top: 2px;
-    min-width: 30px;
-    text-align: center;
-}
-.details-list .details-content strong { display: block; margin-bottom: 8px; font-size: 1.1rem; color: #222; }
-.details-list ul { margin: 0; padding-left: 20px; list-style: disc; color: #444; line-height: 1.6; }
-.details-list ul li { margin-bottom: 5px; }
-
-/* Animación de aparición */
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-
-/* --- NUEVA GALERÍA: CARRUSEL + LIGHTBOX (PANTALLA COMPLETA) --- */
-
-/* 1. Estilos del Carrusel en la página del Tour */
-.tour-carousel-container {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.tour-carousel-slides {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-
-.tour-carousel-slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Sigue cubriendo el área, pero ahora es interactivo */
-    flex-shrink: 0;
-    cursor: zoom-in; /* Indica que se puede agrandar */
-}
-
-/* Botones de navegación del carrusel */
-.tour-car-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.7);
-    color: #333;
-    border: none;
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.tour-car-btn:hover { background: rgba(255, 255, 255, 0.9); }
-.tour-car-prev { left: 20px; }
-.tour-car-next { right: 20px; }
-
-/* 2. Estilos del Lightbox (El panel negro a pantalla completa) */
-.lightbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Fondo negro tipo tu captura */
-    display: none; /* Oculto por defecto */
-    justify-content: center;
-    align-items: center;
-    z-index: 99999; /* Por encima de absolutamente todo */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.lightbox-overlay.active {
-    display: flex;
-    opacity: 1;
-}
-
-/* Imagen dentro del Lightbox */
-.lightbox-img {
-    max-width: 90%;
-    max-height: 90vh; /* Ocupa casi toda la altura de la pantalla */
-    object-fit: contain; /* ¡CLAVE! Muestra la foto sin cortar, cuerpo completo */
-    border-radius: 4px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    animation: zoomIn 0.3s ease;
-}
-
-/* Botones dentro del Lightbox */
-.lightbox-btn {
-    position: absolute;
-    background: none;
-    border: none;
-    color: white; /* Flechas blancas como en tu captura */
-    font-size: 3rem;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s, transform 0.2s;
-    z-index: 10;
-}
-.lightbox-btn:hover { opacity: 1; transform: scale(1.1); }
-.lightbox-close { top: 20px; right: 30px; font-size: 2.5rem; } /* X para cerrar */
-.lightbox-prev { left: 30px; }
-.lightbox-next { right: 30px; }
-
-@keyframes zoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-@keyframes zoomOut { from { transform: scale(1); opacity: 1; } to { transform: scale(0.9); opacity: 0; } }
-
-/* Ajustes para celulares */
-@media (max-width: 768px) {
+    
     .tour-carousel-container { height: 300px; }
     .lightbox-btn { font-size: 2rem; }
     .lightbox-close { top: 15px; right: 20px; }
     .lightbox-prev { left: 15px; }
     .lightbox-next { right: 15px; }
-}
-
-
-/* --- SCROLLER VERTICAL DE TOURS EN EL INICIO --- */
-.tours-vertical-scroller {
-    height: 75vh; /* Ocupa el 75% de la pantalla */
-    min-height: 550px;
-    max-height: 800px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory; /* Hace que el scroll "salte" y se clave en cada tour */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    background: #fff;
-    /* Ocultar barra de scroll para que se vea más limpio */
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-.tours-vertical-scroller::-webkit-scrollbar {
-    display: none; 
-}
-
-.tour-scroll-slide {
-    height: 100%; /* Cada tour ocupa el 100% de la ventana */
-    width: 100%;
-    scroll-snap-align: start; /* Acá es donde se "clava" el scroll */
-    display: flex;
-    flex-direction: column; /* Foto arriba, texto abajo */
-    position: relative;
-}
-
-.tour-scroll-img-box {
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-
-.tour-scroll-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tour-scroll-content {
-    height: 50%;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Ajustes para celulares */
-@media (max-width: 768px) {
+    
     .tour-scroll-content { padding: 1.5rem; }
     .tours-vertical-scroller { height: 85vh; }
-}
 
-/* --- HEADER FIJO (STICKY NAVBAR) --- */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999; /* Asegura que el menú tape a cualquier otra foto o tour al scrollear */
-    background-color: #000; /* Fondo negro sólido para que no se mezcle con las fotos */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombrita elegante abajo del menú */
-}
-
-/* Compensamos el espacio que ahora ocupa el menú flotante */
-body {
-    padding-top: 85px; 
-}
-
-/* Transición suave para cuando cambie la foto de la cabecera de destinos */
-.page-header {
-    transition: background-image 1s ease-in-out;
-}
+    /* Adaptar Contacto */
+    .contacto-container { flex-direction: column; gap: 2rem; }
+    .contacto-info h2 { font-size: 2.2rem; }
 
 
-/* --- ESTILOS PARA EL MEGA MENU DINÁMICO --- */
-
-/* La grilla principal que acomoda las tarjetas (4 por fila en PC) */
-.dynamic-destinations .dropdown-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* La tarjeta individual: foto de fondo con texto superpuesto */
-.destination-menu-card {
-    position: relative;
-    height: 160px; /* Altura de la caja */
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* La imagen de fondo */
-.destination-menu-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Súper importante para que no se deforme la foto */
-    transition: transform 0.5s ease;
-}
-
-/* El degradado oscuro para que el texto blanco se lea bien */
-.destination-menu-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 70%; /* Degradado desde la mitad para abajo */
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-    display: flex;
-    align-items: flex-end; /* Texto abajo */
-    padding: 15px;
-    z-index: 2;
-}
-
-/* Estilo del título */
-.destination-menu-overlay h3 {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    text-transform: capitalize; /* Convierte 'tokio' en 'Tokio' */
-}
-
-/* Efectos al pasar el mouse (Hover) */
-.destination-menu-card:hover {
-    transform: translateY(-3px); /* Levanta la tarjeta */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra elegante */
-}
-
-.destination-menu-card:hover img {
-    transform: scale(1.1); /* Efecto zoom suave en la foto */
-}
-
-/* Ajustes para celulares y tablets (2 por fila) */
-@media (max-width: 768px) {
-    .dynamic-destinations .dropdown-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 15px;
+     .modern-header {
+        flex-direction: column; /* Apilamos uno arriba del otro */
+        align-items: flex-start; /* Alineamos a la izquierda */
+        gap: 0.5rem; /* Separación chiquita entre título y precio */
     }
-    .destination-menu-card {
-        height: 130px;
+    
+    .modern-header h2 { 
+        font-size: 1.8rem; /* Título un pelín más chico para que entre mejor */
+        line-height: 1.2;
+    }
+    
+    .modern-header-actions {
+        width: 100%;
+        justify-content: space-between; /* Botón de WhatsApp a la derecha, precio a la izquierda */
+        margin-top: 10px;
+    }
+    
+    .modern-price { 
+        font-size: 1.4rem; 
+    }
+}
+
+
+/* --- TRUCOS PARA OCULTAR LA BARRA DE GOOGLE TRANSLATE --- */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0px !important; }
+.goog-tooltip { display: none !important; }
+.goog-tooltip:hover { display: none !important; }
+.goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
+
+/* --- LLUVIA DE EMOJIS JAPONESES (SOLO CELULARES) --- */
+.emoji-cayendo {
+    position: fixed;
+    top: -50px; 
+    font-size: 1.5rem;
+    z-index: 9999;
+    pointer-events: none; 
+    opacity: 0.6; 
+    animation: caer linear forwards;
+
+
+
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(360deg); 
+    }
+}
+
+/* --- ARREGLO TITULO Y PRECIO EN EL SCROLLER DE INICIO --- */
+.tour-scroll-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+.tour-scroll-encabezado h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+.tour-scroll-encabezado span {
+    font-weight: bold;
+    color: var(--rojo-ariga);
+    font-size: 1.3rem;
+    white-space: nowrap; /* Evita que el símbolo del € baje a otra línea */
+}
+
+@media (max-width: 768px) {
+    /* 1. Desarmamos la caja contenedora del scroll */
+    .tours-vertical-scroller {
+        height: auto; /* Dejamos que ocupe lo que tenga que ocupar */
+        max-height: none;
+        overflow-y: visible; /* Sacamos el scroll interno */
+        scroll-snap-type: none; /* Sacamos el efecto de salto */
+        background: transparent;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column; /* Los apilamos verticalmente */
+        gap: 2rem; /* Le damos espacio entre tarjeta y tarjeta */
+    }
+
+    /* 2. Le damos forma de "tarjeta individual" a cada tour */
+    .tour-scroll-slide {
+        height: auto; /* Que mida lo que necesite su contenido */
+        scroll-snap-align: none;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra a cada tarjetita */
+        overflow: hidden;
+    }
+
+    /* 3. Fijamos un alto lindo para la foto */
+    .tour-scroll-img-box {
+        height: 250px; 
+    }
+
+    /* 4. Acomodamos el espacio del texto */
+    .tour-scroll-content { 
+        height: auto;
+        padding: 1.5rem; 
+    }
+
+    /* 5. Acomodamos el título y el precio para que no choquen */
+    .tour-scroll-encabezado {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .tour-scroll-encabezado h3 {
+        font-size: 1.4rem; 
     }
 }

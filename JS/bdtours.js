@@ -248,18 +248,30 @@ function mostrarDetalle(tour) {
         });
     });
 
-    // C. Lógica para cambiar de pestañas (se mantiene)
+    // C. Lógica para cambiar de pestañas (CON SCROLL SUAVE PARA MOBILE)
     const tabLinks = contenedorDetalle.querySelectorAll('.tour-tab-link');
     const tabPanes = contenedorDetalle.querySelectorAll('.tour-tab-pane');
 
     tabLinks.forEach(link => {
         link.addEventListener('click', () => {
+            // 1. Cambiamos las clases activas para mostrar el texto
             tabLinks.forEach(l => l.classList.remove('active-tour-tab'));
             tabPanes.forEach(p => p.classList.remove('active-tour-tab'));
 
             link.classList.add('active-tour-tab');
             const targetID = `pane-${link.dataset.target}`;
             document.getElementById(targetID).classList.add('active-tour-tab');
+
+            // 2. MAGIA: Scroll automático al tocar pestaña (solo en celular)
+            if (window.innerWidth <= 768) {
+                const tabsContainer = document.querySelector('.modern-tabs-container');
+                if (tabsContainer) {
+                    tabsContainer.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }
+            }
         });
     });
 
@@ -291,6 +303,7 @@ function mostrarDetalle(tour) {
 
     document.getElementById('zona-detalles').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
 // --- FUNCIONES DEL LIGHTBOX (VISTA A PANTALLA COMPLETA TIPO TU CAPTURA) ---
 
 // 1. Inyectamos el HTML oculto del Lightbox en el body al cargar la página
@@ -345,7 +358,7 @@ function inicializarEventosLightbox() {
         if (e.target.id === 'ariga-lightbox') cerrarLightbox();
     });
 
-    // Soporte para flechas del teclado (¡Muy pro!)
+    // Soporte para flechas del teclado
     document.addEventListener('keydown', (e) => {
         if (!lightbox.classList.contains('active')) return;
         if (e.key === 'ArrowRight') lbSiguiente();

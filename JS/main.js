@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
+/*
 // --- EFECTO LLUVIA JAPÓN EN TODAS LAS PANTALLAS ---
 function iniciarLluviaJapon() {
     const emojis = ['🌸', '⛩️', '🍣', '🏮', '🗻', '🏯', '🎋', '🍡'];
@@ -147,3 +147,4 @@ function iniciarLluviaJapon() {
         
     }, 600); // Cae un emoji nuevo cada 600 milisegundos (ajustalo para más o menos lluvia)
 }
+*/

@@ -15,19 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Tokiovicerojo4.jpg", "Tokiovicerojo5.jpg", "Tokiovicerojo6.jpg"
     ];
 
-    // Mezclamos la lista al azar como si fuera un mazo de cartas
     const fotosMezcladas = listaFotos.sort(() => 0.5 - Math.random());
-
-    // Buscamos los 3 slides del HTML
     const slidesHero = document.querySelectorAll('.carousel-slide');
 
-    // A cada uno le ponemos una foto distinta de la lista mezclada
     slidesHero.forEach((slide, index) => {
         if (fotosMezcladas[index]) {
-            // Mantenemos el filtro oscuro (linear-gradient) para que las letras blancas se sigan leyendo bien
             slide.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Recursos/${fotosMezcladas[index]}')`;
         }
     });
+
     // --- LÓGICA DEL CARRUSEL HERO GIGANTE ---
     const slides = document.querySelectorAll('.carousel-slide');
     const dots = document.querySelectorAll('.dot');
@@ -37,12 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) {
         let currentSlide = 0;
         let slideInterval;
-        const intervalTime = 10000; // 10 segundos para que no sea tan lento
+        const intervalTime = 10000;
 
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
-            
             slides[index].classList.add('active');
             dots[index].classList.add('active');
         }
@@ -102,13 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 👇 ACÁ ESTÁ LA MAGIA QUE FALTABA: LLAMAMOS A LA FUNCIÓN 👇
     iniciarCalendario();
 });
 
-// --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD (VERSIÓN MEJORADA) ---
-// --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD (VERSIÓN MEJORADA CON ENLACES) ---
-// --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD (VERSIÓN MEJORADA CON ENLACES Y FECHA) ---
+// --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD ---
 function iniciarCalendario() {
     const contenedor = document.getElementById('calendario-contenedor');
     const infoDia = document.getElementById('info-tour-dia');
@@ -138,7 +130,6 @@ function iniciarCalendario() {
 
                 caja.addEventListener('click', () => {
                     if (toursDelDia.length > 0) {
-                        // LA MAGIA ACÁ: Le agregamos &fecha=${fechaString} al enlace
                         let enlacesTours = toursDelDia.map(t => 
                             `<a href="tours.html?tour=${t.id}&fecha=${fechaString}" style="color: #000; text-decoration: none; border-bottom: 2px solid #e60000; padding-bottom: 2px; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.7" onmouseout="this.style.opacity=1">${t.titulo}</a>`
                         ).join(' <br><br> ✔️ '); 
@@ -155,7 +146,7 @@ function iniciarCalendario() {
         .catch(error => console.error("Error cargando el calendario:", error));
 }
 
-// --- LÓGICA PARA CARGAR SCROLLER DE TOURS EN EL INICIO (CON CLIMA) ---
+// --- LÓGICA PARA CARGAR GRILLA DE TOURS EN EL INICIO (CON CLIMA) ---
 document.addEventListener('DOMContentLoaded', () => {
     const contenedorInicio = document.getElementById('contenedor-tours-inicio');
     if (!contenedorInicio) return;
@@ -165,7 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(tours => {
             contenedorInicio.innerHTML = ''; 
 
-            // Función ninja para dar el clima según la ciudad
             function obtenerClimaHTML(ciudad) {
                 if (ciudad === 'Tokio' || ciudad === 'Kanagawa') {
                     return `
@@ -186,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Tomamos los 4 tours principales
             const toursMostrar = tours.slice(0, 4);
 
             toursMostrar.forEach(tour => {
@@ -199,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let climaHTML = obtenerClimaHTML(tour.ciudad);
 
                 const slide = document.createElement('div');
-                slide.className = 'tour-scroll-slide';
+                slide.className = 'tour-scroll-slide'; // Mantenemos el nombre para no romper el CSS
 
                 slide.innerHTML = `
                     <div class="tour-scroll-img-box">
@@ -209,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </span>
                     </div>
                     <div class="tour-scroll-content">
+                        
                         <div class="tour-scroll-encabezado">
                             <h3>${tour.titulo}</h3>
                             <span>${tour.precio ? tour.precio.split(' ')[0] + ' €' : ''}</span>
@@ -234,37 +224,25 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error("Error cargando los tours en el inicio:", error));
 });
 
-
-
 // --- LÓGICA PARA CARGAR EL MEGA MENU DINÁMICO DESDE EL JSON ---
 document.addEventListener('DOMContentLoaded', () => {
     const contenedorDropdown = document.getElementById('dynamic-dropdown-container');
-    if (!contenedorDropdown) return; // Si no encuentra el contenedor, no hace nada
+    if (!contenedorDropdown) return;
 
-    // Vamos a buscar la base de datos
     fetch('JSON/BdTours.json')
         .then(respuesta => respuesta.json())
         .then(tours => {
-            // Limpiamos el texto de "Cargando..."
             contenedorDropdown.innerHTML = '';
-
-            // Usamos un Set para no repetir ciudades si tenemos varios tours en la misma (ej. Tokio Vice y Tokio Todo en un Día)
             const ciudadesAgregadas = new Set();
 
             tours.forEach(tour => {
-                // Si la ciudad ya se agregó al menú, saltamos al siguiente tour
                 if (ciudadesAgregadas.has(tour.ciudad.toLowerCase())) return;
-
-                // Si es una ciudad nueva, la marcamos como agregada
                 ciudadesAgregadas.add(tour.ciudad.toLowerCase());
 
-                // Vemos qué imagen usar (la primera de la galería si tiene, sino la principal)
                 let imagenMostrar = (tour.galeria && tour.galeria.length > 0) ? tour.galeria[0] : tour.imagen;
 
-                // Creamos la tarjeta dinámica vinculada a la ciudad
                 const tarjetaMenu = document.createElement('a');
                 tarjetaMenu.className = 'destination-menu-card';
-                // Vinculamos el enlace a la página de tours filtrando por ciudad
                 tarjetaMenu.href = `tours.html?ciudad=${tour.ciudad}`;
 
                 tarjetaMenu.innerHTML = `
@@ -276,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 contenedorDropdown.appendChild(tarjetaMenu);
             });
 
-            // Si por alguna razón no hay tours en la base de datos
             if (ciudadesAgregadas.size === 0) {
                 contenedorDropdown.innerHTML = '<p style="text-align:center; color:#888; width:100%;">No hay destinos disponibles actualmente.</p>';
             }

@@ -3,15 +3,17 @@
     
 {
         "id": "tour-kamakura",
-        "ciudad": "Kanagawa",
+        "ciudad": "Kamakura",
         "tematica": "Arte y cultura",
         "titulo": "Kamakura Clásico",
-        "imagen": "Recursos/kamakura1.jpg",
+        "imagen": "Recursos/Kamakura2.jpg",
         "galeria": [
-            "Recursos/kamakura1.jpg",
-            "Recursos/Kamakura2.jpg",
+            "Recursos/kamakura2.jpg",
+            "Recursos/Kamakura1.jpg",
             "Recursos/kamakura3.jpg",
-            "Recursos/kamakura4.jpg"
+            "Recursos/kamakura4.jpg",
+            "Recursos/kamakura5.jpg"
+
         ],
         "duracion": "4 horas",
         "precio": "25 € (Adultos) / 5 € (Niños)",

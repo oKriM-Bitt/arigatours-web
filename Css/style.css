@@ -301,18 +301,41 @@ body { top: 0px !important; }
    ========================================================================== */
 
 /* TABLETS Y MENÚ HAMBURGUESA */
+/* TABLETS Y MENÚ HAMBURGUESA */
 @media (max-width: 992px) {
-    .hamburger { display: block; margin-left: auto; }
-    .nav-links { position: fixed; top: 0; right: -100%; width: 75%; height: 100vh; background-color: #111111; flex-direction: column; align-items: flex-start; padding: 100px 5% 20px; transition: right 0.4s ease; overflow-y: auto; z-index: 10000; }
-    .nav-links.nav-active { right: 0; }
-    .nav-links li { width: 100%; border-bottom: 1px solid #333; padding: 1rem 0; }
+    /* Hamburguesa negra */
+    .hamburger { display: block; margin-left: auto; color: #000000; } 
     
-    .header-actions { display: flex; flex-direction: column; align-items: flex-start; width: 100%; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); gap: 1.5rem; position: fixed; bottom: 50px; right: -100%; width: 75%; padding-left: 5%; transition: right 0.4s ease; z-index: 10000; }
+    /* Fondo beige y menú más angosto (60%) */
+    .nav-links { 
+        position: fixed; top: 0; right: -100%; width: 60%; height: 100vh; 
+        background-color: #FDF8F5; 
+        flex-direction: column; align-items: flex-start; padding: 100px 5% 20px; 
+        transition: right 0.4s ease; overflow-y: auto; z-index: 10000; 
+    }
+    .nav-links.nav-active { right: 0; }
+    
+    /* Líneas divisorias suaves y enlaces negros */
+    .nav-links li { width: 100%; border-bottom: 1px solid #ddd; padding: 1rem 0; }
+    .nav-links a { color: #000000; font-weight: bold; }
+    
+    /* Contenedor de Redes e Idioma (también al 60% de ancho) */
+    .header-actions { 
+        display: flex; flex-direction: column; align-items: flex-start; width: 100%; 
+        margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #ddd; gap: 1.5rem; 
+        position: fixed; bottom: 50px; right: -100%; width: 60%; padding-left: 5%; 
+        transition: right 0.4s ease; z-index: 10000; 
+    }
     .header-actions.nav-active { right: 0; }
+    
+    /* Iconos de redes en negro */
     .social-icons { gap: 2rem; }
+    .social-icons a { color: #000000; }
     .social-icons a i { font-size: 1.5rem; }
+    
+    /* Selector de idiomas adaptado al fondo claro */
     .language-selector { width: 80%; }
-    .language-selector select { width: 100%; padding: 12px; font-size: 1.1rem; border-color: var(--rojo-ariga); }
+    .language-selector select { width: 100%; padding: 12px; font-size: 1.1rem; border-color: var(--rojo-ariga); background-color: #ffffff; color: #000000; }
 
     .mega-menu { position: static; opacity: 1; visibility: visible; display: none; transform: none; box-shadow: none; padding: 1rem 0 0 1rem; background-color: transparent; }
     .nav-item-dropdown:hover .mega-menu, .nav-item-dropdown:focus-within .mega-menu { display: block; }

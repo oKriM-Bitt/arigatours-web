@@ -1,0 +1,392 @@
+[
+
+    
+{
+        "id": "tour-kamakura",
+        "ciudad": "Kamakura",
+        "tematica": "Arte y cultura",
+        "titulo": "Kamakura Clásico",
+        "imagen": "Recursos/Kamakura2.jpg",
+        "galeria": [
+            "Recursos/Kamakura2.jpg",
+            "Recursos/kamakura1.jpg",
+            "Recursos/Kamakura6.jpg",
+            "Recursos/Kamakura7.jpg",
+            "Recursos/Kamakura8.jpg"
+
+        ],
+        "duracion": "4 horas",
+        "precio": "25 € (Adultos) / 5 € (Niños)",
+        "puntoEncuentro": "Salida Marunouchi North Exit (Estación de Tokio) a las 9:00 AM",
+        "descripcion": "Escapa con nosotros del ruido de la megalópolis y adéntrate en la ciudad que fue el centro del poder samurái durante más de un siglo. Este tour de una mañana está diseñado para quien quiere lo esencial de Kamakura y sentir el peso de la historia, y comprender por qué este pequeño rincón costero cambió para siempre el destino de Japón.<br><br><strong>Itinerario:</strong><br>Saldremos a las 9:00 AM desde la estación de Tokio para llegar a la ciudad. Comenzaremos en Hase-dera, el templo de la diosa Kannon. Desde allí nos trasladaremos al Kotoku-in para encontrarnos cara a cara con el Gran Buda, el Daibutsu. Cerraremos el recorrido en el Tsurugaoka Hachiman-gu, el gran santuario shintoísta que durante siglos fue el corazón espiritual y político del shogunato. Para la hora de la comida, la calle Komachi-dori nos espera con sus puestos, dulces tradicionales y pequeños restaurantes; el lugar perfecto para acabar el tour.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour privado",
+            "Explicaciones históricas de los puntos visitados",
+            "Entradas a dos templos incluidas"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+         
+        ]
+    },
+
+    {
+        "id": "tour-tokio-todo-en-un-dia",
+        "ciudad": "Tokio",
+        "tematica": "Arte y cultura",
+        "titulo": "Tokio todo en un día",
+        "imagen": "Recursos/Tokioundia.jpg",
+        "galeria": [
+            "Recursos/Tokioundia.jpg",
+            "Recursos/tokioundia2.jpg",
+            "Recursos/tokioundia3.jpg",
+            "Recursos/tokioundia4.jpg",
+            "Recursos/tokioundia5.jpg",
+            "Recursos/tokioundia6.jpg"
+          
+          
+        ],
+        "duracion": "8 horas",
+        "precio": "120 € (Adultos)",
+        "puntoEncuentro": "Al lado del edificio de información turística de Asakusa a las 9:00 AM",
+        "descripcion": "Descubre con nosotros la ciudad que nunca deja de sorprender. Este tour de un día está diseñado para quien quiere entender Tokio, no solo verla, sino sentirla y comprender por qué millones de personas la consideran la ciudad más fascinante del planeta.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 9:00 AM en Asakusa, el último barrio que conserva el alma de Tokio. Pasearemos por el Nakamise, hasta llegar al Senso-ji, el templo budista que lleva más de mil años recibiendo peregrinos. Desde allí nos trasladaremos al histórico Santuario Meiji. A pocos pasos, cruzaremos al otro lado del espejo: Harajuku y su calle Takeshita. Haremos una pausa de una hora para comer al mediodía y luego iremos a Shibuya, el cruce más fotografiado del mundo. Terminaremos en Shinjuku, donde Tokio se despide a lo grande.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante todo el tour privado",
+            "Explicaciones históricas y culturales de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos (se da 1 hora libre para comer)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+
+{
+        "id": "tour-tokio-vice",
+        "ciudad": "Tokio",
+        "tematica": "Arte y cultura",
+        "titulo": "Tokio Vice (Tour Nocturno)",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "galeria": [
+            "Recursos/Tokiovicerojo.jpg",
+            "Recursos/Tokiovicerojo2.jpg",
+            "Recursos/Tokiovicerojo3.jpg",
+            "Recursos/Tokiovicerojo4.jpg",
+                "Recursos/Tokiovicerojo5.jpg",
+                "Recursos/Tokiovicerojo6.jpg"
+          
+        ],
+        "duracion": "2.5 o 3.5 horas (según opción de cena)",
+        "precio": "60 € (Sin cena) / 80 € (Con cena)",
+        "puntoEncuentro": "Parque Umayamichi, salida Este (Estación de Yoyogi) a las 18:00 horas",
+        "descripcion": "Adéntrate con nosotros en el lado más crudo y fascinante de Tokio con este tour nocturno inspirado en artículos y series como Tokyo Vice. Exploraremos juntos el distrito de Shinjuku y su cara más enigmática: Kabukicho, el barrio que nunca duerme.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 18:00 en el parque Umayamichi a pocos pasos de la estación de Yoyogi. Desde aquí nos adentraremos en un recorrido que nos permitirá comprender cómo funciona realmente el mundo nocturno japonés: sus códigos no escritos, sus luces de neón y las estructuras sociales que operan en la sombra. Analizamos la evolución histórica del barrio tras la posguerra en Omoide Yokocho, su transformación en epicentro del entretenimiento adulto en las principales avenidas de Kabukicho y la influencia de la yakuza, la mafia japonesa. Visitaremos lugares emblemáticos como el gato gigante de Shinjuku, el mismísimo Godzilla y lugares a los que solo los tokiotas más locales saben llegar.<br><br><strong>Opción con cena:</strong><br>Shinjuku es conocido como el lugar donde los trabajadores japoneses vienen a desestresarse después de una larga jornada laboral. Iremos a un restaurante típico izakaya donde podréis probar variedades de yakitori, brochetas de pollo, karaage, gyoza entre muchos. En caso de elegir tour con cena, la finalización del tour será a las 21:00 horas.<br><br><strong>Aviso importante:</strong><br>Dado que por los temas que tratarán durante este tour y que se visitará el barrio rojo, este tour <strong>no es recomendado para menores de 18 años</strong>.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado y protección.",
+        "incluye": [
+            "Guía en español durante todo el recorrido nocturno",
+            "Explicaciones históricas y culturales de los puntos visitados",
+            "Cena en restaurante típico Izakaya (Solo si se reserva la opción de 80 €)"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos durante el tour (la cena es al finalizar)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+ {
+        "id": "tour-osaka-presentation",
+        "ciudad": "Osaka",
+        "tematica": "Arte y cultura",
+        "titulo": "Osaka Presentation",
+         "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "60 € (Adultos)",
+        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
+        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>El recorrido pasa por escalones pequeños. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour",
+            "Explicaciones históricas de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Entradas a lugares que lo requieran",
+            "Recogida en el hotel (disponible por tarifa agregada)"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+    
+    {
+        "id": "tour-kioto-historico",
+        "ciudad": "Kioto",
+        "tematica": "Arte y cultura",
+        "titulo": "Kioto Histórico",
+         "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+            
+        ],
+        "duracion": "3 horas",
+        "precio": "60 € (Adultos)",
+        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
+        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este recorrido pasa por cuestas largas y escalones grandes. No es recomendado para personas con dificultad de movimiento. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour",
+            "Explicaciones históricas de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Entradas a lugares que lo requieran",
+            "Recogida en el hotel (disponible por tarifa agregada)"
+        ],
+        "fechasDisponibles": [
+           
+        ]
+    },
+    {
+        "id": "tour-kyoto-3h",
+        "ciudad": "Kioto",
+        "tematica": "Arte y cultura",
+        "titulo": "Kioto Más Allá de lo Ordinario (3 Horas)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
+        "puntoEncuentro": "Estación Gion-Shijo",
+        "descripcion": "Descubre la esencia de Kioto con un recorrido a pie diseñado para una experiencia sin estrés.<br><br><strong>Itinerario:</strong><br>Caminaremos junto al río Kamogawa, exploraremos Gion Shirakawa, visitaremos el Templo Chionin, pasaremos por el Parque Maruyama y concluiremos en el famoso Templo Kiyomizudera.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Experiencia de tour privado a pie"
+        ],
+        "noIncluye": [
+            "Entradas",
+            "Transporte",
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kyoto-8h",
+        "ciudad": "Kioto",
+        "tematica": "Arte y cultura",
+        "titulo": "El ABC de Kioto (8 Horas)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "8 horas",
+        "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
+        "puntoEncuentro": "Recogida en el hotel",
+        "descripcion": "Visita los 3 lugares más famosos de la ciudad utilizando transporte público para una inmersión cultural auténtica y profunda.<br><br><strong>Itinerario:</strong><br>Exploraremos el dorado Templo Kinkakuji (UNESCO), caminaremos bajo las icónicas puertas de Fushimi Inari, y visitaremos Kiyomizu-dera (UNESCO).",
+        "incluye": [
+            "Guía hispanohablante",
+            "Recogida en el hotel",
+            "Todas las tarifas y entradas incluidas"
+        ],
+        "noIncluye": [
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-3h",
+        "ciudad": "Osaka",
+        "tematica": "Arte y cultura",
+        "titulo": "Siente la Energía de Osaka (3 Horas)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
+        "puntoEncuentro": "Estación Shinsaibashi",
+        "descripcion": "Un vibrante recorrido a pie para sentir la verdadera energía, la cultura gastronómica y la vida callejera de Osaka.<br><br><strong>Itinerario:</strong><br>Comenzamos en Shinsaibashi, pasamos por la juvenil America Mura, las luces de Dotonbori, el tradicional Templo Hozenji, y terminamos en el animado Mercado Kuromon.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Experiencia de tour privado a pie"
+        ],
+        "noIncluye": [
+            "Entradas",
+            "Transporte",
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-8h",
+        "ciudad": "Osaka",
+        "tematica": "Arte y cultura",
+        "titulo": "Experiencia de Día Completo en Osaka (8 Horas)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "8 horas",
+        "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
+        "puntoEncuentro": "Recogida en el hotel",
+        "descripcion": "Todo lo incluido en el tour de 3 horas, además de visitas extendidas a los distritos históricos y retro-futuristas más significativos de la ciudad usando transporte público.<br><br><strong>Itinerario:</strong><br>Castillo de Osaka (UNESCO), distrito de Namba, y la fascinante zona de Shinsekai, más lo más destacado del tour a pie de 3 horas.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Recogida en el hotel",
+            "Todas las tarifas y entradas incluidas"
+        ],
+        "noIncluye": [
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-3h",
+        "ciudad": "Kobe",
+        "tematica": "Arte y cultura",
+        "titulo": "Kobe: Ciudad de Sabores y Comercio (3 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 horas",
+        "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
+        "puntoEncuentro": "Estación Sannomiya",
+        "descripcion": "Descubre la ciudad portuaria cosmopolita de Kobe, donde el comercio internacional moldeó su arquitectura y sabores únicos.<br><br><strong>Itinerario:</strong><br>Comenzando en Sannomiya, visitaremos Ikuta Jinja, el histórico Starbucks Ijinkan, la casa Weathercock y pasaremos por Steakland.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Experiencia de tour privado a pie"
+        ],
+        "noIncluye": [
+            "Entradas",
+            "Transporte",
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-8h",
+        "ciudad": "Kobe",
+        "tematica": "Arte y cultura",
+        "titulo": "Experiencia de Día Completo en Kobe (8 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 horas",
+        "precio": "$315 USD (Base 2 pax) + $55 USD por persona adicional",
+        "puntoEncuentro": "Recogida en el hotel",
+        "descripcion": "Un recorrido completo por Kobe utilizando transporte público, desde sus raíces espirituales hasta los modernos paseos marítimos.<br><br><strong>Itinerario:</strong><br>Sannomiya, Santuario Ikuta, Distrito Kitano Ijinkan, Cascadas Nunobiki, Steakland, Parque Meriken, y la Torre del Puerto de Kobe.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Recogida en el hotel",
+            "Todas las tarifas y entradas incluidas"
+        ],
+        "noIncluye": [
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-3h",
+        "ciudad": "Himeji",
+        "tematica": "Arte y cultura",
+        "titulo": "Lo Mejor de Himeji (3 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 horas",
+        "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
+        "puntoEncuentro": "Estación Himeji",
+        "descripcion": "Donde la historia y el sabor se unen. Explora los caminos que conducen al castillo mejor conservado y espectacular de Japón.<br><br><strong>Itinerario:</strong><br>Estación Himeji, Calle Otemae, Calle Yamasa Kamaboko, Santuario Harima Sosha, el magnífico Castillo de Himeji (UNESCO), y el Santuario Himeji.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Experiencia de tour privado a pie"
+        ],
+        "noIncluye": [
+            "Entradas",
+            "Transporte",
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-kobe-8h",
+        "ciudad": "Himeji",
+        "tematica": "Gastronomía",
+        "titulo": "Día Completo Himeji y Kobe (8 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 horas",
+        "precio": "$350 USD (Base 2 pax) + $55 USD por persona adicional",
+        "puntoEncuentro": "Recogida en el hotel",
+        "descripcion": "La excursión perfecta que combina la maravilla histórica del Castillo de Himeji con el ambiente cosmopolita y la excelencia culinaria de Kobe.<br><br><strong>Itinerario:</strong><br>Castillo de Himeji, luego viajamos a Kobe Sannomiya, visitamos el Parque Meriken, disfrutamos de un almuerzo de carne de Kobe en Steakland, y exploramos Kitano y Motomachi.",
+        "incluye": [
+            "Guía hispanohablante",
+            "Recogida en el hotel",
+            "Todas las tarifas incluidas",
+            "Almuerzo de carne de Kobe incluido en Steakland"
+        ],
+        "noIncluye": [
+            "Bebidas adicionales"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-3h",
+        "ciudad": "Nara",
+        "tematica": "Arte y cultura",
+        "titulo": "Nara: El Alma de Japón (3 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 horas",
+        "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
+        "puntoEncuentro": "Estación Kintetsu Nara",
+        "descripcion": "Descubre la antigua capital donde los ciervos deambulan libremente entre templos centenarios.<br><br><strong>Itinerario:</strong><br>Estación Kintetsu, Sarusawa ike, Kodaiji, Museo de Nara, y el impresionante Templo Todaiji (UNESCO).",
+        "incluye": [
+            "Guía hispanohablante",
+            "Experiencia de tour privado a pie"
+        ],
+        "noIncluye": [
+            "Entradas",
+            "Transporte",
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-uji-8h",
+        "ciudad": "Nara",
+        "tematica": "Arte y cultura",
+        "titulo": "Nara y Uji: Los Orígenes del Matcha (8 Horas)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 horas",
+        "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
+        "puntoEncuentro": "Recogida en el hotel",
+        "descripcion": "Experimenta el corazón espiritual de Nara y el lugar de nacimiento del auténtico té verde japonés en Uji.<br><br><strong>Itinerario:</strong><br>Pabellón del Fénix, Calle de Uji (tiendas de Matcha), Sarusawa-ike, Kofuku-ji (UNESCO), Parque de Nara, y Todaiji (UNESCO).",
+        "incluye": [
+            "Guía hispanohablante",
+            "Recogida en el hotel",
+            "Todas las tarifas y entradas incluidas"
+        ],
+        "noIncluye": [
+            "Alimentos y bebidas"
+        ],
+        "fechasDisponibles": []
+    }
+]
+

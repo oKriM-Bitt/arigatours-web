@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initMegaMenuTabs();
-    
+
     // Arrancamos la lluvia de Japón en TODAS las pantallas
     iniciarLluviaJapon();
 });
@@ -21,7 +21,7 @@ function initMobileMenu() {
         hamburger.addEventListener('click', () => {
             // Abrimos/cerramos el menú principal
             navLinks.classList.toggle('nav-active');
-            
+
             // Abrimos/cerramos las redes e idioma
             if (headerActions) {
                 headerActions.classList.toggle('nav-active');
@@ -47,7 +47,7 @@ function initMegaMenuTabs() {
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const targetId = tab.getAttribute('data-target');
-            if (!targetId) return; 
+            if (!targetId) return;
 
             const megaMenu = tab.closest('.mega-menu');
 
@@ -68,7 +68,23 @@ function initMegaMenuTabs() {
         });
     });
 }
+// --- GESTIÓN DE IDIOMAS ---
+document.addEventListener('DOMContentLoaded', () => {
+    const langSwitches = document.querySelectorAll('#lang-switch');
+    const idiomaInicial = localStorage.getItem('idiomaAriga') || 'es';
 
+    langSwitches.forEach(select => {
+        select.value = idiomaInicial;
+        select.addEventListener('change', (e) => {
+            const nuevoIdioma = e.target.value;
+            localStorage.setItem('idiomaAriga', nuevoIdioma);
+            window.location.reload(); // Recarga para traer el JSON correcto
+        });
+    });
+
+    aplicarIdioma(idiomaInicial);
+});
+/*
 // --- LÓGICA DEL SELECTOR DE IDIOMAS (CON MEMORIA LOCAL) ---
 document.addEventListener('DOMContentLoaded', () => {
     // Buscamos si hay selectores de idioma (puede haber más de uno ahora con el diseño mobile)

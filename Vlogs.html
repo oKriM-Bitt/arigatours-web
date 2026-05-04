@@ -12,58 +12,44 @@
 
     <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="Recursos/arigaLOGO.png" alt="Logo ArigaTours">
+            <img src="Recursos/logo-png.png" alt="Logo ArigaTours">
         </a>
         
         <nav>
             <ul class="nav-links">
-                
-                <li><a href="index.html" class="active">Inicio</a></li>
-    
+                <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
                 <li class="nav-item-dropdown">
-                    <a href="tours.html">Destinos</a>
+                    <a href="tours.html" data-i18n="nav-dest">Destinos</a>
                     <div class="mega-menu dynamic-destinations">
                         <div id="dynamic-dropdown-container" class="dropdown-grid">
                             <p style="text-align:center; color:#888; padding: 20px;">Cargando destinos...</p>
                         </div>
                     </div>
                 </li>
-
                 <li class="nav-item-dropdown">
-                    <a href="Vlogs.html">Blogs</a>
+                    <a href="Vlogs.html" class="active" data-i18n="nav-blog">Blogs</a>
                     <div class="mega-menu mega-menu-small">
                         <div class="menu-column">
-                            <h3>Contenido Exclusivo</h3>
+                            <h3 data-i18n="vlog-excl">Contenido Exclusivo</h3>
                             <ul>
-                                <li><a href="#">Últimas Noticias</a></li>
-                                <li><a href="#">Galería de Fotos Varias</a></li>
-                                <li><a href="#">Diarios de Viajeros</a></li>
-                                <li><a href="#">Tips y Recomendaciones</a></li>
+                                <li><a href="#" data-i18n="vlog-news">Últimas Noticias</a></li>
+                                <li><a href="#" data-i18n="vlog-gallery">Galería de Fotos Varias</a></li>
+                                <li><a href="#" data-i18n="vlog-diaries">Diarios de Viajeros</a></li>
+                                <li><a href="#" data-i18n="vlog-tips">Tips y Recomendaciones</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-
+                <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
             </ul>
         </nav>
         
         <div class="header-actions">
             <div class="social-icons">
-                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                
-                <a href="https://www.instagram.com/arigatourss/" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                
-                <a href="https://www.tiktok.com/@arigatourss?_r=1&_t=ZS-92UDj3dUVqD&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVqbCueaRXkLYG85JknYHpFwakfw4-gaIXThzdjjiMvN932AiRM8n9niTrXY_aem_WsLHdxzmNEvHBb3mhrnTOQ" target="_blank" title="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arigatourss/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@arigatourss" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-
             <div class="language-selector">
                 <select id="lang-switch">
                     <option value="es">ESPAÑOL</option>
@@ -76,67 +62,55 @@
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        
     </header>
 
-   <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/Paginavlogs.jpg');">
-        <h1>Diario de Viajeros</h1>
-        <p>Nos esperan increíbles aventuras...</p>
+    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/Paginavlogs.jpg');">
+        <h1 data-i18n="vlog-title">Diario de Viajeros</h1>
+        <p data-i18n="vlog-subtitle">Nos esperan increíbles aventuras...</p>
     </section>
 
-<main class="tours-page" style="display: flex; justify-content: center; align-items: center; min-height: 45vh; text-align: center; padding: 3rem 1rem;">
+    <main class="tours-page" style="display: flex; justify-content: center; align-items: center; min-height: 45vh; text-align: center; padding: 3rem 1rem;">
         <div style="background: #fff; padding: 3rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); max-width: 600px; width: 100%;">
             <i class="fas fa-pencil-alt" style="font-size: 4rem; color: var(--rojo-ariga); margin-bottom: 1.5rem;"></i>
-            <h2 style="font-size: 2.2rem; color: #333; margin-bottom: 1rem;">¡Sección de Blogs en construcción!</h2>
-            <p style="font-size: 1.1rem; color: #666; line-height: 1.6; margin-bottom: 2rem;">
+            <h2 style="font-size: 2.2rem; color: #333; margin-bottom: 1rem;" data-i18n="vlog-wip-title">¡Sección de Blogs en construcción!</h2>
+            <p style="font-size: 1.1rem; color: #666; line-height: 1.6; margin-bottom: 2rem;" data-i18n="vlog-wip-desc">
                 Estamos preparando los mejores artículos, tips de viaje y galerías de fotos exclusivas de nuestros recorridos por Japón. ¡Volvé pronto para descubrir todo el contenido que estamos creando para vos!
             </p>
             <a href="index.html" class="btn-primary" style="text-decoration: none; padding: 12px 30px; font-size: 1.1rem; display: inline-block;">
-                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> Volver al Inicio
+                <i class="fas fa-arrow-left" style="margin-right: 8px;"></i> <span data-i18n="vlog-wip-btn">Volver al Inicio</span>
             </a>
         </div>
     </main>
+
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>ArigaTours</h4>
-                <p>Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
             </div>
             <div class="footer-section">
-                <h4>Enlaces Rápidos</h4>
+                <h4 data-i18n="footer-links">Enlaces Rápidos</h4>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tours.html">Destinos</a></li>
-                    <li><a href="Vlogs.html">Blogs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
+                    <li><a href="tours.html" data-i18n="nav-dest">Destinos</a></li>
+                    <li><a href="Vlogs.html" data-i18n="nav-blog">Blogs</a></li>
+                    <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contacto</h4>
+                <h4 data-i18n="nav-contact">Contacto</h4>
                 <p>Email: info@arigatours.com</p>
                 <p>Tel: +81 123 456 789</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ArigaTours. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copy">© 2026 ArigaTours. Todos los derechos reservados.</p>
         </div>
     </footer>
  
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
     <script src="JS/Java.js"></script>
-    <script src="../JS/main.js"></script>
-
-
-    <div id="google_translate_element" style="display:none;"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es',
-                includedLanguages: 'es,en,ja',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>

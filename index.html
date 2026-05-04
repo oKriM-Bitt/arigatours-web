@@ -10,61 +10,46 @@
 </head>
 <body>
 
- <header class="navbar">
+    <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="Recursos/arigaLOGO.png" alt="Logo ArigaTours">
+            <img src="Recursos/logo-png.png" alt="Logo ArigaTours">
         </a>
         
         <nav>
             <ul class="nav-links">
-                
-                <li><a href="index.html" class="active">Inicio</a></li>
-    
+                <li><a href="index.html" class="active" data-i18n="nav-home">Inicio</a></li>
                 <li class="nav-item-dropdown">
-                    <a href="tours.html">Destinos</a>
-                    
+                    <a href="tours.html" data-i18n="nav-dest">Destinos</a>
                     <div class="mega-menu dynamic-destinations">
                         <div id="dynamic-dropdown-container" class="dropdown-grid">
                             <p style="text-align:center; color:#888; padding: 20px;">Cargando destinos...</p>
                         </div>
                     </div>
                 </li>
-
                 <li class="nav-item-dropdown">
-                    <a href="Vlogs.html">Blogs</a>
+                    <a href="Vlogs.html" data-i18n="nav-blog">Blogs</a>
                     <div class="mega-menu mega-menu-small">
                         <div class="menu-column">
-                            <h3>Contenido Exclusivo</h3>
+                            <h3 data-i18n="vlog-excl">Contenido Exclusivo</h3>
                             <ul>
-                                <li><a href="#">Últimas Noticias</a></li>
-                                <li><a href="#">Galería de Fotos Varias</a></li>
-                                <li><a href="#">Diarios de Viajeros</a></li>
-                                <li><a href="#">Tips y Recomendaciones</a></li>
+                                <li><a href="#" data-i18n="vlog-news">Últimas Noticias</a></li>
+                                <li><a href="#" data-i18n="vlog-gallery">Galería de Fotos Varias</a></li>
+                                <li><a href="#" data-i18n="vlog-diaries">Diarios de Viajeros</a></li>
+                                <li><a href="#" data-i18n="vlog-tips">Tips y Recomendaciones</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-                
+                <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
             </ul>
         </nav>
         
         <div class="header-actions">
             <div class="social-icons">
-                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                
-                <a href="https://www.instagram.com/arigatourss/" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                
-                <a href="https://www.tiktok.com/@arigatourss?_r=1&_t=ZS-92UDj3dUVqD&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVqbCueaRXkLYG85JknYHpFwakfw4-gaIXThzdjjiMvN932AiRM8n9niTrXY_aem_WsLHdxzmNEvHBb3mhrnTOQ" target="_blank" title="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arigatourss/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@arigatourss" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-
             <div class="language-selector">
                 <select id="lang-switch">
                     <option value="es">ESPAÑOL</option>
@@ -77,31 +62,30 @@
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        
     </header>
 
     <section class="hero carousel-container">
         <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../Recursos/fondo-hero.jpg');">
             <div class="hero-content">
-                <h1>Explora Japón a tu manera</h1>
-                <p>Tours guiados y experiencias inolvidables en tu idioma.</p>
-                <a href="tours.html" class="btn-primary">Ver Destinos</a>
+                <h1 data-i18n="hero-title">Explora Japón a tu manera</h1>
+                <p data-i18n="hero-subtitle">Tours guiados y experiencias inolvidables en tu idioma.</p>
+                <a href="tours.html" class="btn-primary" data-i18n="nav-dest">Ver Destinos</a>
             </div>
         </div>
 
         <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../Recursos/fondo-tokio.jpg');">
             <div class="hero-content">
-                <h2>Experiencias Viajeros</h2>
-                <p>Descubre Japón a partir de las experiencias y recomendaciones de otros viajeros.</p>
-                <a href="Vlogs.html" class="btn-primary">Ver Blogs</a>
+                <h2 data-i18n="exp-title">Experiencias Viajeros</h2>
+                <p data-i18n="exp-subtitle">Descubre Japón a partir de las experiencias y recomendaciones de otros viajeros.</p>
+                <a href="Vlogs.html" class="btn-primary" data-i18n="nav-blog">Ver Blogs</a>
             </div>
         </div>
 
         <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../Recursos/fondo-templo.jpg');">
             <div class="hero-content">
-                <h2>Naturaleza y Tradición</h2>
-                <p>Sumérgete en la cultura milenaria y paisajes asombrosos.</p>
-                <a href="tours.html" class="btn-primary">Descubrir más</a>
+                <h2 data-i18n="nat-title">Naturaleza y Tradición</h2>
+                <p data-i18n="nat-subtitle">Sumérgete en la cultura milenaria y paisajes asombrosos.</p>
+                <a href="tours.html" class="btn-primary" data-i18n="feat-btn">Descubrir más</a>
             </div>
         </div>
 
@@ -115,75 +99,57 @@
         </div>
     </section>
 
-        <section class="seccion-calendario" style="padding: 4rem 5%; text-align: center;">
-        <h2 style="font-size: 2rem; color: var(--rojo-ariga); margin-bottom: 1rem;">Disponibilidad de Tours</h2>
-        <p style="margin-bottom: 2rem;">Deslizá para ver los próximos días y hacé clic para ver los tours.</p>
-        
-        <div class="calendario-carousel" id="calendario-contenedor">
-            </div>
-
+    <section class="seccion-calendario" style="padding: 4rem 5%; text-align: center;">
+        <h2 style="font-size: 2rem; color: var(--rojo-ariga); margin-bottom: 1rem;" data-i18n="cal-title">Disponibilidad de Tours</h2>
+        <p style="margin-bottom: 2rem;" data-i18n="cal-subtitle">Deslizá para ver los próximos días y hacé clic para ver los tours.</p>
+        <div class="calendario-carousel" id="calendario-contenedor"></div>
         <div id="info-tour-dia" class="info-dia-seleccionado" style="margin-top: 2rem; padding: 1rem; border-radius: 10px; background: #f9f9f9; border: 1px solid #ddd;">
-            <p>👈 Seleccioná un día en el calendario para ver las opciones.</p>
-        </div>
-        </section>
-
-   <section class="tours-destacados-section" style="padding: 4rem 5%; background: #fdfdfd;">
-        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-            <h2 style="font-size: 2.5rem; color: #222;">Experiencias Destacadas</h2>
-            <p style="color: #666; font-size: 1.1rem;">Deslizá hacia abajo en el recuadro para descubrir nuestras aventuras.</p>
-        </div>
-        
-        <div id="contenedor-tours-inicio" class="tours-vertical-scroller">
-            </div>
-
-        <div style="text-align: center; margin-top: 2rem; color: #888; font-size: 0.9rem; animation: bounce 2s infinite;">
-            <i class="fas fa-chevron-down"></i> Sigue deslizando para ver más <i class="fas fa-chevron-down"></i>
-        </div>
-
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="tours.html" class="btn-primary" style="padding: 12px 30px; font-size: 1.1rem; text-decoration: none;">Ver todos los destinos completos</a>
+            <p data-i18n="cal-sel">👈 Seleccioná un día en el calendario para ver las opciones.</p>
         </div>
     </section>
 
-    <div id="google_translate_element" style="display:none;"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es', // Tu idioma original
-                includedLanguages: 'es,en,ja', // Los idiomas que permitimos
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <section class="tours-destacados-section" style="padding: 4rem 5%; background: #fdfdfd;">
+        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="font-size: 2.5rem; color: #222;" data-i18n="feat-title">Experiencias Destacadas</h2>
+            <p style="color: #666; font-size: 1.1rem;" data-i18n="feat-subtitle">Deslizá hacia abajo en el recuadro para descubrir nuestras aventuras.</p>
+        </div>
+        <div id="contenedor-tours-inicio" class="tours-vertical-scroller"></div>
+        <div style="text-align: center; margin-top: 2rem; color: #888; font-size: 0.9rem;">
+            <i class="fas fa-chevron-down"></i> <span data-i18n="feat-more">Sigue deslizando para ver más</span> <i class="fas fa-chevron-down"></i>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="tours.html" class="btn-primary" data-i18n="feat-btn">Ver todos los destinos completos</a>
+        </div>
+    </section>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>ArigaTours</h4>
-                <p>Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
             </div>
             <div class="footer-section">
-                <h4>Enlaces Rápidos</h4>
+                <h4 data-i18n="footer-links">Enlaces Rápidos</h4>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tours.html">Destinos</a></li>
-                    <li><a href="Vlogs.html">Blogs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
+                    <li><a href="tours.html" data-i18n="nav-dest">Destinos</a></li>
+                    <li><a href="Vlogs.html" data-i18n="nav-blog">Blogs</a></li>
+                    <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contacto</h4>
+                <h4 data-i18n="nav-contact">Contacto</h4>
                 <p>Email: info@arigatours.com</p>
                 <p>Tel: +81 123 456 789</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ArigaTours. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copy">© 2026 ArigaTours. Todos los derechos reservados.</p>
         </div>
     </footer>
-<script>src="JS/bd.tours.js"</script>
-   <script src="JS/main.js"></script>
+
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
     <script src="JS/Java.js"></script>
 </body>
 </html>

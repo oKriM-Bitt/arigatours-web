@@ -1,0 +1,371 @@
+[
+    {
+        "id": "tour-kamakura",
+        "ciudad": "鎌倉",
+        "tematica": "芸術と文化",
+        "titulo": "クラシック鎌倉",
+        "imagen": "Recursos/Kamakura2.jpg",
+        "galeria": [
+            "Recursos/Kamakura2.jpg",
+            "Recursos/kamakura1.jpg",
+            "Recursos/Kamakura6.jpg",
+            "Recursos/Kamakura7.jpg",
+            "Recursos/Kamakura8.jpg"
+        ],
+        "duracion": "4時間",
+        "precio": "25 € (大人) / 5 € (子供)",
+        "puntoEncuentro": "午前9時に東京駅 丸の内北口",
+        "descripcion": "大都市の喧騒から逃れ、1世紀以上にわたって武士の権力の中心であった街を探索しましょう。この午前のツアーは、鎌倉の真髄を味わい、歴史の重みを感じ、なぜこの小さな海岸沿いの街が日本の運命を永遠に変えたのかを理解したい方向けに設計されています。<br><br><strong>旅程：</strong><br>午前9時に東京駅を出発し、鎌倉へ向かいます。まずは観音菩薩を祀る長谷寺から始めます。その後、高徳院へ移動し、大仏と対面します。ツアーの最後は、何世紀にもわたって幕府の精神的・政治的中心であった壮大な神道神社、鶴岡八幡宮を訪れます。昼食時には、伝統的なお菓子や小さなレストランが立ち並ぶ小町通りが待っています。ツアーを締めくくるのに最適な場所です。<br><br><strong>アクセシビリティと推奨事項：</strong><br>急な坂やでこぼこした道はないため、どなたでも参加しやすいツアーです。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
+        "incluye": [
+            "プライベートツアー中のスペイン語ガイド",
+            "訪問先の歴史的解説",
+            "2つの寺院の入場料込み"
+        ],
+        "noIncluye": [
+            "飲食代",
+            "ホテルへの送迎"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-todo-en-un-dia",
+        "ciudad": "東京",
+        "tematica": "芸術と文化",
+        "titulo": "東京1日満喫ツアー",
+        "imagen": "Recursos/Tokioundia.jpg",
+        "galeria": [
+            "Recursos/Tokioundia.jpg",
+            "Recursos/tokioundia2.jpg",
+            "Recursos/tokioundia3.jpg",
+            "Recursos/tokioundia4.jpg",
+            "Recursos/tokioundia5.jpg",
+            "Recursos/tokioundia6.jpg"
+        ],
+        "duracion": "8時間",
+        "precio": "120 € (大人)",
+        "puntoEncuentro": "午前9時に浅草文化観光センターの隣",
+        "descripcion": "常に驚きに満ちたこの街を一緒に発見しましょう。この1日ツアーは、東京を見るだけでなく、感じ、なぜ何百万人もの人々がこの街を地球上で最も魅力的な都市だと考えているのかを理解したい方向けに設計されています。<br><br><strong>旅程：</strong><br>午前9時に、東京の魂を今も残す街、浅草からスタートします。仲見世通りを歩き、千年以上前から巡礼者を迎えてきた仏教寺院、浅草寺に向かいます。そこから歴史ある明治神宮へ移動します。数歩歩けば、鏡の向こう側、原宿と竹下通りへと足を踏み入れます。正午に1時間の昼食休憩を取り、その後、世界で最も写真に撮られる交差点がある渋谷へ向かいます。最後は、東京が壮大に別れを告げる新宿で締めくくります。<br><br><strong>アクセシビリティと推奨事項：</strong><br>急な坂やでこぼこした道はないため、どなたでも参加しやすいツアーです。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
+        "incluye": [
+            "プライベートツアー中のスペイン語ガイド",
+            "訪問先の歴史的および文化的解説"
+        ],
+        "noIncluye": [
+            "飲食代（昼食のための1時間の自由時間があります）",
+            "ホテルへの送迎"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-vice",
+        "ciudad": "東京",
+        "tematica": "芸術と文化",
+        "titulo": "トウキョウ・バイス (ナイトツアー)",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "galeria": [
+            "Recursos/Tokiovicerojo.jpg",
+            "Recursos/Tokiovicerojo2.jpg",
+            "Recursos/Tokiovicerojo3.jpg",
+            "Recursos/Tokiovicerojo4.jpg",
+            "Recursos/Tokiovicerojo5.jpg",
+            "Recursos/Tokiovicerojo6.jpg"
+        ],
+        "duracion": "2.5時間 または 3.5時間 (夕食オプションによる)",
+        "precio": "60 € (夕食なし) / 80 € (夕食付き)",
+        "puntoEncuentro": "午後6時に代々木駅東口の厩道公園",
+        "descripcion": "「TOKYO VICE」のような記事やドラマにインスピレーションを得たこのナイトツアーで、東京の最も生々しく魅力的な側面に足を踏み入れましょう。新宿地区とその最も謎めいた顔、眠らない街・歌舞伎町を一緒に探索します。<br><br><strong>旅程：</strong><br>午後6時に代々木駅から徒歩数分の厩道公園からスタートします。ここから、日本の夜の世界が実際にどのように機能しているのか、その暗黙のルール、ネオンライト、そして影で機能する社会構造を理解できるルートに入ります。思い出横丁で戦後の街の歴史的変遷を分析し、歌舞伎町の主要な通りで大人のエンターテイメントの中心地へと変貌を遂げた様子、そして日本のマフィアであるヤクザの影響について学びます。新宿の巨大な猫、ゴジラ、そして地元の東京っ子しか知らないような場所を訪れます。<br><br><strong>夕食オプション：</strong><br>新宿は、日本のサラリーマンが長い一日の労働の後にストレスを発散しに来る場所として知られています。焼き鳥、唐揚げ、餃子など様々な料理を味わえる典型的な居酒屋に行きます。夕食付きツアーを選択した場合、ツアーは午後9時に終了します。<br><br><strong>重要な注意事項：</strong><br>このツアーで扱うテーマと歓楽街を訪れるという性質上、<strong>18歳未満の方には推奨されません</strong>。<br><br><strong>アクセシビリティと推奨事項：</strong><br>急な坂やでこぼこした道はないため、どなたでも参加しやすいツアーです。歩きやすい服装、水分補給のための飲み物、身の回りの安全対策をお勧めします。",
+        "incluye": [
+            "ナイトツアー中のスペイン語ガイド",
+            "訪問先の歴史的および文化的解説",
+            "典型的な居酒屋での夕食（80 €オプションを予約した場合のみ）"
+        ],
+        "noIncluye": [
+            "ツアー中の飲食代（夕食は最後になります）",
+            "ホテルへの送迎"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-presentation",
+        "ciudad": "大阪",
+        "tematica": "芸術と文化",
+        "titulo": "大阪プレゼンテーション",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3時間",
+        "precio": "60 € (大人)",
+        "puntoEncuentro": "午前9時30分に祇園四条駅 出雲阿国像前",
+        "descripcion": "この京都への歓迎ツアーに一緒に参加して、市内で最も象徴的な場所のいくつかを発見しましょう。日本の歴史的な首都の起源と、それが時間とともにどのように進化してきたかについてお話しします。<br><br><strong>旅程：</strong><br>ツアーは午前9時30分に始まります。芸者の街（祇園）を通って円山公園を訪れ、そこで侍の起源と終焉についてお話しします。その後、ねねの道を通って東山の坂道へと進みます。八坂の塔を見学し、二寧坂と産寧坂を歩き、最後に午後12時30分に清水寺（世界遺産）に到着します。<br><br><strong>アクセシビリティと推奨事項：</strong><br>小さな階段があるルートです。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
+        "incluye": [
+            "ツアー中のスペイン語ガイド",
+            "訪問先の歴史的解説"
+        ],
+        "noIncluye": [
+            "飲食代",
+            "必要な場所への入場料",
+            "ホテルへの送迎（追加料金で利用可能）"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kioto-historico",
+        "ciudad": "京都",
+        "tematica": "芸術と文化",
+        "titulo": "歴史的京都",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "3時間",
+        "precio": "60 € (大人)",
+        "puntoEncuentro": "午前9時30分に祇園四条駅 出雲阿国像前",
+        "descripcion": "この京都への歓迎ツアーに一緒に参加して、市内で最も象徴的な場所のいくつかを発見しましょう。日本の歴史的な首都の起源と、それが時間とともにどのように進化してきたかについてお話しします。<br><br><strong>旅程：</strong><br>ツアーは午前9時30分に始まります。芸者の街（祇園）を通って円山公園を訪れ、そこで侍の起源と終焉についてお話しします。その後、ねねの道を通って東山の坂道へと進みます。八坂の塔を見学し、二寧坂と産寧坂を歩き、最後に午後12時30分に清水寺（世界遺産）に到着します。<br><br><strong>アクセシビリティと推奨事項：</strong><br>このルートには長い坂や大きな階段があります。移動に困難がある方にはお勧めできません。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
+        "incluye": [
+            "ツアー中のスペイン語ガイド",
+            "訪問先の歴史的解説"
+        ],
+        "noIncluye": [
+            "飲食代",
+            "必要な場所への入場料",
+            "ホテルへの送迎（追加料金で利用可能）"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kyoto-3h",
+        "ciudad": "京都",
+        "tematica": "芸術と文化",
+        "titulo": "京都の真髄を巡る (3時間)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "3時間",
+        "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
+        "puntoEncuentro": "祇園四条駅",
+        "descripcion": "ストレスフリーな体験のために設計されたウォーキングツアーで京都の真髄を発見してください。<br><br><strong>旅程：</strong><br>鴨川沿いを歩き、祇園白川を探索し、知恩院を訪れ、円山公園を通り抜け、有名な清水寺で締めくくります。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "プライベートウォーキングツアー体験"
+        ],
+        "noIncluye": [
+            "入場料",
+            "交通費",
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kyoto-8h",
+        "ciudad": "京都",
+        "tematica": "芸術と文化",
+        "titulo": "京都のABC (8時間)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "8時間",
+        "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",
+        "puntoEncuentro": "ホテルへの送迎",
+        "descripcion": "公共交通機関を利用して市内の最も有名な3つの場所を訪れ、本物の深い文化に浸ります。<br><br><strong>旅程：</strong><br>黄金の金閣寺（世界遺産）を探索し、伏見稲荷の象徴的な鳥居の下を歩き、清水寺（世界遺産）を訪れます。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "ホテルへの送迎",
+            "すべての入場料と交通費込み"
+        ],
+        "noIncluye": [
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-3h",
+        "ciudad": "大阪",
+        "tematica": "芸術と文化",
+        "titulo": "大阪の活気を感じる (3時間)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3時間",
+        "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
+        "puntoEncuentro": "心斎橋駅",
+        "descripcion": "大阪の真のエネルギー、食文化、そしてストリートライフを感じる活気あるウォーキングツアー。<br><br><strong>旅程：</strong><br>心斎橋から始まり、若者の街アメリカ村、道頓堀のネオン、伝統的な法善寺を抜け、活気ある黒門市場で終わります。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "プライベートウォーキングツアー体験"
+        ],
+        "noIncluye": [
+            "入場料",
+            "交通費",
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-8h",
+        "ciudad": "大阪",
+        "tematica": "芸術と文化",
+        "titulo": "大阪1日満喫ツアー (8時間)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "8時間",
+        "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",
+        "puntoEncuentro": "ホテルへの送迎",
+        "descripcion": "3時間ツアーのすべての内容に加え、公共交通機関を利用して市の最も重要な歴史的およびレトロフューチャーな地区をさらに深く訪問します。<br><br><strong>旅程：</strong><br>大阪城（世界遺産）、難波地区、魅力的な新世界エリア、さらに3時間のウォーキングツアーのハイライト。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "ホテルへの送迎",
+            "すべての入場料と交通費込み"
+        ],
+        "noIncluye": [
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-3h",
+        "ciudad": "神戸",
+        "tematica": "芸術と文化",
+        "titulo": "神戸：美食と貿易の街 (3時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3時間",
+        "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
+        "puntoEncuentro": "三宮駅",
+        "descripcion": "国際貿易がその独特の建築と風味を形成した国際色豊かな港町、神戸を発見してください。<br><br><strong>旅程：</strong><br>三宮から出発し、生田神社、歴史あるスターバックス異人館、風見鶏の館を訪れ、ステーキランドの前を通ります。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "プライベートウォーキングツアー体験"
+        ],
+        "noIncluye": [
+            "入場料",
+            "交通費",
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-8h",
+        "ciudad": "神戸",
+        "tematica": "芸術と文化",
+        "titulo": "神戸1日満喫ツアー (8時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8時間",
+        "precio": "$315 USD (基本2名) + 追加1名につき $55 USD",
+        "puntoEncuentro": "ホテルへの送迎",
+        "descripcion": "精神的なルーツから近代的なウォーターフロントまで、公共交通機関を利用した神戸の総合的なツアー。<br><br><strong>旅程：</strong><br>三宮、生田神社、北野異人館街、布引の滝、ステーキランド、メリケンパーク、神戸ポートタワー。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "ホテルへの送迎",
+            "すべての入場料と交通費込み"
+        ],
+        "noIncluye": [
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-3h",
+        "ciudad": "姫路",
+        "tematica": "芸術と文化",
+        "titulo": "姫路ハイライト (3時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3時間",
+        "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
+        "puntoEncuentro": "姫路駅",
+        "descripcion": "歴史と風味が交差する場所。日本で最も壮麗に保存されている城へと続く道を探索しましょう。<br><br><strong>旅程：</strong><br>姫路駅、大手前通り、ヤマサ蒲鉾通り、播磨国総社、壮大な姫路城（世界遺産）、姫路神社。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "プライベートウォーキングツアー体験"
+        ],
+        "noIncluye": [
+            "入場料",
+            "交通費",
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-kobe-8h",
+        "ciudad": "姫路",
+        "tematica": "美食",
+        "titulo": "姫路＆神戸1日満喫ツアー (8時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8時間",
+        "precio": "$350 USD (基本2名) + 追加1名につき $55 USD",
+        "puntoEncuentro": "ホテルへの送迎",
+        "descripcion": "姫路城の歴史的な驚異と、神戸の国際的な雰囲気と卓越した料理を組み合わせた究極の日帰り旅行。<br><br><strong>旅程：</strong><br>姫路城、その後神戸三宮へ移動し、メリケンパークを訪れ、ステーキランドで神戸牛のランチを楽しみ、北野と元町を探索します。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "ホテルへの送迎",
+            "すべての入場料と交通費込み",
+            "ステーキランドでの神戸牛ランチ付き"
+        ],
+        "noIncluye": [
+            "追加の飲み物"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-3h",
+        "ciudad": "奈良",
+        "tematica": "芸術と文化",
+        "titulo": "奈良：日本の魂 (3時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3時間",
+        "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
+        "puntoEncuentro": "近鉄奈良駅",
+        "descripcion": "何世紀も前の寺院の間を鹿が自由に歩き回る古都を発見してください。<br><br><strong>旅程：</strong><br>近鉄駅、猿沢池、興福寺、奈良国立博物館、そして息をのむような東大寺（世界遺産）。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "プライベートウォーキングツアー体験"
+        ],
+        "noIncluye": [
+            "入場料",
+            "交通費",
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-uji-8h",
+        "ciudad": "奈良",
+        "tematica": "芸術と文化",
+        "titulo": "奈良と宇治：抹茶の起源 (8時間)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8時間",
+        "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",
+        "puntoEncuentro": "ホテルへの送迎",
+        "descripcion": "奈良の精神的な中心地と、本物の日本の緑茶の発祥の地である宇治を体験してください。<br><br><strong>旅程：</strong><br>平等院鳳凰堂、宇治の通り（抹茶店）、猿沢池、興福寺（世界遺産）、奈良公園、東大寺（世界遺産）。",
+        "incluye": [
+            "スペイン語/英語ガイド",
+            "ホテルへの送迎",
+            "すべての入場料と交通費込み"
+        ],
+        "noIncluye": [
+            "飲食代"
+        ],
+        "fechasDisponibles": []
+    }
+]

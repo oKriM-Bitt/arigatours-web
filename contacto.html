@@ -10,62 +10,46 @@
 </head>
 <body>
     
-<header class="navbar">
+    <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="Recursos/arigaLOGO.png" alt="Logo ArigaTours">
+            <img src="Recursos/logo-png.png" alt="Logo ArigaTours">
         </a>
         
         <nav>
             <ul class="nav-links">
-                
-                <li><a href="index.html" class="active">Inicio</a></li>
-    
+                <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
                 <li class="nav-item-dropdown">
-                    <a href="tours.html">Destinos</a>
-                    
+                    <a href="tours.html" data-i18n="nav-dest">Destinos</a>
                     <div class="mega-menu dynamic-destinations">
-                        
                         <div id="dynamic-dropdown-container" class="dropdown-grid">
                             <p style="text-align:center; color:#888; padding: 20px;">Cargando destinos...</p>
                         </div>
                     </div>
                 </li>
-
                 <li class="nav-item-dropdown">
-                    <a href="Vlogs.html">Blogs</a>
+                    <a href="Vlogs.html" data-i18n="nav-blog">Blogs</a>
                     <div class="mega-menu mega-menu-small">
                         <div class="menu-column">
-                            <h3>Contenido Exclusivo</h3>
+                            <h3 data-i18n="vlog-excl">Contenido Exclusivo</h3>
                             <ul>
-                                <li><a href="#">Últimas Noticias</a></li>
-                                <li><a href="#">Galería de Fotos Varias</a></li>
-                                <li><a href="#">Diarios de Viajeros</a></li>
-                                <li><a href="#">Tips y Recomendaciones</a></li>
+                                <li><a href="#" data-i18n="vlog-news">Últimas Noticias</a></li>
+                                <li><a href="#" data-i18n="vlog-gallery">Galería de Fotos Varias</a></li>
+                                <li><a href="#" data-i18n="vlog-diaries">Diarios de Viajeros</a></li>
+                                <li><a href="#" data-i18n="vlog-tips">Tips y Recomendaciones</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-
+                <li><a href="contacto.html" class="active" data-i18n="nav-contact">Contacto</a></li>
             </ul>
         </nav>
         
         <div class="header-actions">
             <div class="social-icons">
-                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                
-                <a href="https://www.instagram.com/arigatourss/" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                
-                <a href="https://www.tiktok.com/@arigatourss?_r=1&_t=ZS-92UDj3dUVqD&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVqbCueaRXkLYG85JknYHpFwakfw4-gaIXThzdjjiMvN932AiRM8n9niTrXY_aem_WsLHdxzmNEvHBb3mhrnTOQ" target="_blank" title="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
+                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arigatourss/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@arigatourss" target="_blank"><i class="fab fa-tiktok"></i></a>
             </div>
-
             <div class="language-selector">
                 <select id="lang-switch">
                     <option value="es">ESPAÑOL</option>
@@ -78,20 +62,13 @@
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        
     </header>
 
     <section class="contacto-split" style="background-image: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.85)), url('../Recursos/fondo-contacto.jpg');">
-        
         <div class="contacto-container">
-            
             <div class="contacto-info">
-                <h2>Contáctanos para<br><span style="color: var(--rojo-ariga);">agendar tu próxima aventura</span></h2>
-                
-                <p>Viajar con un guía experto te permite sumergirte completamente en la experiencia de descubrir un destino. Nos adaptamos a tu ritmo para explorar a fondo cada rincón, probar la gastronomía auténtica y conectar con las personas que hacen de Japón un lugar algo especial.</p>
-                
-                <p>Si prefieres ajustar la duración de tu viaje según tus necesidades, estamos aquí para personalizarlo a tu medida. Diseñaremos un itinerario que se adapte perfectamente a tus deseos y agenda.</p>
-                
+                <h2 data-i18n="contact-title">Contáctanos para agendar tu próxima aventura</h2>
+                <p data-i18n="contact-desc">Viajar con un guía experto te permite sumergirte completamente en la experiencia de descubrir un destino. Nos adaptamos a tu ritmo para explorar a fondo cada rincón, probar la gastronomía auténtica y conectar con las personas que hacen de Japón un lugar algo especial. Si prefieres ajustar la duración de tu viaje según tus necesidades, estamos aquí para personalizarlo a tu medida. Diseñaremos un itinerario que se adapte perfectamente a tus deseos y agenda.</p>
                 <div class="contacto-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -100,90 +77,68 @@
             </div>
 
             <div class="contacto-formulario">
-                
                 <form action="https://formsubmit.co/arigatoursceo@gmail.com" method="POST">
-                    
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="¡Nueva consulta de Arigatours!">
-                    
                     <div class="form-group">
-                        <label for="nombre">Nombre Completo: <span class="required">*</span></label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre Completo" required>
+                        <label for="nombre" data-i18n="form-name">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" data-i18n="form-name-ph" placeholder="Tu Nombre Completo" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="fecha">Fecha Estimada del Viaje: <span class="required">*</span></label>
+                        <label for="fecha" data-i18n="form-date">Fecha Estimada del Viaje:</label>
                         <input type="date" id="fecha" name="fecha" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="telefono">Teléfono: <span class="required">*</span></label>
+                        <label for="telefono" data-i18n="form-phone">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 11 1234-5678" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="email">Correo Electrónico: <span class="required">*</span></label>
+                        <label for="email" data-i18n="form-email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" placeholder="tu_email@ejemplo.com" required>
                     </div>
-
                     <div class="form-group">
-                        <label for="mensaje">Mensaje o Detalles del Tour:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos qué te gustaría visitar, cuántas personas viajan..."></textarea>
+                        <label for="mensaje" data-i18n="form-msg">Mensaje o Detalles del Tour:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" data-i18n="form-msg-ph" placeholder="Contanos qué te gustaría visitar..."></textarea>
                     </div>
-
                     <div class="form-checkbox">
                         <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <label for="privacidad">He leído y acepto la <a href="#">política de privacidad</a></label>
+                        <label for="privacidad" data-i18n="form-priv">He leído y acepto la política de privacidad</label>
                     </div>
-
                     <button type="submit" class="btn-enviar">
-                        Enviar Consulta <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                        <span data-i18n="form-btn">Enviar Consulta</span> <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
                     </button>
                 </form>
             </div>
-
         </div>
     </section>
-
-    <div id="google_translate_element" style="display:none;"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es', // Tu idioma original
-                includedLanguages: 'es,en,ja', // Los idiomas que permitimos
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>ArigaTours</h4>
-                <p>Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
             </div>
             <div class="footer-section">
-                <h4>Enlaces Rápidos</h4>
+                <h4 data-i18n="footer-links">Enlaces Rápidos</h4>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tours.html">Destinos</a></li>
-                    <li><a href="Vlogs.html">Blogs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
+                    <li><a href="tours.html" data-i18n="nav-dest">Destinos</a></li>
+                    <li><a href="Vlogs.html" data-i18n="nav-blog">Blogs</a></li>
+                    <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Contacto</h4>
+                <h4 data-i18n="nav-contact">Contacto</h4>
                 <p>Email: info@arigatours.com</p>
                 <p>Tel: +81 123 456 789</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ArigaTours. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copy">© 2026 ArigaTours. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-   <script src="../JS/main.js"></script>
-    <script src="../JS/Java.js"></script>
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/Java.js"></script>
 </body>
 </html>

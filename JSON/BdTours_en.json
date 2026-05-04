@@ -1,0 +1,234 @@
+[
+    {
+        "id": "tour-kyoto-3h",
+        "ciudad": "Kyoto",
+        "tematica": "Art and Culture",
+        "titulo": "Kyoto Beyond the Ordinary (3 Hours)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "3 hours",
+        "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
+        "puntoEncuentro": "Gion-Shijo Station",
+        "descripcion": "Discover the essence of Kyoto with a walking tour designed for a stress-free experience.<br><br><strong>Itinerary:</strong><br>We will walk by the Kamogawa river, explore Gion Shirakawa, visit the Chionin Temple, pass through Maruyama Park, and conclude at the famous Kiyomizudera Temple.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Private walking tour experience"
+        ],
+        "noIncluye": [
+            "Entrance fees",
+            "Transportation",
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kyoto-8h",
+        "ciudad": "Kyoto",
+        "tematica": "Art and Culture",
+        "titulo": "The ABC of Kyoto (8 Hours)",
+        "imagen": "Recursos/kYOTO.jpg",
+        "galeria": [
+            "Recursos/kYOTO.jpg",
+            "Recursos/kYOTO2.jpg",
+            "Recursos/kYOTO3.jpg",
+            "Recursos/kYOTO4.jpg"
+        ],
+        "duracion": "8 hours",
+        "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",
+        "puntoEncuentro": "Hotel Pick Up",
+        "descripcion": "Visit the 3 most famous places in the city using public transportation for an authentic and deep cultural immersion.<br><br><strong>Itinerary:</strong><br>We will explore the golden Kinkakuji Temple (UNESCO), walk through the iconic gates of Fushimi Inari, and visit Kiyomizu-dera (UNESCO).",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Hotel pick-up",
+            "All fees included"
+        ],
+        "noIncluye": [
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-3h",
+        "ciudad": "Osaka",
+        "tematica": "Art and Culture",
+        "titulo": "Feel the Energy of Osaka (3 Hours)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "3 hours",
+        "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
+        "puntoEncuentro": "Shinsaibashi Station",
+        "descripcion": "A vibrant walking tour to feel the real energy, food culture, and street life of Osaka.<br><br><strong>Itinerary:</strong><br>We start at Shinsaibashi, move through the youthful America Mura, the bright lights of Dotonbori, the traditional Hozenji Temple, and end at the lively Kuromon Market.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Private walking tour experience"
+        ],
+        "noIncluye": [
+            "Entrance fees",
+            "Transportation",
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-osaka-8h",
+        "ciudad": "Osaka",
+        "tematica": "Art and Culture",
+        "titulo": "Osaka Full Day Experience (8 Hours)",
+        "imagen": "Recursos/osaka.jpg",
+        "galeria": [
+            "Recursos/osaka.jpg",
+            "Recursos/osaka1.jpg"
+        ],
+        "duracion": "8 hours",
+        "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",
+        "puntoEncuentro": "Hotel Pick Up",
+        "descripcion": "Everything on the 3-hour tour included, plus extended visits to the city's most significant historical and retro-futuristic districts using public transport.<br><br><strong>Itinerary:</strong><br>Osaka Castle (UNESCO), Namba district, and the fascinating Shinsekai area, plus the highlights from the 3-hour walking tour.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Hotel pick-up",
+            "All fees included"
+        ],
+        "noIncluye": [
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-3h",
+        "ciudad": "Kobe",
+        "tematica": "Art and Culture",
+        "titulo": "Kobe: A City of Taste and Trade (3 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 hours",
+        "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
+        "puntoEncuentro": "Sannomiya Station",
+        "descripcion": "Discover the cosmopolitan port city of Kobe, where international trade shaped its unique architecture and flavors.<br><br><strong>Itinerary:</strong><br>Starting from Sannomiya, we will visit Ikuta Jinja, the historical Starbucks Ijinkan, the Weathercock house, and pass by Steakland.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Private walking tour experience"
+        ],
+        "noIncluye": [
+            "Entrance fees",
+            "Transportation",
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-kobe-8h",
+        "ciudad": "Kobe",
+        "tematica": "Art and Culture",
+        "titulo": "Kobe Full Day Experience (8 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 hours",
+        "precio": "$315 USD (Base 2 pax) + $55 USD per additional person",
+        "puntoEncuentro": "Hotel Pick Up",
+        "descripcion": "A comprehensive tour of Kobe using public transportation, from its spiritual roots to modern waterfronts.<br><br><strong>Itinerary:</strong><br>Sannomiya, Ikuta Shrine, Kitano Ijinkan District, Nunobiki Falls, Steakland, Meriken Park, and the Kobe Port Tower.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Hotel pick-up",
+            "All fees included"
+        ],
+        "noIncluye": [
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-3h",
+        "ciudad": "Himeji",
+        "tematica": "Art and Culture",
+        "titulo": "Himeji Highlights (3 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 hours",
+        "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
+        "puntoEncuentro": "Himeji Station",
+        "descripcion": "Where history and flavor come together. Explore the paths leading to Japan's most spectacular preserved castle.<br><br><strong>Itinerary:</strong><br>Himeji Station, Otemae Street, Yamasa Kamaboko Street, Harima Sosha Shrine, the magnificent Himeji Castle (UNESCO), and Himeji Shrine.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Private walking tour experience"
+        ],
+        "noIncluye": [
+            "Entrance fees",
+            "Transportation",
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-himeji-kobe-8h",
+        "ciudad": "Himeji",
+        "tematica": "Gastronomy",
+        "titulo": "Himeji & Kobe Full Day (8 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 hours",
+        "precio": "$350 USD (Base 2 pax) + $55 USD per additional person",
+        "puntoEncuentro": "Hotel Pick Up",
+        "descripcion": "The ultimate day trip combining the historic wonder of Himeji Castle with the cosmopolitan vibe and culinary excellence of Kobe.<br><br><strong>Itinerary:</strong><br>Himeji Castle, then travel to Kobe Sannomiya, visit Meriken Park, enjoy a Kobe beef lunch at Steakland, and explore Kitano and Motomachi.",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Hotel pick-up",
+            "All fees included",
+            "Kobe beef lunch included at Steakland"
+        ],
+        "noIncluye": [
+            "Additional beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-3h",
+        "ciudad": "Nara",
+        "tematica": "Art and Culture",
+        "titulo": "Nara: The Soul of Japan (3 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "3 hours",
+        "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
+        "puntoEncuentro": "Kintetsu Nara Station",
+        "descripcion": "Discover the ancient capital where deer roam free among centuries-old temples.<br><br><strong>Itinerary:</strong><br>Kintetsu Station, Sarusawa ike, Kodaiji, Nara Museum, and the breathtaking Todaiji Temple (UNESCO).",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Private walking tour experience"
+        ],
+        "noIncluye": [
+            "Entrance fees",
+            "Transportation",
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-nara-uji-8h",
+        "ciudad": "Nara",
+        "tematica": "Art and Culture",
+        "titulo": "Nara & Uji: The Origins of Matcha (8 Hours)",
+        "imagen": "",
+        "galeria": [],
+        "duracion": "8 hours",
+        "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",
+        "puntoEncuentro": "Hotel Pick Up",
+        "descripcion": "Experience the spiritual heart of Nara and the birthplace of authentic Japanese green tea in Uji.<br><br><strong>Itinerary:</strong><br>Phoenix Pavilion, Uji Street (Matcha shops), Sarusawa-ike, Kofuku-ji (UNESCO), Nara Park, and Todaiji (UNESCO).",
+        "incluye": [
+            "English, Spanish or Portuguese speaking guide",
+            "Hotel pick-up",
+            "All fees included"
+        ],
+        "noIncluye": [
+            "Food and beverages"
+        ],
+        "fechasDisponibles": []
+    }
+]

@@ -62,7 +62,7 @@
             "Recursos/osaka.jpg",
             "Recursos/osaka1.jpg",
             "Recursos/osaka2.jpg",
-            "Recursos/osaka3.jpg"
+            "Recursos/osaka4.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -84,12 +84,12 @@
         "ciudad": "Osaka",
         "tematica": "Art and Culture",
         "titulo": "Osaka Full Day Experience (8 Hours)",
-        "imagen": "Recursos/osaka3.jpg",
+        "imagen": "Recursos/osaka4.jpg",
         "galeria": [
             "Recursos/osaka.jpg",
             "Recursos/osaka1.jpg",
             "Recursos/osaka2.jpg",
-            "Recursos/osaka3.jpg"
+            "Recursos/osaka4.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",
@@ -110,12 +110,12 @@
         "ciudad": "Kobe",
         "tematica": "Art and Culture",
         "titulo": "Kobe: A City of Taste and Trade (3 Hours)",
-        "imagen": "Recursos/kobe2.jpg",
+       "imagen": "Recursos/kobe2.jpg",
         "galeria": [
-            "Recursos/kobe.jpg",
             "Recursos/kobe1.jpg",
             "Recursos/kobe2.jpg",
-            "Recursos/kobe3.jpg"
+            "Recursos/kobe3.jpg",
+            "Recursos/kobe4.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -137,12 +137,12 @@
         "ciudad": "Kobe",
         "tematica": "Art and Culture",
         "titulo": "Kobe Full Day Experience (8 Hours)",
-        "imagen": "Recursos/kobe.jpg",
+        "imagen": "Recursos/kobe1.jpg",
         "galeria": [
-            "Recursos/kobe.jpg",
             "Recursos/kobe1.jpg",
             "Recursos/kobe2.jpg",
-            "Recursos/kobe3.jpg"
+            "Recursos/kobe3.jpg",
+            "Recursos/kobe4.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$315 USD (Base 2 pax) + $55 USD per additional person",
@@ -163,12 +163,11 @@
         "ciudad": "Himeji",
         "tematica": "Art and Culture",
         "titulo": "Himeji Highlights (3 Hours)",
-        "imagen": "Recursos/himeji.jpg",
+        "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI3.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -190,12 +189,11 @@
         "ciudad": "Himeji",
         "tematica": "Gastronomy",
         "titulo": "Himeji & Kobe Full Day (8 Hours)",
-        "imagen": "Recursos/himeji.jpg",
+        "imagen": "Recursos/HIJI.jpg",
         "galeria": [
-            "Recursos/himeji.jpg",
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI3.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$350 USD (Base 2 pax) + $55 USD per additional person",
@@ -217,12 +215,12 @@
         "ciudad": "Nara",
         "tematica": "Art and Culture",
         "titulo": "Nara: The Soul of Japan (3 Hours)",
-        "imagen": "Recursos/nara2.jpg",
+        "imagen": "Recursos/NARA2.jpg",
         "galeria": [
-            "Recursos/nara.jpg",
-            "Recursos/nara2.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA2.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -244,12 +242,12 @@
         "ciudad": "Nara",
         "tematica": "Art and Culture",
         "titulo": "Nara & Uji: The Origins of Matcha (8 Hours)",
-        "imagen": "Recursos/nara2.jpg",
+        "imagen": "Recursos/NARA.jpg",
         "galeria": [
-            "Recursos/nara.jpg",
-            "Recursos/nara2.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA2.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",

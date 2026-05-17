@@ -322,12 +322,11 @@
         "ciudad": "Himeji",
         "tematica": "Arte y cultura",
         "titulo": "Lo Mejor de Himeji (3 Horas)",
-        "imagen": "Recursos/himeji.jpg",
+        "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/himeji.jpg",
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI3.jpg"
         ],
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
@@ -349,12 +348,11 @@
         "ciudad": "Himeji",
         "tematica": "Gastronomía",
         "titulo": "Día Completo Himeji y Kobe (8 Horas)",
-        "imagen": "Recursos/himeji2.jpg",
+        "imagen": "Recursos/HIJI1.jpg",
         "galeria": [
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI3.jpg"
         ],
         "duracion": "8 horas",
         "precio": "$350 USD (Base 2 pax) + $55 USD por persona adicional",
@@ -376,12 +374,12 @@
         "ciudad": "Nara",
         "tematica": "Arte y cultura",
         "titulo": "Nara: El Alma de Japón (3 Horas)",
-        "imagen": "Recursos/nara.jpg",
+        "imagen": "Recursos/Nara1.jpg",
         "galeria": [
-            "Recursos/nara.jpg",
-            "Recursos/nara2.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA2.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
@@ -403,12 +401,12 @@
         "ciudad": "Nara",
         "tematica": "Arte y cultura",
         "titulo": "Nara y Uji: Los Orígenes del Matcha (8 Horas)",
-        "imagen": "Recursos/nara2.jpg",
+        "imagen": "Recursos/NARA2.jpg",
         "galeria": [
-            "Recursos/nara.jpg",
-            "Recursos/nara2.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA2.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "8 horas",
         "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",

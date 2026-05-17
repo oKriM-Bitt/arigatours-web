@@ -199,7 +199,7 @@
             "Recursos/osaka.jpg",
             "Recursos/osaka1.jpg",
             "Recursos/osaka2.jpg",
-            "Recursos/osaka3.jpg"
+            "Recursos/osaka4.jpg"
         ],
         "duracion": "3時間",
         "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
@@ -221,12 +221,12 @@
         "ciudad": "大阪",
         "tematica": "芸術と文化",
         "titulo": "大阪1日満喫ツアー (8時間)",
-        "imagen": "Recursos/osaka3.jpg",
+        "imagen": "Recursos/osaka4.jpg",
         "galeria": [
             "Recursos/osaka.jpg",
             "Recursos/osaka1.jpg",
             "Recursos/osaka2.jpg",
-            "Recursos/osaka3.jpg"   
+            "Recursos/osaka4.jpg"   
         ],
         "duracion": "8時間",
         "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",
@@ -300,12 +300,11 @@
         "ciudad": "姫路",
         "tematica": "芸術と文化",
         "titulo": "姫路ハイライト (3時間)",
-        "imagen": "Recursos/himeji2.jpg",
+        "imagen": "Recursos/HIJI1.jpg",
         "galeria": [
-            "Recursos/himeji.jpg",
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI3.jpg"
         ],
         "duracion": "3時間",
         "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
@@ -327,13 +326,12 @@
         "ciudad": "姫路",
         "tematica": "美食",
         "titulo": "姫路＆神戸1日満喫ツアー (8時間)",
-        "imagen": "Recursos/himeji.jpg",
+       "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/himeji.jpg",
-            "Recursos/himeji2.jpg",
-            "Recursos/himeji3.jpg",
-            "Recursos/himeji4.jpg"
-        ],
+            "Recursos/HIJI.jpg",
+            "Recursos/HIJI2.jpg",
+            "Recursos/HIJI3.jpg"
+        ]
         "duracion": "8時間",
         "precio": "$350 USD (基本2名) + 追加1名につき $55 USD",
         "puntoEncuentro": "ホテルへの送迎",
@@ -354,12 +352,12 @@
         "ciudad": "奈良",
         "tematica": "芸術と文化",
         "titulo": "奈良：日本の魂 (3時間)",
-        "imagen": "Recursos/nara.jpg",
+        "imagen": "Recursos/Nara1.jpg",
         "galeria": [
-            "Recursos/nara2.jpg",
-            "Recursos/nara.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/NARA2.jpg",
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "3時間",
         "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
@@ -381,12 +379,12 @@
         "ciudad": "奈良",
         "tematica": "芸術と文化",
         "titulo": "奈良と宇治：抹茶の起源 (8時間)",
-        "imagen": "Recursos/nara2.jpg",
+        "imagen": "Recursos/NARA2.jpg",
         "galeria": [
-            "Recursos/nara2.jpg",
-            "Recursos/nara.jpg",
-            "Recursos/nara3.jpg",
-            "Recursos/nara4.jpg"
+            "Recursos/NARA2.jpg",
+            "Recursos/Nara1.jpg",
+            "Recursos/NARA3.jpg",
+            "Recursos/NARA4.jpg"
         ],
         "duracion": "8時間",
         "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",

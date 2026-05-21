@@ -5,11 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const cabeceraDestinos = document.querySelector('.page-header');
     if (cabeceraDestinos) {
         const fotosFondo = [
-            "kamakura1.jpg", "Kamakura2.jpg", "kamakura3.jpg", "kamakura4.jpg",
-            "kYOTO.jpg", "kYOTO2.jpg", "kYOTO3.jpg", "kYOTO4.jpg",
-            "osaka.jpg", "osaka1.jpg",
-            "Tokioundia.jpg", "tokioundia2.jpg", "tokioundia3.jpg",
-            "Tokiovicerojo.jpg", "Tokiovicerojo2.jpg", "Tokiovicerojo3.jpg"
+            "HIJI3.jpg", "Kamakura8.jpg",
+            "kobe3.jpg", "kobe4.jpg", "kYOTO4.jpg",
+            "NARA2.jpg", "osaka4.jpg",
+            "Tokioundia.jpg", "Tokiovicerojo6.jpg"
         ];
         
         fotosFondo.sort(() => 0.5 - Math.random());

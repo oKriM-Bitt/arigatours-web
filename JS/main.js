@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMegaMenuTabs();
 
     // Arrancamos la lluvia de Japón en TODAS las pantallas
-    iniciarLluviaJapon();
+   // iniciarLluviaJapon();
 });
 
 // --- LÓGICA DEL MENÚ HAMBURGUESA ---

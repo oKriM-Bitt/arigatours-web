@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- MAGIA: FONDOS ALEATORIOS PARA EL INICIO ---
     const listaFotos = [
-        "kamakura1.jpg", "Kamakura2.jpg", "kamakura3.jpg", "kamakura4.jpg",
-        "kYOTO.jpg", "kYOTO2.jpg", "kYOTO3.jpg", "kYOTO4.jpg",
-        "osaka.jpg", "osaka1.jpg",
-        "Tokioundia.jpg", "tokioundia2.jpg", "tokioundia3.jpg",
-        "Tokiovicerojo.jpg", "Tokiovicerojo2.jpg", "Tokiovicerojo3.jpg",
-        "Tokiovicerojo4.jpg", "Tokiovicerojo5.jpg", "Tokiovicerojo6.jpg"
+            "HIJI1.jpg", "HIJI2.jpg", "HIJI3.jpg",
+            "kamakura1.jpg", "Kamakura2.jpg", "Kamakura6.jpg", "Kamakura7.jpg", "Kamakura8.jpg",
+            "kobe1.jpg", "kobe2.jpg", "kobe3.jpg", "kobe4.jpg",
+            "kYOTO.jpg", "kYOTO2.jpg", "kYOTO3.jpg", "kYOTO4.jpg",
+            "Nara1.jpg", "NARA2.jpg", "NARA3.jpg", "NARA4.jpg",
+            "osaka.jpg", "osaka1.jpg", "osaka2.jpg", "osaka4.jpg",
+            "Tokioundia.jpg", "tokioundia2.jpg", "tokioundia3.jpg", "tokioundia4.jpg", "tokioundia5.jpg", "tokioundia6.jpg",
+            "Tokiovicerojo.jpg", "Tokiovicerojo2.jpg", "Tokiovicerojo3.jpg", "Tokiovicerojo4.jpg", "Tokiovicerojo5.jpg", "Tokiovicerojo6.jpg"
     ];
 
     const fotosMezcladas = listaFotos.sort(() => 0.5 - Math.random());
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) {
         let currentSlide = 0;
         let slideInterval;
-        const intervalTime = 10000;
+       const intervalTime = 4000;
 
         function showSlide(index) {
             slides.forEach(slide => slide.classList.remove('active'));
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD (MULTI-IDIOMA) ---
+/*
 function iniciarCalendario() {
     const contenedor = document.getElementById('calendario-contenedor');
     const infoDia = document.getElementById('info-tour-dia');
@@ -135,8 +138,8 @@ function iniciarCalendario() {
                 contenedor.appendChild(caja);
             }
         })
-        .catch(error => console.error("Error cargando el calendario:", error));
-}
+ 
+        */
 
 // --- LÓGICA PARA CARGAR GRILLA DE TOURS EN EL INICIO (MULTI-IDIOMA) ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -194,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 slide.innerHTML = `
                     <div class="tour-scroll-img-box">
-                        <img src="${imagenMostrar}" alt="${tour.titulo}">
+                        <img src="${imagenMostrar}" alt="${tour.titulo}" loading="lazy">
                         <span style="position: absolute; top: 20px; right: 20px; background: var(--rojo-ariga); color: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
                             <i class="fas fa-map-marker-alt"></i> ${tour.ciudad}
                         </span>

@@ -133,7 +133,7 @@
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",
         "titulo": "Kioto Histórico",
-         "imagen": "Recursos/kYOTO.jpg",
+         "imagen": "Recursos/kYOTO4.jpg",
         "galeria": [
             "Recursos/kYOTO.jpg",
             "Recursos/kYOTO2.jpg",
@@ -163,7 +163,7 @@
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",
         "titulo": "Kioto Más Allá de lo Ordinario (3 Horas)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/kYOTO3.jpg",
         "galeria": [
             "Recursos/kYOTO.jpg",
             "Recursos/kYOTO2.jpg",
@@ -190,7 +190,7 @@
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",
         "titulo": "El ABC de Kioto (8 Horas)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/kYOTO2.jpg",
         "galeria": [
             "Recursos/kYOTO.jpg",
             "Recursos/kYOTO2.jpg",
@@ -324,7 +324,7 @@
         "titulo": "Lo Mejor de Himeji (3 Horas)",
         "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/HIJI.jpg",
+            "Recursos/HIJI1.jpg",
             "Recursos/HIJI2.jpg",
             "Recursos/HIJI3.jpg"
         ],
@@ -348,10 +348,9 @@
         "ciudad": "Himeji",
         "tematica": "Gastronomía",
         "titulo": "Día Completo Himeji y Kobe (8 Horas)",
-        "imagen": "Recursos/HIJI1.jpg",
+        "imagen": "Recursos/HIJI3.jpg",
         "galeria": [
             "Recursos/HIJI2.jpg",
-            "Recursos/HIJI.jpg",
             "Recursos/HIJI3.jpg"
         ],
         "duracion": "8 horas",

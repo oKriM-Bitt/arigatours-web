@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin — ArigaTours</title>
+    <link rel="icon" href="Recursos/arigaLOGO.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --rojo-ariga: #DE1B22;
+            --rojo-oscuro: #b2151b;
+            --rosa-sakura: #F690AB;
+            --rosa-fondo: #FAD3DC;
+            --fondo-pagina: #FDF8F5;
+            --texto-oscuro: #333333;
+            --texto-claro: #FFFFFF;
+            --fuente: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --sombra-card: 0 4px 20px rgba(0,0,0,0.08);
+            --sombra-hover: 0 8px 28px rgba(0,0,0,0.14);
+            --radio-card: 16px;
+            --radio-btn: 30px;
+            --radio-input: 8px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--fuente);
+            background: var(--fondo-pagina);
+            color: var(--texto-oscuro);
+            min-height: 100vh;
+        }
+
+        /* ── TOP BAR ── */
+        .admin-topbar {
+            background: var(--rosa-fondo);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0.75rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .topbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .topbar-brand img {
+            height: 44px;
+            width: auto;
+            border-radius: 6px;
+        }
+        .topbar-brand span {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--texto-oscuro);
+        }
+        .topbar-brand span em {
+            color: var(--rojo-ariga);
+            font-style: normal;
+        }
+
+        /* ── PAGE WRAPPER ── */
+        .page-wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+        }
+
+        /* ── CARDS ── */
+        .card {
+            background: #fff;
+            border-radius: var(--radio-card);
+            box-shadow: var(--sombra-card);
+            padding: 24px 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        .card h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--texto-oscuro);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h2 i {
+            color: var(--rojo-ariga);
+            font-size: 1rem;
+        }
+
+        /* ── FORMS ── */
+        .form-group { margin-bottom: 14px; }
+        label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1.5px solid #e0d5d5;
+            border-radius: var(--radio-input);
+            font-family: var(--fuente);
+            font-size: 0.95rem;
+            color: var(--texto-oscuro);
+            background: #fafafa;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            -webkit-appearance: none;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px dashed #F690AB;
+            border-radius: var(--radio-input);
+            font-family: var(--fuente);
+            font-size: 0.9rem;
+            color: #666;
+            background: #fff5f7;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        input[type="file"]:hover { border-color: var(--rojo-ariga); }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--rojo-ariga);
+            box-shadow: 0 0 0 3px rgba(222,27,34,0.1);
+            background: #fff;
+        }
+        textarea { min-height: 90px; resize: vertical; line-height: 1.5; }
+
+        .hint {
+            font-size: 0.76rem;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        /* ── GRID ── */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        @media (max-width: 520px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        /* ── BUTTONS ── */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 12px 28px;
+            border: none;
+            border-radius: var(--radio-btn);
+            font-family: var(--fuente);
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.25s, transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: var(--rojo-ariga);
+            color: var(--texto-claro);
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background: var(--rojo-oscuro);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(222,27,34,0.35);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--rojo-ariga);
+            border: 2px solid var(--rojo-ariga);
+            padding: 9px 20px;
+            font-size: 0.85rem;
+        }
+        .btn-secondary:hover {
+            background: var(--rojo-ariga);
+            color: var(--texto-claro);
+            transform: translateY(-1px);
+        }
+        .btn-danger {
+            background: transparent;
+            color: #c0392b;
+            border: 1.5px solid #e0a0a0;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+        }
+        .btn-danger:hover { background: #ffeaea; }
+        button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        /* ── ALERTS ── */
+        .alert {
+            padding: 11px 14px;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            font-weight: 500;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .alert-error {
+            background: #ffeaea;
+            color: #c0392b;
+            border-left: 4px solid #DE1B22;
+        }
+        .alert-success {
+            background: #eafaf2;
+            color: #1e7e5a;
+            border-left: 4px solid #28a745;
+        }
+        .hidden { display: none !important; }
+
+        /* ── LOGIN CARD ── */
+        .login-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 70px);
+            padding: 24px 16px;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            background: #fff;
+            border-radius: var(--radio-card);
+            box-shadow: var(--sombra-hover);
+            padding: 36px 28px;
+        }
+        .login-logo {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .login-logo img { height: 58px; border-radius: 8px; }
+        .login-logo h2 {
+            font-size: 1.3rem;
+            margin-top: 12px;
+            color: var(--texto-oscuro);
+        }
+        .login-logo h2 span { color: var(--rojo-ariga); }
+
+        /* ── ADMIN HEADER ── */
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .panel-header h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        #admin-user-info {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        /* ── TOURS LIST ── */
+        .tour-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #f0e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .tour-item:last-child { border-bottom: none; }
+        .tour-item-info { flex: 1; min-width: 0; }
+        .tour-item-info strong {
+            display: block;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .tour-meta {
+            font-size: 0.78rem;
+            color: #aaa;
+            margin-top: 3px;
+        }
+        .tour-badge {
+            display: inline-block;
+            background: var(--rosa-fondo);
+            color: var(--rojo-ariga);
+            border-radius: 20px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 4px;
+        }
+
+        /* ── SECTION DIVIDER ── */
+        .section-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #bbb;
+            padding: 8px 4px 4px;
+        }
+
+        /* ── FILE PREVIEW ── */
+        .file-preview {
+            margin-top: 6px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .file-preview img {
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--rosa-fondo);
+        }
+
+        /* ── SPINNER ── */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ── RESPONSIVE TWEAKS ── */
+        @media (max-width: 420px) {
+            .card { padding: 18px 14px; }
+            .login-card { padding: 28px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <header class="admin-topbar">
+        <a class="topbar-brand" href="index.html">
+            <img src="Recursos/ImgLogoAri.jpeg" alt="ArigaTours">
+            <span>Ariga<em>Tours</em> · Admin</span>
+        </a>
+        <button type="button" id="logout-btn" class="btn btn-secondary hidden">
+            <i class="fa-solid fa-right-from-bracket"></i> Salir
+        </button>
+    </header>
+
+    <!-- ════════════ LOGIN ════════════ -->
+    <div id="login-section" class="login-wrap">
+        <div class="login-card">
+            <div class="login-logo">
+                <img src="Recursos/ImgLogoAri.jpeg" alt="ArigaTours">
+                <h2>Panel <span>Admin</span></h2>
+            </div>
+            <div id="login-error" class="alert alert-error hidden"></div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email"><i class="fa-regular fa-envelope"></i> Email</label>
+                    <input type="email" id="login-email" name="email" placeholder="admin@arigatours.com" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="login-password"><i class="fa-solid fa-lock"></i> Contraseña</label>
+                    <input type="password" id="login-password" name="password" placeholder="••••••••" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top:8px">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Iniciar sesión
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ════════════ ADMIN PANEL ════════════ -->
+    <div id="admin-panel" class="hidden">
+        <div class="page-wrap">
+
+            <!-- Header -->
+            <div class="card panel-header">
+                <div>
+                    <h1><i class="fa-solid fa-shield-halved" style="color:var(--rojo-ariga)"></i> Gestión de Tours</h1>
+                    <p id="admin-user-info"></p>
+                </div>
+            </div>
+
+            <!-- Lista de tours -->
+            <p class="section-title">Tours registrados</p>
+            <div class="card">
+                <h2><i class="fa-solid fa-map-location-dot"></i> Tours en base de datos</h2>
+                <div id="tours-error" class="alert alert-error hidden"></div>
+                <div id="tours-list">
+                    <p class="tour-meta">Cargando tours...</p>
+                </div>
+            </div>
+
+            <!-- Formulario nuevo tour -->
+            <p class="section-title">Añadir tour</p>
+            <div class="card">
+                <h2><i class="fa-solid fa-plus-circle"></i> Nuevo tour</h2>
+                <div id="tour-form-error" class="alert alert-error hidden"></div>
+                <div id="tour-form-success" class="alert alert-success hidden"></div>
+
+                <form id="tour-form" enctype="multipart/form-data">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="tour-id">ID (slug)</label>
+                            <input type="text" id="tour-id" name="id" placeholder="tour-ejemplo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tour-ciudad">Ciudad</label>
+                            <input type="text" id="tour-ciudad" name="ciudad" placeholder="Tokio" required>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="tour-tematica">Temática</label>
+                            <input type="text" id="tour-tematica" name="tematica" placeholder="Arte y cultura" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tour-titulo">Título</label>
+                            <input type="text" id="tour-titulo" name="titulo" placeholder="Nombre del tour" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tour-imagen-file"><i class="fa-solid fa-image"></i> Imagen principal</label>
+                        <input type="file" id="tour-imagen-file" name="imagenFile" accept="image/*">
+                        <p class="hint">Sube una foto o escribe la ruta manualmente abajo.</p>
+                        <div id="imagen-preview" class="file-preview"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tour-imagen">Ruta de imagen (si no subes archivo)</label>
+                        <input type="text" id="tour-imagen" name="imagen" placeholder="Recursos/ejemplo.jpg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tour-galeria-files"><i class="fa-solid fa-images"></i> Galería (múltiples fotos)</label>
+                        <input type="file" id="tour-galeria-files" name="galeriaFiles" accept="image/*" multiple>
+                        <div id="galeria-preview" class="file-preview"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tour-galeria">Rutas de galería (si no subes archivos, una por línea)</label>
+                        <textarea id="tour-galeria" name="galeria" placeholder="Recursos/foto1.jpg&#10;Recursos/foto2.jpg"></textarea>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="tour-duracion">Duración</label>
+                            <input type="text" id="tour-duracion" name="duracion" placeholder="4 horas" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tour-precio">Precio</label>
+                            <input type="text" id="tour-precio" name="precio" placeholder="60 € (Adultos)" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tour-puntoEncuentro">Punto de encuentro</label>
+                        <input type="text" id="tour-puntoEncuentro" name="puntoEncuentro" placeholder="Salida Norte, Estación de Tokio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tour-descripcion">Descripción</label>
+                        <textarea id="tour-descripcion" name="descripcion" placeholder="Descripción detallada del tour..." required></textarea>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="tour-incluye">Incluye (un ítem por línea)</label>
+                            <textarea id="tour-incluye" name="incluye" placeholder="Guía en español&#10;Entradas incluidas"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tour-noIncluye">No incluye (un ítem por línea)</label>
+                            <textarea id="tour-noIncluye" name="noIncluye" placeholder="Bebidas&#10;Recogida en hotel"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="tour-submit-btn">
+                        <i class="fa-solid fa-floppy-disk"></i> Crear tour
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/admin.js" defer></script>
+</body>
+</html>

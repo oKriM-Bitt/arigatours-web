@@ -36,7 +36,18 @@ const traduccionesAriga = {
         "footer-copy": "© 2026 ArigaTours. Todos los derechos reservados.",
         "cal-title": "Disponibilidad de Tours",
         "cal-subtitle": "Deslizá para ver los próximos días y hacé clic para ver los tours.",
-        "cal-sel": "👈 Seleccioná un día en el calendario para ver las opciones."
+        "cal-sel": "👈 Seleccioná un día en el calendario para ver las opciones.",
+        "nav-about": "Quiénes Somos",
+        "about-title": "Quiénes Somos",
+        "about-p1": "En ArigaTours creemos que viajar es mucho más que visitar lugares famosos o tomar fotografías. Los mejores viajes son aquellos que nos permiten conectar con una cultura, comprender su historia y vivir experiencias que permanecen en nuestra memoria mucho después de regresar a casa.",
+        "about-p2": "Por eso nació ArigaTours: con el deseo de ayudar a viajeros de todo el mundo a descubrir un Japón auténtico, cercano y lleno de experiencias significativas.",
+        "about-p3": "Somos una empresa de turismo local establecida en Japón, especializada en experiencias privadas y personalizadas. Nuestro objetivo es mostrar tanto los destinos más emblemáticos como aquellos rincones especiales que muchas veces pasan desapercibidos para el turismo tradicional. Creemos que cada viajero es diferente, por lo que diseñamos experiencias adaptadas a sus intereses, ritmo y estilo de viaje.",
+        "about-p4": "Nuestro equipo está formado por personas apasionadas por Japón, su cultura, su historia y sus tradiciones. Gracias a nuestro conocimiento local, acompañamos a nuestros viajeros para que puedan descubrir el país de una manera más profunda y auténtica, creando recuerdos que van más allá de una simple visita turística.",
+        "about-p5": "Desde los templos históricos de Kioto y Nara hasta la energía vibrante de Osaka y Tokio, pasando por ciudades llenas de encanto como Kobe, Himeji o Kamakura, buscamos que cada experiencia permita conocer no solo los lugares, sino también las historias, costumbres y detalles que hacen único a Japón.",
+        "about-p6": "En ArigaTours valoramos la atención personalizada, la cercanía y la confianza. Queremos que nuestros viajeros se sientan acompañados antes, durante y después de su viaje. Por ello, ofrecemos un servicio flexible y humano, adaptándonos a las necesidades de cada persona para garantizar una experiencia cómoda, enriquecedora y memorable.",
+        "about-p7": "Nuestra misión es acercar Japón al mundo a través de experiencias auténticas que permitan a cada visitante descubrir la verdadera esencia del país. No buscamos simplemente mostrar Japón; buscamos ayudar a vivirlo.",
+        "about-p8": "Porque para nosotros, cada viaje es una oportunidad para crear conexiones, descubrir nuevas perspectivas y construir recuerdos que acompañarán a nuestros viajeros toda la vida.",
+        "about-p9": "Bienvenido a ArigaTours. Descubre Japón de una forma auténtica, personal e inolvidable. 🇯🇵🌸🐱"
     },
     en: {
         "nav-home": "Home",
@@ -75,7 +86,18 @@ const traduccionesAriga = {
         "footer-copy": "© 2026 ArigaTours. All rights reserved.",
         "cal-title": "Tour Availability",
         "cal-subtitle": "Scroll to see upcoming days and click to view tours.",
-        "cal-sel": "👈 Select a day on the calendar to see options."
+        "cal-sel": "👈 Select a day on the calendar to see options.",
+        "nav-about": "About Us",
+        "about-title": "About Us",
+        "about-p1": "At ArigaTours, we believe that traveling is much more than visiting famous places or taking photographs. The best journeys are those that allow us to connect with a culture, understand its history, and live experiences that stay in our memory long after returning home.",
+        "about-p2": "That is why ArigaTours was born: with the desire to help travelers from all over the world discover an authentic, welcoming Japan full of meaningful experiences.",
+        "about-p3": "We are a local tourism company established in Japan, specializing in private and personalized experiences. Our goal is to showcase both the most iconic destinations and those special corners that often go unnoticed by traditional tourism. We believe every traveler is different, so we design experiences tailored to their interests, pace, and travel style.",
+        "about-p4": "Our team is made up of people passionate about Japan, its culture, history, and traditions. Thanks to our local knowledge, we accompany our travelers so they can discover the country in a deeper and more authentic way, creating memories that go beyond a simple tourist visit.",
+        "about-p5": "From the historic temples of Kyoto and Nara to the vibrant energy of Osaka and Tokyo, through charming cities like Kobe, Himeji, and Kamakura, we strive to ensure that each experience allows visitors to know not just the places, but also the stories, customs, and details that make Japan unique.",
+        "about-p6": "At ArigaTours we value personalized attention, closeness, and trust. We want our travelers to feel supported before, during, and after their trip. Therefore, we offer a flexible and human service, adapting to each person's needs to guarantee a comfortable, enriching, and memorable experience.",
+        "about-p7": "Our mission is to bring Japan closer to the world through authentic experiences that allow every visitor to discover the true essence of the country. We do not simply seek to show Japan; we seek to help people live it.",
+        "about-p8": "Because for us, every trip is an opportunity to create connections, discover new perspectives, and build memories that will accompany our travelers for a lifetime.",
+        "about-p9": "Welcome to ArigaTours. Discover Japan in an authentic, personal, and unforgettable way. 🇯🇵🌸🐱"
     },
     ja: {
         "nav-home": "ホーム",
@@ -114,7 +136,18 @@ const traduccionesAriga = {
         "footer-copy": "© 2026 ArigaTours. 無断複写・転載を禁じます。",
         "cal-title": "ツアーの空き状況",
         "cal-subtitle": "スクロールして近日中の日付を確認し、クリックしてツアーを表示します。",
-        "cal-sel": "👈 カレンダーで日付を選択してオプションを表示してください。"
+        "cal-sel": "👈 カレンダーで日付を選択してオプションを表示してください。",
+        "nav-about": "私たちについて",
+        "about-title": "私たちについて",
+        "about-p1": "ArigaToursでは、旅行とは有名な場所を訪れたり写真を撮ったりする以上のものだと信じています。最高の旅とは、文化とつながり、その歴史を理解し、家に帰った後もずっと記憶に残る体験をすることです。",
+        "about-p2": "だからこそArigaToursは生まれました。世界中の旅行者が、本物で身近で意味深い体験に満ちた日本を発見できるよう助けたいという願いから。",
+        "about-p3": "私たちは日本に拠点を置くローカル観光会社で、プライベートでパーソナライズされた体験を専門としています。最も象徴的な目的地だけでなく、従来の観光では見落とされがちな特別な場所もご紹介することを目指しています。旅行者それぞれが違うと信じているため、興味・ペース・旅のスタイルに合わせた体験を設計します。",
+        "about-p4": "私たちのチームは、日本の文化・歴史・伝統に情熱を持つ人々で構成されています。地元の知識を活かして旅行者に寄り添い、単なる観光以上の、より深く本物の方法で日本を発見できるよう導き、一生の思い出を作ります。",
+        "about-p5": "京都や奈良の歴史的な寺社から大阪や東京の活気あふれるエネルギー、神戸・姫路・鎌倉などの魅力的な都市まで、それぞれの体験を通じて場所だけでなく、日本をユニークにする物語・風習・細部を知ってもらえるよう努めています。",
+        "about-p6": "ArigaToursでは、きめ細やかな対応・親しみやすさ・信頼を大切にしています。旅行の前・中・後を通じて旅行者に寄り添いたいと考えています。そのため、一人ひとりのニーズに合わせた柔軟で人間味あふれるサービスを提供し、快適で豊かな忘れられない体験を保証します。",
+        "about-p7": "私たちのミッションは、すべての訪問者が国の本当の本質を発見できる本物の体験を通じて、日本を世界に近づけることです。日本を見せるだけでなく、日本を生きることを助けたいのです。",
+        "about-p8": "私たちにとって、すべての旅はつながりを作り、新しい視点を発見し、旅行者の人生を通じて寄り添う思い出を築く機会です。",
+        "about-p9": "ArigaToursへようこそ。本物で、個人的で、忘れられない方法で日本を発見してください。🇯🇵🌸🐱"
     }
 };
 

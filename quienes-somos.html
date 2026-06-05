@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Quiénes Somos - ArigaTours</title>
+    <link rel="icon" href="Recursos/arigaLOGO.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        .about-section {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 5rem 2rem 4rem;
+        }
+        .about-section h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--rojo-ariga, #DE1B22);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .about-section p {
+            font-size: 1.08rem;
+            color: #444;
+            line-height: 1.85;
+            margin-bottom: 1.4rem;
+        }
+        .about-section p:last-child {
+            font-weight: 600;
+            color: #222;
+        }
+        .about-divider {
+            width: 60px;
+            height: 4px;
+            background: var(--rojo-ariga, #DE1B22);
+            border-radius: 2px;
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="Recursos/ImgLogoAri.jpeg" alt="Logo ArigaTours">
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="tours.html" data-i18n="nav-dest">Destinos</a>
+                    <div class="mega-menu dynamic-destinations">
+                        <div id="dynamic-dropdown-container" class="dropdown-grid">
+                            <p style="text-align:center; color:#888; padding: 20px;">Cargando destinos...</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="quienes-somos.html" class="active" data-i18n="nav-about">Quiénes Somos</a></li>
+                <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/people/Ariga-Tours/61586121007456/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/arigatourss/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@arigatourss" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="language-selector">
+                <select id="lang-switch">
+                    <option value="es">ESPAÑOL</option>
+                    <option value="en">ENGLISH</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+            <a href="admin.html" class="btn-login" data-i18n="nav-login"><i class="fas fa-user"></i> Login</a>
+        </div>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('Recursos/kYOTO.jpg');">
+        <h1 data-i18n="about-title">Quiénes Somos</h1>
+    </section>
+
+    <main>
+        <div class="about-section">
+            <div class="about-divider"></div>
+            <p data-i18n="about-p1">En ArigaTours creemos que viajar es mucho más que visitar lugares famosos o tomar fotografías. Los mejores viajes son aquellos que nos permiten conectar con una cultura, comprender su historia y vivir experiencias que permanecen en nuestra memoria mucho después de regresar a casa.</p>
+            <p data-i18n="about-p2">Por eso nació ArigaTours: con el deseo de ayudar a viajeros de todo el mundo a descubrir un Japón auténtico, cercano y lleno de experiencias significativas.</p>
+            <p data-i18n="about-p3">Somos una empresa de turismo local establecida en Japón, especializada en experiencias privadas y personalizadas. Nuestro objetivo es mostrar tanto los destinos más emblemáticos como aquellos rincones especiales que muchas veces pasan desapercibidos para el turismo tradicional. Creemos que cada viajero es diferente, por lo que diseñamos experiencias adaptadas a sus intereses, ritmo y estilo de viaje.</p>
+            <p data-i18n="about-p4">Nuestro equipo está formado por personas apasionadas por Japón, su cultura, su historia y sus tradiciones. Gracias a nuestro conocimiento local, acompañamos a nuestros viajeros para que puedan descubrir el país de una manera más profunda y auténtica, creando recuerdos que van más allá de una simple visita turística.</p>
+            <p data-i18n="about-p5">Desde los templos históricos de Kioto y Nara hasta la energía vibrante de Osaka y Tokio, pasando por ciudades llenas de encanto como Kobe, Himeji o Kamakura, buscamos que cada experiencia permita conocer no solo los lugares, sino también las historias, costumbres y detalles que hacen único a Japón.</p>
+            <p data-i18n="about-p6">En ArigaTours valoramos la atención personalizada, la cercanía y la confianza. Queremos que nuestros viajeros se sientan acompañados antes, durante y después de su viaje. Por ello, ofrecemos un servicio flexible y humano, adaptándonos a las necesidades de cada persona para garantizar una experiencia cómoda, enriquecedora y memorable.</p>
+            <p data-i18n="about-p7">Nuestra misión es acercar Japón al mundo a través de experiencias auténticas que permitan a cada visitante descubrir la verdadera esencia del país. No buscamos simplemente mostrar Japón; buscamos ayudar a vivirlo.</p>
+            <p data-i18n="about-p8">Porque para nosotros, cada viaje es una oportunidad para crear conexiones, descubrir nuevas perspectivas y construir recuerdos que acompañarán a nuestros viajeros toda la vida.</p>
+            <p data-i18n="about-p9">Bienvenido a ArigaTours. Descubre Japón de una forma auténtica, personal e inolvidable. 🇯🇵🌸🐱</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ArigaTours</h4>
+                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer-links">Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
+                    <li><a href="tours.html" data-i18n="nav-dest">Destinos</a></li>
+                    <li><a href="quienes-somos.html" data-i18n="nav-about">Quiénes Somos</a></li>
+                    <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="nav-contact">Contacto</h4>
+                <p>Email: bryan.arigatours@gmail.com</p>
+                <p>Tel: +81 70-6438-2066</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer-copy">© 2026 ArigaTours. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/i18n.js" defer></script>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/Java.js" defer></script>
+</body>
+</html>

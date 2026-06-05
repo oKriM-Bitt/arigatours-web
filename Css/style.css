@@ -90,6 +90,8 @@ body {
 .hero-content p { font-size: 1.5rem; color: var(--texto-claro); margin-bottom: 2.5rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.6); }
 .btn-primary { display: inline-block; padding: 1rem 2.5rem; background-color: var(--rojo-ariga); color: var(--texto-claro); text-decoration: none; border-radius: 30px; font-size: 1.2rem; font-weight: bold; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; }
 .btn-primary:hover { background-color: #b2151b; transform: translateY(-3px); }
+.btn-login { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 1.1rem; background: transparent; color: var(--texto-oscuro); border: 1.5px solid var(--rojo-ariga); border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; letter-spacing: 0.03em; transition: background 0.25s ease, color 0.25s ease; white-space: nowrap; }
+.btn-login:hover { background: var(--rojo-ariga); color: #fff; }
 .carousel-container { position: relative; height: calc(100vh - 85px); overflow: hidden; background-color: #000; }
 .carousel-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0; transition: opacity 1s ease-in-out; display: flex; align-items: center; justify-content: center; text-align: center; z-index: 1; }
 .carousel-slide.active { opacity: 1; z-index: 2; }

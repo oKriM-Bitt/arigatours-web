@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS usuarios (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  rol VARCHAR(50) NOT NULL DEFAULT 'user',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_usuarios_email ON usuarios (email);
+
+CREATE TABLE IF NOT EXISTS tours (
+  id VARCHAR(100) PRIMARY KEY,
+  ciudad VARCHAR(255) NOT NULL,
+  tematica VARCHAR(255) NOT NULL,
+  titulo VARCHAR(255) NOT NULL,
+  imagen TEXT NOT NULL,
+  galeria JSONB NOT NULL DEFAULT '[]',
+  duracion VARCHAR(255) NOT NULL,
+  precio VARCHAR(255) NOT NULL,
+  punto_encuentro TEXT NOT NULL,
+  descripcion TEXT NOT NULL,
+  incluye JSONB NOT NULL DEFAULT '[]',
+  no_incluye JSONB NOT NULL DEFAULT '[]',
+  fechas_disponibles JSONB NOT NULL DEFAULT '[]',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS blogs (
+  id VARCHAR(100) PRIMARY KEY,
+  categoria VARCHAR(255) NOT NULL,
+  titulo VARCHAR(255) NOT NULL,
+  autor VARCHAR(255) NOT NULL,
+  fecha VARCHAR(100) NOT NULL,
+  imagen TEXT NOT NULL,
+  resumen TEXT NOT NULL,
+  contenido TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

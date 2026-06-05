@@ -1,5 +1,17 @@
+const API_BASE_URL = (() => {
+    const { protocol, hostname } = window.location;
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+        return `${protocol}//${hostname}:3000`;
+    }
+    return `${protocol}//${hostname}`;
+})();
+
+const TOURS_API_URL = `${API_BASE_URL}/api/tours`;
+
 let todosLosTours = [];
-let fechaGlobal = null; 
+let fechaGlobal = null;
+let filtroCiudad = null;
+let filtroTematica = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     const cabeceraDestinos = document.querySelector('.page-header');
@@ -10,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "NARA2.jpg", "osaka4.jpg",
             "Tokioundia.jpg", "Tokiovicerojo6.jpg"
         ];
-        
+
         fotosFondo.sort(() => 0.5 - Math.random());
         let indiceFondo = 0;
 
@@ -19,57 +31,81 @@ document.addEventListener('DOMContentLoaded', () => {
             cabeceraDestinos.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/${fotosFondo[indiceFondo]}')`;
         }, 4000);
     }
-    
-    const filtroCiudad = document.getElementById('filtro-ciudad');
-    const filtroTematica = document.getElementById('filtro-tematica');
 
-    function aplicarFiltros() {
-        const ciudad = filtroCiudad.value;
-        const tematica = filtroTematica.value;
+    filtroCiudad = document.getElementById('filtro-ciudad');
+    filtroTematica = document.getElementById('filtro-tematica');
 
-        const toursFiltrados = todosLosTours.filter(tour => {
-            const coincideCiudad = ciudad === 'todas' || tour.ciudad === ciudad;
-            const coincideTematica = tematica === 'todas' || tour.tematica === tematica;
-            return coincideCiudad && coincideTematica;
-        });
-        renderizarGrilla(toursFiltrados);
-    }
-
-    if(filtroCiudad && filtroTematica) {
+    if (filtroCiudad && filtroTematica) {
         filtroCiudad.addEventListener('change', aplicarFiltros);
         filtroTematica.addEventListener('change', aplicarFiltros);
     }
 
-    const idiomaActual = localStorage.getItem('idiomaAriga') || 'es';
-
-    // MAGIA: Leer el JSON correcto según el idioma
-    fetch(`JSON/BdTours_${idiomaActual}.json`) 
-        .then(respuesta => {
-            if (!respuesta.ok) throw new Error("JSON no encontrado");
-            return respuesta.json();
-        })
-        .then(datos => {
-            todosLosTours = datos;
-            renderizarGrilla(todosLosTours); 
-            
-            const urlParams = new URLSearchParams(window.location.search);
-            const tourSolicitado = urlParams.get('tour');
-            const ciudadSolicitada = urlParams.get('ciudad');
-            
-            fechaGlobal = urlParams.get('fecha'); 
-
-            if (tourSolicitado) {
-                const tourEncontrado = todosLosTours.find(t => t.id === tourSolicitado);
-                if (tourEncontrado) mostrarDetalle(tourEncontrado);
-            }
-
-            if (ciudadSolicitada && filtroCiudad) {
-                filtroCiudad.value = ciudadSolicitada; 
-                aplicarFiltros(); 
-            }
-        })
-        .catch(error => console.error("Error cargando el JSON de tours:", error));
+    cargarToursDesdeAPI();
 });
+
+async function cargarToursDesdeAPI() {
+    const contenedor = document.getElementById('contenedor-grilla-tours');
+    const idiomaActual = localStorage.getItem('idiomaAriga') || 'es';
+    const txt = dicTours[idiomaActual] || dicTours.es;
+
+    if (contenedor) {
+        contenedor.innerHTML = '<p style="text-align:center; width:100%;">Cargando tours...</p>';
+    }
+
+    try {
+        const respuesta = await fetch(TOURS_API_URL);
+
+        if (!respuesta.ok) {
+            throw new Error(`Error HTTP ${respuesta.status}`);
+        }
+
+        const datos = await respuesta.json();
+        todosLosTours = Array.isArray(datos) ? datos : [];
+        procesarToursCargados();
+    } catch (error) {
+        console.error('Error cargando tours desde la API:', error);
+        todosLosTours = [];
+
+        if (contenedor) {
+            contenedor.innerHTML = '<p style="text-align:center; width:100%;">No se pudieron cargar los tours. Verifica que el servidor esté activo.</p>';
+        }
+    }
+}
+
+function procesarToursCargados() {
+    renderizarGrilla(todosLosTours);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const tourSolicitado = urlParams.get('tour');
+    const ciudadSolicitada = urlParams.get('ciudad');
+
+    fechaGlobal = urlParams.get('fecha');
+
+    if (tourSolicitado) {
+        const tourEncontrado = todosLosTours.find((t) => t.id === tourSolicitado);
+        if (tourEncontrado) mostrarDetalle(tourEncontrado);
+    }
+
+    if (ciudadSolicitada && filtroCiudad) {
+        filtroCiudad.value = ciudadSolicitada;
+        aplicarFiltros();
+    }
+}
+
+function aplicarFiltros() {
+    if (!filtroCiudad || !filtroTematica) return;
+
+    const ciudad = filtroCiudad.value;
+    const tematica = filtroTematica.value;
+
+    const toursFiltrados = todosLosTours.filter((tour) => {
+        const coincideCiudad = ciudad === 'todas' || tour.ciudad === ciudad;
+        const coincideTematica = tematica === 'todas' || tour.tematica === tematica;
+        return coincideCiudad && coincideTematica;
+    });
+
+    renderizarGrilla(toursFiltrados);
+}
 
 // Diccionario interno para bdtours.js (textos de la tarjeta y detalles)
 const dicTours = {
@@ -78,20 +114,31 @@ const dicTours = {
     ja: { vacio: "これらの条件に一致するツアーはありません。", desc: "説明", det: "詳細と含まれるもの", punto: "待ち合わせ場所", dur: "所要時間", idioma: "言語", inc: "含まれるもの", noinc: "含まれないもの", coord: "予約後に調整します。", cons: "問い合わせ", noDet: "詳細は指定されていません。", noEsp: "指定なし。", msgWsp1: "こんにちは、ツアーの空き状況を確認したいです：", msgWsp2: "希望日：" }
 };
 
+function normalizarTour(tour) {
+    return {
+        ...tour,
+        galeria: Array.isArray(tour.galeria) ? tour.galeria : [],
+        incluye: Array.isArray(tour.incluye) ? tour.incluye : [],
+        noIncluye: Array.isArray(tour.noIncluye) ? tour.noIncluye : [],
+        fechasDisponibles: Array.isArray(tour.fechasDisponibles) ? tour.fechasDisponibles : [],
+    };
+}
+
 function renderizarGrilla(tours) {
     const contenedor = document.getElementById('contenedor-grilla-tours');
-    if(!contenedor) return;
-    contenedor.innerHTML = ''; 
+    if (!contenedor) return;
+    contenedor.innerHTML = '';
 
     const idiomaActual = localStorage.getItem('idiomaAriga') || 'es';
-    const txt = dicTours[idiomaActual] || dicTours['es'];
+    const txt = dicTours[idiomaActual] || dicTours.es;
 
     if (tours.length === 0) {
         contenedor.innerHTML = `<p style="text-align:center; width:100%;">${txt.vacio}</p>`;
         return;
     }
 
-    tours.forEach(tour => {
+    tours.forEach((tourRaw) => {
+        const tour = normalizarTour(tourRaw);
         const tarjeta = document.createElement('div');
         tarjeta.className = 'tour-card';
         tarjeta.innerHTML = `
@@ -104,7 +151,7 @@ function renderizarGrilla(tours) {
         `;
 
         tarjeta.addEventListener('click', () => {
-            document.querySelectorAll('.tour-card').forEach(c => c.classList.remove('active-card'));
+            document.querySelectorAll('.tour-card').forEach((c) => c.classList.remove('active-card'));
             tarjeta.classList.add('active-card');
             mostrarDetalle(tour);
         });
@@ -117,20 +164,21 @@ function renderizarGrilla(tours) {
 let imagenesGaleriaActual = [];
 let indiceImagenActual = 0;
 
-function mostrarDetalle(tour) {
+function mostrarDetalle(tourRaw) {
+    const tour = normalizarTour(tourRaw);
     const msjDef = document.getElementById('mensaje-default');
-    if(msjDef) msjDef.style.display = 'none'; 
-    
+    if (msjDef) msjDef.style.display = 'none';
+
     const contenedorDetalle = document.getElementById('detalle-dinamico');
-    if(!contenedorDetalle) return;
+    if (!contenedorDetalle) return;
 
     const idiomaActual = localStorage.getItem('idiomaAriga') || 'es';
-    const txt = dicTours[idiomaActual] || dicTours['es'];
+    const txt = dicTours[idiomaActual] || dicTours.es;
 
-    let incluyeHTML = tour.incluye && tour.incluye.length > 0 ? tour.incluye.map(i => `<li>${i}</li>`).join('') : `<li>${txt.noDet}</li>`;
-    let noIncluyeHTML = tour.noIncluye && tour.noIncluye.length > 0 ? tour.noIncluye.map(i => `<li>${i}</li>`).join('') : `<li>${txt.noEsp}</li>`;
+    let incluyeHTML = tour.incluye.length > 0 ? tour.incluye.map((i) => `<li>${i}</li>`).join('') : `<li>${txt.noDet}</li>`;
+    let noIncluyeHTML = tour.noIncluye.length > 0 ? tour.noIncluye.map((i) => `<li>${i}</li>`).join('') : `<li>${txt.noEsp}</li>`;
 
-    imagenesGaleriaActual = tour.galeria && tour.galeria.length > 0 ? tour.galeria : [tour.imagen]; 
+    imagenesGaleriaActual = tour.galeria.length > 0 ? tour.galeria : [tour.imagen]; 
     indiceImagenActual = 0;
 
     let slidesHTML = imagenesGaleriaActual.map((img, index) => 

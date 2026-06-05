@@ -1,0 +1,26 @@
+{
+  "name": "arigatours-backend",
+  "version": "1.0.0",
+  "description": "API backend para ArigaTours",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node scripts/seed.js",
+    "migrate:tours": "node scripts/migrateTours.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.1.1",
+    "nodemailer": "^7.0.3",
+    "pg": "^8.16.0"
+  }
+}

@@ -1,7 +1,5 @@
 [
-
-    
-{
+    {
         "id": "tour-kamakura",
         "ciudad": "Kamakura",
         "tematica": "Arte y cultura",
@@ -13,7 +11,6 @@
             "Recursos/Kamakura6.jpg",
             "Recursos/Kamakura7.jpg",
             "Recursos/Kamakura8.jpg"
-
         ],
         "duracion": "4 horas",
         "precio": "25 € (Adultos) / 5 € (Niños)",
@@ -28,11 +25,8 @@
             "Bebidas ni alimentos",
             "Recogida en el hotel"
         ],
-        "fechasDisponibles": [
-         
-        ]
+        "fechasDisponibles": []
     },
-
     {
         "id": "tour-tokio-todo-en-un-dia",
         "ciudad": "Tokio",
@@ -46,8 +40,6 @@
             "Recursos/tokioundia4.jpg",
             "Recursos/tokioundia5.jpg",
             "Recursos/tokioundia6.jpg"
-          
-          
         ],
         "duracion": "8 horas",
         "precio": "120 € (Adultos)",
@@ -61,12 +53,9 @@
             "Bebidas ni alimentos (se da 1 hora libre para comer)",
             "Recogida en el hotel"
         ],
-        "fechasDisponibles": [
-           
-        ]
+        "fechasDisponibles": []
     },
-
-{
+    {
         "id": "tour-tokio-vice",
         "ciudad": "Tokio",
         "tematica": "Arte y cultura",
@@ -77,9 +66,8 @@
             "Recursos/Tokiovicerojo2.jpg",
             "Recursos/Tokiovicerojo3.jpg",
             "Recursos/Tokiovicerojo4.jpg",
-                "Recursos/Tokiovicerojo5.jpg",
-                "Recursos/Tokiovicerojo6.jpg"
-          
+            "Recursos/Tokiovicerojo5.jpg",
+            "Recursos/Tokiovicerojo6.jpg"
         ],
         "duracion": "2.5 o 3.5 horas (según opción de cena)",
         "precio": "60 € (Sin cena) / 80 € (Con cena)",
@@ -94,16 +82,14 @@
             "Bebidas ni alimentos durante el tour (la cena es al finalizar)",
             "Recogida en el hotel"
         ],
-        "fechasDisponibles": [
-           
-        ]
+        "fechasDisponibles": []
     },
- {
+    {
         "id": "tour-osaka-presentation",
         "ciudad": "Osaka",
         "tematica": "Arte y cultura",
         "titulo": "Osaka Presentation",
-         "imagen": "Recursos/osaka.jpg",
+        "imagen": "Recursos/osaka.jpg",
         "galeria": [
             "Recursos/osaka.jpg",
             "Recursos/osaka1.jpg",
@@ -113,7 +99,7 @@
         "duracion": "3 horas",
         "precio": "60 € (Adultos)",
         "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
-        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>El recorrido pasa por escalones pequeños. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "descripcion": "Descubre la energía única de Osaka, una ciudad famosa por su vibrante vida urbana, su deliciosa gastronomía y su ambiente acogedor.<br><br>Comenzaremos nuestro recorrido en Shinsaibashi, una de las zonas comerciales más populares de la ciudad, donde se mezclan las últimas tendencias con la cultura local. Continuaremos hacia America Mura (Amerikamura), el corazón de la cultura juvenil de Osaka, conocido por su ambiente creativo, arte urbano, boutiques independientes y espíritu alternativo que lo convierten en uno de los barrios más dinámicos de Japón.<br><br>Después llegaremos a Dotonbori, el distrito más emblemático de Osaka, famoso por sus enormes carteles luminosos, sus animadas calles y la inconfundible atmósfera que ha convertido a esta zona en uno de los lugares más fotografiados del país.<br><br>A pocos pasos visitaremos el histórico Templo Hozenji, un rincón de tranquilidad que conserva el encanto del Osaka tradicional y ofrece un contraste fascinante con el bullicio de las calles cercanas.<br><br>Finalizaremos nuestra experiencia en el famoso Mercado Kuromon, conocido como la \"Cocina de Osaka\", donde podrás descubrir productos locales, mariscos frescos, dulces japoneses y algunas de las especialidades gastronómicas más representativas de la ciudad.<br><br>Una experiencia perfecta para quienes desean conocer la esencia de Osaka a través de su cultura, su gastronomía y su vibrante vida urbana. 🍜✨🏮🇯🇵",
         "incluye": [
             "Guía en español durante el tour",
             "Explicaciones históricas de los puntos visitados"
@@ -123,23 +109,19 @@
             "Entradas a lugares que lo requieran",
             "Recogida en el hotel (disponible por tarifa agregada)"
         ],
-        "fechasDisponibles": [
-           
-        ]
+        "fechasDisponibles": []
     },
-    
     {
         "id": "tour-kioto-historico",
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",
         "titulo": "Kioto Histórico",
-         "imagen": "Recursos/kYOTO4.jpg",
+        "imagen": "Recursos/kYOTO4.jpg",
         "galeria": [
             "Recursos/kYOTO.jpg",
             "Recursos/kYOTO2.jpg",
             "Recursos/kYOTO3.jpg",
             "Recursos/kYOTO4.jpg"
-            
         ],
         "duracion": "3 horas",
         "precio": "60 € (Adultos)",
@@ -154,9 +136,7 @@
             "Entradas a lugares que lo requieran",
             "Recogida en el hotel (disponible por tarifa agregada)"
         ],
-        "fechasDisponibles": [
-           
-        ]
+        "fechasDisponibles": []
     },
     {
         "id": "tour-kyoto-3h",
@@ -173,7 +153,7 @@
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
         "puntoEncuentro": "Estación Gion-Shijo",
-        "descripcion": "Descubre la esencia de Kioto con un recorrido a pie diseñado para una experiencia sin estrés.<br><br><strong>Itinerario:</strong><br>Caminaremos junto al río Kamogawa, exploraremos Gion Shirakawa, visitaremos el Templo Chionin, pasaremos por el Parque Maruyama y concluiremos en el famoso Templo Kiyomizudera.",
+        "descripcion": "Descubre el lado más tradicional y pintoresco de Kioto en un recorrido por algunos de sus barrios y templos más emblemáticos.<br><br>Comenzaremos caminando junto al tranquilo río Kamogawa, uno de los lugares favoritos de los habitantes de la ciudad para relajarse y disfrutar de la atmósfera única de Kioto. Continuaremos hacia Gion Shirakawa, una de las zonas más bellas y fotogénicas de la antigua capital. Sus calles adoquinadas, casas tradicionales de madera y canales bordeados de sauces conservan el encanto del Japón de otra época y representan la esencia del histórico distrito de las geishas.<br><br>Después visitaremos el impresionante Templo Chionin, sede principal de una de las escuelas budistas más importantes de Japón. Su imponente puerta de entrada y sus extensos terrenos ofrecen una experiencia de gran valor cultural y espiritual.<br><br>Seguiremos nuestro recorrido a través del Parque Maruyama, uno de los espacios verdes más famosos de Kioto, conocido por su ambiente tranquilo y sus hermosos paisajes durante todas las estaciones del año.<br><br>Finalmente llegaremos al majestuoso Templo Kiyomizudera, declarado Patrimonio de la Humanidad por la UNESCO y considerado uno de los monumentos más emblemáticos de Japón. Su famosa terraza de madera ofrece espectaculares vistas de la ciudad y constituye el cierre perfecto para una experiencia llena de historia, cultura y tradición.<br><br>Una experiencia ideal para quienes desean descubrir la belleza clásica de Kioto y sumergirse en la atmósfera única de la antigua capital japonesa.",
         "incluye": [
             "Guía hispanohablante",
             "Experiencia de tour privado a pie"
@@ -200,7 +180,7 @@
         "duracion": "8 horas",
         "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
         "puntoEncuentro": "Recogida en el hotel",
-        "descripcion": "Visita los 3 lugares más famosos de la ciudad utilizando transporte público para una inmersión cultural auténtica y profunda.<br><br><strong>Itinerario:</strong><br>Exploraremos el dorado Templo Kinkakuji (UNESCO), caminaremos bajo las icónicas puertas de Fushimi Inari, y visitaremos Kiyomizu-dera (UNESCO).",
+        "descripcion": "Descubre tres de los lugares más emblemáticos y visitados de Kioto en un recorrido diseñado para quienes desean conocer la esencia de la antigua capital japonesa. Esta experiencia reúne algunos de los monumentos más representativos del país, combinando historia, espiritualidad y paisajes inolvidables.<br><br>Comenzaremos visitando el impresionante Templo Kinkakuji, conocido como el Pabellón Dorado y declarado Patrimonio de la Humanidad por la UNESCO. Cubierto de pan de oro y rodeado de jardines tradicionales y estanques, es uno de los símbolos más reconocidos de Japón.<br><br>Continuaremos hacia el famoso Santuario Fushimi Inari Taisha, célebre por sus miles de puertas torii de color rojo que se extienden a lo largo de la montaña. Este lugar sagrado ofrece una de las imágenes más icónicas de Japón y una experiencia única cargada de historia y tradición.<br><br>Finalizaremos nuestro recorrido en el majestuoso Templo Kiyomizudera, también declarado Patrimonio de la Humanidad por la UNESCO. Su espectacular terraza de madera, construida sin el uso de clavos, ofrece magníficas vistas de Kioto y constituye uno de los tesoros culturales más importantes del país.<br><br>Una experiencia perfecta para quienes visitan Kioto por primera vez y desean descubrir algunos de los lugares más famosos, bellos e históricos de Japón en un solo recorrido.",
         "incluye": [
             "Guía hispanohablante",
             "Recogida en el hotel",
@@ -226,7 +206,7 @@
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
         "puntoEncuentro": "Estación Shinsaibashi",
-        "descripcion": "Un vibrante recorrido a pie para sentir la verdadera energía, la cultura gastronómica y la vida callejera de Osaka.<br><br><strong>Itinerario:</strong><br>Comenzamos en Shinsaibashi, pasamos por la juvenil America Mura, las luces de Dotonbori, el tradicional Templo Hozenji, y terminamos en el animado Mercado Kuromon.",
+        "descripcion": "Descubre la energía vibrante de Osaka en un recorrido que combina modernidad, tradición y algunos de los lugares más emblemáticos de la ciudad.<br><br>Comenzaremos en Shinsaibashi, una de las zonas comerciales más populares de Osaka, donde las calles llenas de tiendas, cafeterías y vida urbana muestran el lado más dinámico de la ciudad.<br><br>Continuaremos hacia America Mura, el corazón de la cultura juvenil de Osaka. Con sus murales, tiendas alternativas y ambiente creativo, este barrio refleja el espíritu moderno y desenfadado que caracteriza a la ciudad.<br><br>Después nos dirigiremos a Dotonbori, el distrito más famoso de Osaka, conocido por sus espectaculares letreros luminosos, su animada atmósfera y su papel como símbolo de la vida nocturna y gastronómica local. Aquí podrás disfrutar de algunas de las vistas más icónicas de Japón.<br><br>A pocos pasos visitaremos el tradicional Templo Hozenji, un pequeño oasis de tranquilidad que conserva el encanto del Osaka histórico y ofrece un interesante contraste con el bullicio de las calles cercanas.<br><br>Finalizaremos nuestro recorrido en el Mercado Kuromon, conocido como la \"Cocina de Osaka\". Este mercado histórico alberga una gran variedad de productos frescos, especialidades locales y algunos de los sabores más representativos de la gastronomía japonesa.<br><br>Una experiencia ideal para quienes desean conocer la esencia de Osaka a través de su cultura urbana, sus tradiciones y su reconocida escena gastronómica.",
         "incluye": [
             "Guía hispanohablante",
             "Experiencia de tour privado a pie"
@@ -253,7 +233,7 @@
         "duracion": "8 horas",
         "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
         "puntoEncuentro": "Recogida en el hotel",
-        "descripcion": "Todo lo incluido en el tour de 3 horas, además de visitas extendidas a los distritos históricos y retro-futuristas más significativos de la ciudad usando transporte público.<br><br><strong>Itinerario:</strong><br>Castillo de Osaka (UNESCO), distrito de Namba, y la fascinante zona de Shinsekai, más lo más destacado del tour a pie de 3 horas.",
+        "descripcion": "Descubre algunos de los lugares más emblemáticos de Osaka en un recorrido que combina historia, cultura y la energía única de una de las ciudades más vibrantes de Japón.<br><br>Comenzaremos visitando el majestuoso Castillo de Osaka, uno de los monumentos históricos más importantes del país y símbolo de la ciudad. Rodeado de extensos jardines y murallas centenarias, este castillo ofrece una fascinante introducción a la historia del Japón feudal.<br><br>Continuaremos hacia el animado distrito de Namba, el corazón del entretenimiento y la vida urbana de Osaka. Sus calles llenas de actividad, comercios y restaurantes reflejan el carácter dinámico y acogedor por el que la ciudad es conocida.<br><br>Después exploraremos la fascinante zona de Shinsekai, un barrio lleno de nostalgia que conserva la atmósfera del Osaka de principios del siglo XX. Sus coloridos letreros, calles tradicionales y ambiente local ofrecen una experiencia diferente y auténtica.<br><br>Además, el recorrido incluye los puntos más destacados de nuestro tour a pie por Osaka, permitiendo descubrir lugares emblemáticos, rincones históricos y algunas de las zonas más representativas de la ciudad.<br><br>Una experiencia ideal para quienes desean conocer la esencia de Osaka a través de su historia, su cultura y su inconfundible energía urbana.",
         "incluye": [
             "Guía hispanohablante",
             "Recogida en el hotel",
@@ -279,7 +259,7 @@
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
         "puntoEncuentro": "Estación Sannomiya",
-        "descripcion": "Descubre la ciudad portuaria cosmopolita de Kobe, donde el comercio internacional moldeó su arquitectura y sabores únicos.<br><br><strong>Itinerario:</strong><br>Comenzando en Sannomiya, visitaremos Ikuta Jinja, el histórico Starbucks Ijinkan, la casa Weathercock y pasaremos por Steakland.",
+        "descripcion": "Descubre el encanto único de Kobe, una ciudad donde la tradición japonesa y la influencia internacional se combinan de manera excepcional.<br><br>Comenzaremos nuestro recorrido en Sannomiya, el corazón de la ciudad y punto de encuentro perfecto para explorar algunos de sus lugares más emblemáticos.<br><br>Nuestra primera parada será Ikuta Jinja, uno de los santuarios más antiguos de Japón, con más de 1.800 años de historia. Rodeado de naturaleza en pleno centro urbano, este santuario ofrece una introducción perfecta a las tradiciones espirituales de la ciudad.<br><br>Continuaremos hacia el famoso Starbucks Kitano Ijinkan, ubicado en una histórica residencia occidental que refleja el pasado internacional de Kobe. Este edificio, considerado uno de los Starbucks más bellos de Japón, permite apreciar la arquitectura que caracteriza al distrito de Kitano.<br><br>Seguiremos explorando esta elegante zona hasta llegar a la emblemática Casa Weathercock (Kazamidori no Yakata), uno de los símbolos más reconocidos de Kobe. Su distintiva arquitectura y su historia ofrecen una mirada fascinante a la época en que comerciantes y diplomáticos extranjeros se establecieron en la ciudad.<br><br>Durante el recorrido también pasaremos por Steakland, uno de los restaurantes más populares para degustar la mundialmente famosa carne de Kobe, una de las especialidades gastronómicas más prestigiosas de Japón.<br><br>Una experiencia perfecta para quienes desean descubrir la historia, la cultura y la atmósfera cosmopolita que han convertido a Kobe en una de las ciudades más fascinantes del país.",
         "incluye": [
             "Guía hispanohablante",
             "Experiencia de tour privado a pie"
@@ -306,7 +286,7 @@
         "duracion": "8 horas",
         "precio": "$315 USD (Base 2 pax) + $55 USD por persona adicional",
         "puntoEncuentro": "Recogida en el hotel",
-        "descripcion": "Un recorrido completo por Kobe utilizando transporte público, desde sus raíces espirituales hasta los modernos paseos marítimos.<br><br><strong>Itinerario:</strong><br>Sannomiya, Santuario Ikuta, Distrito Kitano Ijinkan, Cascadas Nunobiki, Steakland, Parque Meriken, y la Torre del Puerto de Kobe.",
+        "descripcion": "Descubre la esencia de Kobe en un recorrido que combina historia, arquitectura internacional, naturaleza y espectaculares vistas al mar.<br><br>Comenzaremos en Sannomiya, el corazón de la ciudad y punto de partida ideal para explorar algunos de sus lugares más emblemáticos.<br><br>Nuestra primera parada será el Santuario Ikuta, uno de los santuarios más antiguos de Japón, con una historia que se remonta a más de 1.800 años. Este tranquilo espacio ofrece una fascinante introducción a las tradiciones y creencias japonesas.<br><br>Continuaremos hacia el encantador distrito de Kitano Ijinkan, famoso por sus elegantes residencias de estilo occidental construidas por comerciantes y diplomáticos extranjeros durante la apertura internacional de Kobe. Sus calles llenas de historia y arquitectura única reflejan el carácter cosmopolita que distingue a la ciudad.<br><br>Después visitaremos las impresionantes Cascadas Nunobiki, un rincón natural situado a poca distancia del centro urbano que ofrece paisajes tranquilos y una experiencia diferente dentro de la ciudad.<br><br>Durante el recorrido también pasaremos por Steakland, uno de los lugares más populares para degustar la mundialmente famosa carne de Kobe, una de las especialidades gastronómicas más reconocidas de Japón.<br><br>Por la tarde nos dirigiremos al moderno Parque Meriken, ubicado junto al puerto de Kobe. Desde aquí disfrutaremos de hermosas vistas de la bahía, los espacios abiertos frente al mar y algunos de los símbolos más representativos de la ciudad.<br><br>Finalizaremos junto a la icónica Torre del Puerto de Kobe, uno de los monumentos más reconocibles de la ciudad y un excelente lugar para admirar el paisaje urbano y marítimo que han convertido a Kobe en una de las ciudades portuarias más importantes de Japón.<br><br>Una experiencia perfecta para quienes desean descubrir la combinación única de historia, naturaleza, cultura internacional y paisajes costeros que hacen de Kobe un destino inolvidable.",
         "incluye": [
             "Guía hispanohablante",
             "Recogida en el hotel",
@@ -331,7 +311,7 @@
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
         "puntoEncuentro": "Estación Himeji",
-        "descripcion": "Donde la historia y el sabor se unen. Explora los caminos que conducen al castillo mejor conservado y espectacular de Japón.<br><br><strong>Itinerario:</strong><br>Estación Himeji, Calle Otemae, Calle Yamasa Kamaboko, Santuario Harima Sosha, el magnífico Castillo de Himeji (UNESCO), y el Santuario Himeji.",
+        "descripcion": "Descubre la belleza y la historia de una de las ciudades más emblemáticas de Japón en este recorrido por Himeji.<br><br>Comenzaremos en la Estación de Himeji y recorreremos la elegante Calle Otemae, la avenida principal que conduce hacia el famoso castillo, disfrutando de las vistas de la ciudad y de su ambiente local. Durante el camino pasaremos por la tradicional Calle Yamasa Kamaboko, conocida por su conexión con uno de los productos gastronómicos más representativos de la región.<br><br>También visitaremos el histórico Santuario Harima Sosha, un importante lugar de culto con siglos de historia que refleja la profunda tradición espiritual de la zona.<br><br>El punto culminante del recorrido será el impresionante Castillo de Himeji, declarado Patrimonio de la Humanidad por la UNESCO y considerado el castillo feudal mejor conservado de Japón. Conocido como el \"Castillo de la Garza Blanca\" por su elegante apariencia, es uno de los monumentos históricos más importantes del país.<br><br>Finalizaremos visitando el Santuario Himeji, donde podrás disfrutar de una atmósfera tranquila y conocer más sobre las tradiciones y creencias locales.<br><br>Un recorrido ideal para quienes desean conocer la esencia histórica de Himeji, combinando cultura, arquitectura y patrimonio japonés en una experiencia inolvidable. 🏯✨",
         "incluye": [
             "Guía hispanohablante",
             "Experiencia de tour privado a pie"
@@ -356,7 +336,7 @@
         "duracion": "8 horas",
         "precio": "$350 USD (Base 2 pax) + $55 USD por persona adicional",
         "puntoEncuentro": "Recogida en el hotel",
-        "descripcion": "La excursión perfecta que combina la maravilla histórica del Castillo de Himeji con el ambiente cosmopolita y la excelencia culinaria de Kobe.<br><br><strong>Itinerario:</strong><br>Castillo de Himeji, luego viajamos a Kobe Sannomiya, visitamos el Parque Meriken, disfrutamos de un almuerzo de carne de Kobe en Steakland, y exploramos Kitano y Motomachi.",
+        "descripcion": "Disfruta de un recorrido que combina dos de los destinos más fascinantes de la región de Kansai.<br><br>Comenzaremos visitando el majestuoso Castillo de Himeji, declarado Patrimonio de la Humanidad por la UNESCO y considerado el castillo feudal mejor conservado de Japón. Conocido como el \"Castillo de la Garza Blanca\", es una obra maestra de la arquitectura japonesa y uno de los monumentos históricos más impresionantes del país.<br><br>Tras explorar Himeji, viajaremos a Kobe Sannomiya, el corazón de una ciudad famosa por su ambiente cosmopolita y su historia internacional. Pasearemos por el moderno Parque Meriken, situado junto al puerto de Kobe, donde disfrutaremos de hermosas vistas al mar y de algunos de los símbolos más representativos de la ciudad.<br><br>A la hora del almuerzo, tendremos la oportunidad de degustar la reconocida carne de Kobe en Steakland, uno de los restaurantes más populares para probar esta famosa especialidad japonesa.<br><br>Por la tarde exploraremos el encantador distrito de Kitano, conocido por sus elegantes residencias de estilo occidental construidas por antiguos comerciantes y diplomáticos extranjeros. Finalizaremos el recorrido en Motomachi, una vibrante zona llena de historia, tiendas locales y una atmósfera que refleja la mezcla única entre Japón y las influencias internacionales que han dado forma a Kobe.<br><br>Una experiencia perfecta para quienes desean combinar patrimonio histórico, paisajes costeros, cultura internacional y una de las gastronomías más famosas de Japón en un solo día. 🏯⚓🥩✨",
         "incluye": [
             "Guía hispanohablante",
             "Recogida en el hotel",
@@ -383,7 +363,7 @@
         "duracion": "3 horas",
         "precio": "$175 USD (Base 2 pax) + $35 USD por persona adicional",
         "puntoEncuentro": "Estación Kintetsu Nara",
-        "descripcion": "Descubre la antigua capital donde los ciervos deambulan libremente entre templos centenarios.<br><br><strong>Itinerario:</strong><br>Estación Kintetsu, Sarusawa ike, Kodaiji, Museo de Nara, y el impresionante Templo Todaiji (UNESCO).",
+        "descripcion": "Descubre la antigua capital de Japón en un recorrido lleno de historia, cultura y tradiciones.<br><br>Comenzaremos en la Estación Kintetsu Nara, punto de partida ideal para explorar una de las ciudades más históricas del país. Pasearemos junto al tranquilo Estanque Sarusawa-ike, uno de los paisajes más representativos de Nara, rodeado de historia y belleza natural.<br><br>Continuaremos hacia Kōfuku-ji, uno de los templos budistas más importantes de Japón, famoso por su elegante pagoda de cinco pisos, símbolo de la ciudad. Visitaremos el Museo Nacional de Nara, donde conoceremos más sobre el arte y el patrimonio cultural japonés, antes de dirigirnos al espectacular Templo Tōdai-ji, declarado Patrimonio de la Humanidad por la UNESCO. Este impresionante complejo alberga el Gran Buda de Nara, una de las estatuas de bronce más grandes del mundo y uno de los tesoros culturales más importantes de Japón.<br><br>A lo largo del recorrido también tendrás la oportunidad de disfrutar de la atmósfera única del Parque de Nara, hogar de los famosos ciervos considerados mensajeros sagrados en la tradición local.<br><br>Una experiencia ideal para quienes desean descubrir la riqueza histórica, espiritual y cultural de una de las ciudades más fascinantes de Japón. 🦌⛩️✨",
         "incluye": [
             "Guía hispanohablante",
             "Experiencia de tour privado a pie"
@@ -410,7 +390,7 @@
         "duracion": "8 horas",
         "precio": "$315 USD (Base 2 pax) + $42 USD por persona adicional",
         "puntoEncuentro": "Recogida en el hotel",
-        "descripcion": "Experimenta el corazón espiritual de Nara y el lugar de nacimiento del auténtico té verde japonés en Uji.<br><br><strong>Itinerario:</strong><br>Pabellón del Fénix, Calle de Uji (tiendas de Matcha), Sarusawa-ike, Kofuku-ji (UNESCO), Parque de Nara, y Todaiji (UNESCO).",
+        "descripcion": "Descubre dos de los destinos culturales más fascinantes de Japón en un recorrido que combina historia, espiritualidad y gastronomía tradicional.<br><br>Comenzaremos en Uji, una ciudad famosa por producir algunos de los mejores tés matcha del país. Visitaremos el impresionante Pabellón del Fénix del Byōdō-in, declarado Patrimonio de la Humanidad por la UNESCO y considerado una de las obras maestras de la arquitectura japonesa. Después pasearemos por la encantadora calle comercial de Uji, repleta de tiendas especializadas en matcha, dulces tradicionales y productos locales que reflejan la rica cultura del té de la región.<br><br>Continuaremos hacia Nara, la primera capital permanente de Japón. Allí recorreremos el pintoresco estanque Sarusawa-ike y visitaremos Kōfuku-ji, un importante templo budista declarado Patrimonio de la Humanidad por la UNESCO y reconocido por su histórica pagoda de cinco pisos.<br><br>También disfrutaremos de un paseo por el famoso Parque de Nara, hogar de los emblemáticos ciervos que conviven libremente con los visitantes y forman parte de la identidad de la ciudad.<br><br>El recorrido culminará en el majestuoso Templo Tōdai-ji, Patrimonio de la Humanidad por la UNESCO, donde se encuentra el Gran Buda de Nara, una de las estatuas de bronce más impresionantes y representativas de Japón.<br><br>Una experiencia perfecta para quienes desean conocer la esencia cultural de Japón a través de sus templos históricos, sus tradiciones centenarias y el auténtico sabor del matcha de Uji. 🍵🦌⛩️✨",
         "incluye": [
             "Guía hispanohablante",
             "Recogida en el hotel",
@@ -422,4 +402,3 @@
         "fechasDisponibles": []
     }
 ]
-

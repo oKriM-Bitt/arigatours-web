@@ -21,8 +21,8 @@ const poolConfig = process.env.DATABASE_URL
 const pool = new Pool(poolConfig);
 
 pool.on('error', (err) => {
-  console.error('Error inesperado en el pool de PostgreSQL:', err);
-  process.exit(-1);
+  // Log only — never exit on idle connection errors (Neon closes idle connections)
+  console.error('Error inesperado en el pool de PostgreSQL:', err.message);
 });
 
 export async function testConnection() {

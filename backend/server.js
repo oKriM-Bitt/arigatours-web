@@ -32,14 +32,16 @@ app.use('/api/blogs', blogRoutes);
 app.use('/api/contacto', contactoRoutes);
 
 async function startServer() {
+  // Start HTTP server first so Render's health-check succeeds immediately
+  app.listen(PORT, () => {
+    console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  });
+
+  // Test DB connection in the background — failures are logged but won't kill the process
   try {
     await testConnection();
-    app.listen(PORT, () => {
-      console.log(`Servidor escuchando en http://localhost:${PORT}`);
-    });
   } catch (error) {
-    console.error('No se pudo iniciar el servidor:', error.message);
-    process.exit(1);
+    console.error('Advertencia: no se pudo conectar a la base de datos al arrancar:', error.message);
   }
 }
 

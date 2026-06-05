@@ -40,6 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
         filtroTematica.addEventListener('change', aplicarFiltros);
     }
 
+    const langSwitch = document.getElementById('lang-switch');
+    if (langSwitch) {
+        langSwitch.addEventListener('change', async () => {
+            const lang = langSwitch.value;
+            await precargarTraduccion(lang);
+            const traducidos = obtenerToursTraducidos(lang);
+            poblarFiltros(traducidos);
+            renderizarGrilla(traducidos);
+        });
+    }
+
     cargarToursDesdeAPI();
 });
 
@@ -73,7 +84,11 @@ async function cargarToursDesdeAPI() {
 }
 
 function procesarToursCargados() {
-    renderizarGrilla(todosLosTours);
+    poblarFiltros(todosLosTours);
+    const langActual = localStorage.getItem('idiomaAriga') || 'es';
+    precargarTraduccion('en');
+    precargarTraduccion('ja');
+    renderizarGrilla(obtenerToursTraducidos(langActual));
 
     const urlParams = new URLSearchParams(window.location.search);
     const tourSolicitado = urlParams.get('tour');
@@ -113,6 +128,55 @@ const dicTours = {
     en: { vacio: "No tours available with those filters.", desc: "Description", det: "Details & Inclusions", punto: "Meeting Point", dur: "Duration", idioma: "Language", inc: "Included", noinc: "Not included", coord: "To be coordinated after booking.", cons: "Inquire", noDet: "No details specified.", noEsp: "Nothing specified.", msgWsp1: "Hello, I would like to check availability for the tour", msgWsp2: "for the date" },
     ja: { vacio: "これらの条件に一致するツアーはありません。", desc: "説明", det: "詳細と含まれるもの", punto: "待ち合わせ場所", dur: "所要時間", idioma: "言語", inc: "含まれるもの", noinc: "含まれないもの", coord: "予約後に調整します。", cons: "問い合わせ", noDet: "詳細は指定されていません。", noEsp: "指定なし。", msgWsp1: "こんにちは、ツアーの空き状況を確認したいです：", msgWsp2: "希望日：" }
 };
+
+// ── TRADUCCIONES MULTILINGÜE ──────────────────────────────────────────────
+const toursCache = {};
+
+async function precargarTraduccion(lang) {
+    if (lang === 'es' || toursCache[lang]) return;
+    try {
+        const r = await fetch(`../JSON/BdTours_${lang}.json`);
+        if (r.ok) toursCache[lang] = await r.json();
+    } catch { /* sin traducción disponible */ }
+}
+
+function obtenerToursTraducidos(lang) {
+    if (lang === 'es' || !toursCache[lang]) return todosLosTours;
+    return todosLosTours.map(t => {
+        const tr = toursCache[lang].find(x => x.id === t.id);
+        if (!tr) return t;
+        return {
+            ...t,
+            titulo:         tr.titulo         || t.titulo,
+            descripcion:    tr.descripcion    || t.descripcion,
+            tematica:       tr.tematica       || t.tematica,
+            ciudad:         tr.ciudad         || t.ciudad,
+            puntoEncuentro: tr.puntoEncuentro || t.puntoEncuentro,
+            incluye:        Array.isArray(tr.incluye)    ? tr.incluye    : t.incluye,
+            noIncluye:      Array.isArray(tr.noIncluye)  ? tr.noIncluye  : t.noIncluye,
+        };
+    });
+}
+
+function poblarFiltros(tours) {
+    if (!filtroCiudad || !filtroTematica) return;
+    const lang = localStorage.getItem('idiomaAriga') || 'es';
+    const labelCiudad    = { es: 'Todas las ciudades', en: 'All Cities',  ja: 'すべての都市'  }[lang] || 'Todas';
+    const labelTematica  = { es: 'Todas las temáticas', en: 'All Themes', ja: 'すべてのテーマ' }[lang] || 'Todas';
+
+    const prevCiudad   = filtroCiudad.value;
+    const prevTematica = filtroTematica.value;
+
+    const ciudades  = [...new Set(tours.map(t => t.ciudad).filter(Boolean))].sort();
+    const tematicas = [...new Set(tours.map(t => t.tematica).filter(Boolean))].sort();
+
+    filtroCiudad.innerHTML  = `<option value="todas">${labelCiudad}</option>`  + ciudades.map(c  => `<option value="${c}">${c}</option>`).join('');
+    filtroTematica.innerHTML = `<option value="todas">${labelTematica}</option>` + tematicas.map(t => `<option value="${t}">${t}</option>`).join('');
+
+    if ([...filtroCiudad.options].some(o  => o.value === prevCiudad))   filtroCiudad.value   = prevCiudad;
+    if ([...filtroTematica.options].some(o => o.value === prevTematica)) filtroTematica.value = prevTematica;
+}
+// ─────────────────────────────────────────────────────────────────────────────
 
 function normalizarTour(tour) {
     return {
@@ -340,7 +404,7 @@ function mostrarDetalle(tourRaw) {
         if (fechaTexto) mensaje += ` ${txt.msgWsp2} ${fechaTexto}`;
         mensaje += `.`;
         
-        const urlWsp = `https://wa.me/51994846285?text=${encodeURIComponent(mensaje)}`;
+        const urlWsp = `https://wa.me/817064382066?text=${encodeURIComponent(mensaje)}`;
         window.open(urlWsp, '_blank');
     });
 

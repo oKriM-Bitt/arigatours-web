@@ -1,9 +1,9 @@
 const API_BASE_URL = (() => {
-    const { protocol, hostname } = window.location;
+    const { hostname } = window.location;
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
-        return `${protocol}//${hostname}:3000`;
+        return 'http://localhost:3000';
     }
-    return `${protocol}//${hostname}`;
+    return 'https://arigatours-backend.onrender.com';
 })();
 
 const TOURS_API_URL = `${API_BASE_URL}/api/tours`;

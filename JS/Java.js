@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slideInterval = setInterval(nextSlide, intervalTime);
     }
 
-    iniciarCalendario();
+    // iniciarCalendario(); // sección de disponibilidad eliminada
 });
 
 // --- LÓGICA DEL CALENDARIO DE DISPONIBILIDAD (MULTI-IDIOMA) ---

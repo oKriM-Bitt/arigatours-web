@@ -1,38 +1,28 @@
-import pg from 'pg';
-import dotenv from 'dotenv';
+/**
+ * config/db.js -- STUB SIN BASE DE DATOS
+ *
+ * Neon esta desconectado. Este modulo exporta un pool inerte para que todos
+ * los imports existentes carguen sin errores y el servidor arranque limpio.
+ * Cualquier llamada a pool.query() en runtime recibira un error claro.
+ *
+ * Para reconectar a Neon: restaurar la version original con pg.Pool.
+ */
 
-dotenv.config();
+const DB_OFFLINE = new Error(
+  '[db] Base de datos no disponible -- el backend esta en modo JSON local.'
+);
 
-const { Pool } = pg;
+// Pool stub: misma interfaz que pg.Pool pero sin red
+const pool = {
+  query:   () => Promise.reject(DB_OFFLINE),
+  connect: () => Promise.reject(DB_OFFLINE),
+  on:      () => {},
+  end:     () => Promise.resolve(),
+};
 
-const poolConfig = process.env.DATABASE_URL
-  ? {
-      connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false },
-    }
-  : {
-      host: process.env.POSTGRES_HOST,
-      port: Number(process.env.POSTGRES_PORT) || 5432,
-      user: process.env.POSTGRES_USER,
-      password: process.env.POSTGRES_PASSWORD,
-      database: process.env.POSTGRES_DB,
-    };
-
-const pool = new Pool(poolConfig);
-
-pool.on('error', (err) => {
-  // Log only — never exit on idle connection errors (Neon closes idle connections)
-  console.error('Error inesperado en el pool de PostgreSQL:', err.message);
-});
-
+// No-op: server.js la llama en el arranque
 export async function testConnection() {
-  const client = await pool.connect();
-  try {
-    await client.query('SELECT NOW()');
-    console.log('Conexión a PostgreSQL establecida correctamente');
-  } finally {
-    client.release();
-  }
+  console.log('[db] Modo sin BD activo -- testConnection omitida.');
 }
 
 export default pool;

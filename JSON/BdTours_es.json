@@ -2,7 +2,7 @@
     {
         "id": "tour-kamakura",
         "ciudad": "Kamakura",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Kamakura Clásico",
         "imagen": "Recursos/Kamakura2.jpg",
         "galeria": [
@@ -30,7 +30,7 @@
     {
         "id": "tour-tokio-todo-en-un-dia",
         "ciudad": "Tokio",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Tokio todo en un día",
         "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
@@ -58,7 +58,7 @@
     {
         "id": "tour-tokio-vice",
         "ciudad": "Tokio",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Tokio Vice (Tour Nocturno)",
         "imagen": "Recursos/Tokiovicerojo.jpg",
         "galeria": [
@@ -85,36 +85,9 @@
         "fechasDisponibles": []
     },
     {
-        "id": "tour-kioto-historico",
-        "ciudad": "Kioto",
-        "tematica": "Arte y cultura",
-        "titulo": "Kioto Histórico",
-        "imagen": "Recursos/kYOTO4.jpg",
-        "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
-        ],
-        "duracion": "3 horas",
-        "precio": "60 € (Adultos)",
-        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
-        "descripcion": "Explora con nosotros en este recorrido de bienvenida a Kioto, donde descubriremos algunos de los lugares más icónicos de la ciudad. Hablaremos sobre los orígenes de la capital histórica de Japón y cómo fue evolucionando a lo largo del tiempo.<br><br><strong>Itinerario:</strong><br>El tour comienza a las 9:30 AM. Pasaremos por el barrio de las geishas (Gion) para visitar el Parque Maruyama, donde hablaremos sobre el origen y el final de los samuráis. Luego continuaremos por Nene-no-Michi hacia las cuestas de Higashiyama. Veremos la pagoda Yasaka y recorreremos las calles Ninenzaka y Sannenzaka, que nos llevarán finalmente al templo Kiyomizudera (Patrimonio de la Humanidad) a las 12:30 PM.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este recorrido pasa por cuestas largas y escalones grandes. No es recomendado para personas con dificultad de movimiento. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
-        "incluye": [
-            "Guía en español durante el tour",
-            "Explicaciones históricas de los puntos visitados"
-        ],
-        "noIncluye": [
-            "Bebidas ni alimentos",
-            "Entradas a lugares que lo requieran",
-            "Recogida en el hotel (disponible por tarifa agregada)"
-        ],
-        "fechasDisponibles": []
-    },
-    {
         "id": "tour-kyoto-3h",
         "ciudad": "Kioto",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Kioto Más Allá de lo Ordinario (3 Horas)",
         "imagen": "Recursos/kYOTO3.jpg",
         "galeria": [
@@ -141,7 +114,7 @@
     {
         "id": "tour-kyoto-8h",
         "ciudad": "Kioto",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "El ABC de Kioto (8 Horas)",
         "imagen": "Recursos/kYOTO2.jpg",
         "galeria": [
@@ -167,7 +140,7 @@
     {
         "id": "tour-osaka-3h",
         "ciudad": "Osaka",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Siente la Energía de Osaka (3 Horas)",
         "imagen": "Recursos/osaka2.jpg",
         "galeria": [
@@ -194,7 +167,7 @@
     {
         "id": "tour-osaka-8h",
         "ciudad": "Osaka",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Experiencia de Día Completo en Osaka (8 Horas)",
         "imagen": "Recursos/osaka4.jpg",
         "galeria": [
@@ -220,7 +193,7 @@
     {
         "id": "tour-kobe-3h",
         "ciudad": "Kobe",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Kobe: Ciudad de Sabores y Comercio (3 Horas)",
         "imagen": "Recursos/kobe1.jpg",
         "galeria": [
@@ -247,7 +220,7 @@
     {
         "id": "tour-kobe-8h",
         "ciudad": "Kobe",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Experiencia de Día Completo en Kobe (8 Horas)",
         "imagen": "Recursos/kobe2.jpg",
         "galeria": [
@@ -273,7 +246,7 @@
     {
         "id": "tour-himeji-3h",
         "ciudad": "Himeji",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Lo Mejor de Himeji (3 Horas)",
         "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
@@ -299,7 +272,7 @@
     {
         "id": "tour-himeji-kobe-8h",
         "ciudad": "Himeji",
-        "tematica": "Gastronomía",
+        "tematica": "Tour Privado",
         "titulo": "Día Completo Himeji y Kobe (8 Horas)",
         "imagen": "Recursos/HIJI3.jpg",
         "galeria": [
@@ -324,7 +297,7 @@
     {
         "id": "tour-nara-3h",
         "ciudad": "Nara",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Nara: El Alma de Japón (3 Horas)",
         "imagen": "Recursos/Nara1.jpg",
         "galeria": [
@@ -351,7 +324,7 @@
     {
         "id": "tour-nara-uji-8h",
         "ciudad": "Nara",
-        "tematica": "Arte y cultura",
+        "tematica": "Tour Privado",
         "titulo": "Nara y Uji: Los Orígenes del Matcha (8 Horas)",
         "imagen": "Recursos/NARA2.jpg",
         "galeria": [

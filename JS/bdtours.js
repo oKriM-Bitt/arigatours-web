@@ -13,6 +13,19 @@ let fechaGlobal = null;
 let filtroCiudad = null;
 let filtroTematica = null;
 
+// ── Clasificación de tours por precio ─────────────────────────────────────
+function esTourGratuito(tour) {
+    const p = tour.precio;
+    if (p === 0 || p === null || p === undefined || p === '') return true;
+    if (typeof p === 'string') {
+        const lower = p.toLowerCase().trim();
+        return ['0', '0 €', '0€', 'gratis', 'free'].includes(lower)
+            || lower.includes('propina')
+            || lower.includes('voluntari');
+    }
+    return false;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const cabeceraDestinos = document.querySelector('.page-header');
     if (cabeceraDestinos) {
@@ -84,17 +97,24 @@ async function cargarToursDesdeAPI() {
 }
 
 function procesarToursCargados() {
-    poblarFiltros(todosLosTours);
-    renderizarGrilla(todosLosTours);
+    // Filtro de tipo de página definido inline: 'free' | 'privado' | null
+    const filtroTipo = window.ARIGA_FILTRO_TIPO || null;
+    let toursVista = todosLosTours;
+    if (filtroTipo === 'free')    toursVista = todosLosTours.filter(esTourGratuito);
+    if (filtroTipo === 'privado') toursVista = todosLosTours.filter(t => !esTourGratuito(t));
+
+    poblarFiltros(toursVista);
+    renderizarGrilla(toursVista);
 
     const urlParams = new URLSearchParams(window.location.search);
-    const tourSolicitado = urlParams.get('tour');
-    const ciudadSolicitada = urlParams.get('ciudad');
+    const tourSolicitado  = urlParams.get('tour');
+    const ciudadSolicitada = urlParams.get('ciudad'); // para el <select> filtro
+    const citySlug         = urlParams.get('city');   // para scroll por ciudad
 
     fechaGlobal = urlParams.get('fecha');
 
     if (tourSolicitado) {
-        const tourEncontrado = todosLosTours.find((t) => t.id === tourSolicitado);
+        const tourEncontrado = toursVista.find((t) => t.id === tourSolicitado);
         if (tourEncontrado) mostrarDetalle(tourEncontrado);
     }
 
@@ -102,6 +122,73 @@ function procesarToursCargados() {
         filtroCiudad.value = ciudadSolicitada;
         aplicarFiltros();
     }
+
+    // Enfocar ciudad si viene el param ?city=
+    if (citySlug) {
+        // Pequeño delay para que el DOM del streaming haya terminado de pintarse
+        requestAnimationFrame(() => enfocarCiudad(citySlug));
+    }
+}
+
+// ── Scroll automático + highlight a la sección de una ciudad ─────────────────
+function enfocarCiudad(citySlug) {
+    // Normalizar: quitar tildes, minúsculas (igual que el data-city del DOM)
+    const slug = citySlug.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+    const sections = document.querySelectorAll('.streaming-row-section');
+    if (!sections.length) return;
+
+    let targetSection = null;
+
+    sections.forEach((sec) => {
+        const secSlug = (sec.dataset.city || '').toLowerCase();
+        if (secSlug === slug) {
+            targetSection = sec;
+            sec.classList.add('streaming-city-active');
+        } else {
+            sec.classList.add('streaming-city-dimmed');
+        }
+    });
+
+    if (targetSection) {
+        // Scroll suave a la sección con un pequeño offset para que el título quede visible
+        const navH = document.querySelector('.navbar')
+            ? document.querySelector('.navbar').offsetHeight
+            : 80;
+
+        const top = targetSection.getBoundingClientRect().top + window.scrollY - navH - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+
+        // Botón "Ver todas las ciudades" inyectado dinámicamente
+        inyectarBotonVerTodas(targetSection);
+    }
+}
+
+// ── Inyectar botón para limpiar el enfoque y mostrar todas las ciudades ───────
+function inyectarBotonVerTodas(anchorSection) {
+    if (document.getElementById('btn-ver-todas-ciudades')) return; // ya existe
+
+    const lang = localStorage.getItem('idiomaAriga') || 'es';
+    const label = { es: 'Ver todas las ciudades', en: 'View all cities', ja: 'すべての都市を見る' }[lang] || 'Ver todas';
+
+    const btn = document.createElement('button');
+    btn.id = 'btn-ver-todas-ciudades';
+    btn.className = 'btn-ver-todas-ciudades';
+    btn.textContent = '× ' + label;
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.streaming-row-section').forEach((s) => {
+            s.classList.remove('streaming-city-active', 'streaming-city-dimmed');
+        });
+        btn.remove();
+        // Limpiar el param de la URL sin recargar
+        const url = new URL(window.location.href);
+        url.searchParams.delete('city');
+        window.history.replaceState({}, '', url.toString());
+    });
+
+    // Insertar el botón justo antes de la sección activa
+    const contenedor = document.getElementById('contenedor-grilla-tours');
+    if (contenedor) contenedor.insertBefore(btn, anchorSection);
 }
 
 function aplicarFiltros() {
@@ -194,31 +281,67 @@ function renderizarGrilla(tours) {
     const txt = dicTours[idiomaActual] || dicTours.es;
 
     if (tours.length === 0) {
-        contenedor.innerHTML = `<p style="text-align:center; width:100%;">${txt.vacio}</p>`;
+        contenedor.innerHTML = `<p style="text-align:center; width:100%; padding:2rem;">${txt.vacio}</p>`;
         return;
     }
 
+    // ── Agrupar por ciudad (orden de aparición) ──
+    const grupos = {};
+    const ordenCiudades = [];
     tours.forEach((tourRaw) => {
         const tour = normalizarTour(tourRaw);
-        const tarjeta = document.createElement('div');
-        tarjeta.className = 'tour-card';
-        tarjeta.innerHTML = `
-            <img src="${tour.imagen}" alt="${tour.titulo}">
-            <div class="tour-card-info">
-                <span class="badge-tematica">${tour.tematica}</span>
-                <h3>${tour.titulo}</h3>
-                <p style="color: #666;"><i class="fas fa-map-marker-alt"></i> ${tour.ciudad}</p>
-            </div>
-        `;
+        const ciudad = tour.ciudad || 'Otros';
+        if (!grupos[ciudad]) {
+            grupos[ciudad] = [];
+            ordenCiudades.push(ciudad);
+        }
+        grupos[ciudad].push(tour);
+    });
 
-        tarjeta.addEventListener('click', () => {
-            document.querySelectorAll('.tour-card').forEach((c) => c.classList.remove('active-card'));
-            tarjeta.classList.add('active-card');
-            mostrarDetalle(tour);
+    // ── Renderizar una fila por ciudad ──
+    const wrapper = document.createElement('div');
+    wrapper.className = 'streaming-container';
+
+    ordenCiudades.forEach((ciudad) => {
+        const section = document.createElement('div');
+        section.className = 'streaming-row-section';
+        section.dataset.city = ciudad.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+        const titulo = document.createElement('h2');
+        titulo.className = 'streaming-row-title';
+        titulo.textContent = ciudad;
+        section.appendChild(titulo);
+
+        const fila = document.createElement('div');
+        fila.className = 'streaming-row';
+
+        grupos[ciudad].forEach((tour) => {
+            const card = document.createElement('div');
+            card.className = 'stream-card';
+            card.innerHTML = `
+                <div class="stream-card-img">
+                    <img src="${tour.imagen}" alt="${tour.titulo}" loading="lazy">
+                    <div class="stream-card-overlay">
+                        <span class="stream-badge">${tour.tematica || ''}</span>
+                        <h3>${tour.titulo}</h3>
+                    </div>
+                </div>
+            `;
+
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.stream-card').forEach((c) => c.classList.remove('active-card'));
+                card.classList.add('active-card');
+                mostrarDetalle(tour);
+            });
+
+            fila.appendChild(card);
         });
 
-        contenedor.appendChild(tarjeta);
+        section.appendChild(fila);
+        wrapper.appendChild(section);
     });
+
+    contenedor.appendChild(wrapper);
 }
 
 // Variable global para controlar la galería activa en el Lightbox

@@ -2,7 +2,7 @@
     {
         "id": "tour-kamakura",
         "ciudad": "鎌倉",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "クラシック鎌倉",
         "imagen": "Recursos/Kamakura2.jpg",
         "galeria": [
@@ -30,7 +30,7 @@
     {
         "id": "tour-tokio-todo-en-un-dia",
         "ciudad": "東京",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "東京1日満喫ツアー",
         "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
@@ -58,7 +58,7 @@
     {
         "id": "tour-tokio-vice",
         "ciudad": "東京",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "トウキョウ・バイス (ナイトツアー)",
         "imagen": "Recursos/Tokiovicerojo.jpg",
         "galeria": [
@@ -85,36 +85,9 @@
         "fechasDisponibles": []
     },
     {
-        "id": "tour-kioto-historico",
-        "ciudad": "京都",
-        "tematica": "芸術と文化",
-        "titulo": "歴史的京都",
-        "imagen": "Recursos/kYOTO.jpg",
-        "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
-        ],
-        "duracion": "3時間",
-        "precio": "60 € (大人)",
-        "puntoEncuentro": "午前9時30分に祇園四条駅 出雲阿国像前",
-        "descripcion": "この京都への歓迎ツアーに一緒に参加して、市内で最も象徴的な場所のいくつかを発見しましょう。日本の歴史的な首都の起源と、それが時間とともにどのように進化してきたかについてお話しします。<br><br><strong>旅程：</strong><br>ツアーは午前9時30分に始まります。芸者の街（祇園）を通って円山公園を訪れ、そこで侍の起源と終焉についてお話しします。その後、ねねの道を通って東山の坂道へと進みます。八坂の塔を見学し、二寧坂と産寧坂を歩き、最後に午後12時30分に清水寺（世界遺産）に到着します。<br><br><strong>アクセシビリティと推奨事項：</strong><br>このルートには長い坂や大きな階段があります。移動に困難がある方にはお勧めできません。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
-        "incluye": [
-            "ツアー中のスペイン語ガイド",
-            "訪問先の歴史的解説"
-        ],
-        "noIncluye": [
-            "飲食代",
-            "必要な場所への入場料",
-            "ホテルへの送迎（追加料金で利用可能）"
-        ],
-        "fechasDisponibles": []
-    },
-    {
         "id": "tour-kyoto-3h",
         "ciudad": "京都",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "京都の真髄を巡る (3時間)",
         "imagen": "Recursos/kYOTO.jpg",
         "galeria": [
@@ -141,7 +114,7 @@
     {
         "id": "tour-kyoto-8h",
         "ciudad": "京都",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "京都のABC (8時間)",
         "imagen": "Recursos/kYOTO.jpg",
         "galeria": [
@@ -167,7 +140,7 @@
     {
         "id": "tour-osaka-3h",
         "ciudad": "大阪",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "大阪の活気を感じる (3時間)",
         "imagen": "Recursos/osaka2.jpg",
         "galeria": [
@@ -194,7 +167,7 @@
     {
         "id": "tour-osaka-8h",
         "ciudad": "大阪",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "大阪1日満喫ツアー (8時間)",
         "imagen": "Recursos/osaka4.jpg",
         "galeria": [
@@ -220,7 +193,7 @@
     {
         "id": "tour-kobe-3h",
         "ciudad": "神戸",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "神戸：美食と貿易の街 (3時間)",
         "imagen": "Recursos/kobe2.jpg",
         "galeria": [
@@ -247,7 +220,7 @@
     {
         "id": "tour-kobe-8h",
         "ciudad": "神戸",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "神戸1日満喫ツアー (8時間)",
         "imagen": "Recursos/kobe1.jpg",
         "galeria": [
@@ -273,11 +246,10 @@
     {
         "id": "tour-himeji-3h",
         "ciudad": "姫路",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "姫路ハイライト (3時間)",
-        "imagen": "Recursos/HIJI1.jpg",
+        "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/HIJI.jpg",
             "Recursos/HIJI2.jpg",
             "Recursos/HIJI3.jpg"
         ],
@@ -299,11 +271,10 @@
     {
         "id": "tour-himeji-kobe-8h",
         "ciudad": "姫路",
-        "tematica": "美食",
+        "tematica": "Tour Privado",
         "titulo": "姫路＆神戸1日満喫ツアー (8時間)",
-        "imagen": "Recursos/HIJI2.jpg",
+        "imagen": "Recursos/HIJI3.jpg",
         "galeria": [
-            "Recursos/HIJI.jpg",
             "Recursos/HIJI2.jpg",
             "Recursos/HIJI3.jpg"
         ],
@@ -325,7 +296,7 @@
     {
         "id": "tour-nara-3h",
         "ciudad": "奈良",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "奈良：日本の魂 (3時間)",
         "imagen": "Recursos/Nara1.jpg",
         "galeria": [
@@ -352,9 +323,9 @@
     {
         "id": "tour-nara-uji-8h",
         "ciudad": "奈良",
-        "tematica": "芸術と文化",
+        "tematica": "Tour Privado",
         "titulo": "奈良と宇治：抹茶の起源 (8時間)",
-        "imagen": "Recursos/NARA2.jpg",
+        "imagen": "Recursos/NARA3.jpg",
         "galeria": [
             "Recursos/NARA2.jpg",
             "Recursos/Nara1.jpg",

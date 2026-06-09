@@ -1,8 +1,93 @@
 [
     {
+        "id": "tour-kamakura",
+        "ciudad": "Kamakura",
+        "tematica": "Tour Privado",
+        "titulo": "Kamakura Clásico",
+        "imagen": "Recursos/Kamakura2.jpg",
+        "galeria": [
+            "Recursos/Kamakura2.jpg",
+            "Recursos/kamakura1.jpg",
+            "Recursos/Kamakura6.jpg",
+            "Recursos/Kamakura7.jpg",
+            "Recursos/Kamakura8.jpg"
+        ],
+        "duracion": "4 horas",
+        "precio": "25 € (Adultos) / 5 € (Niños)",
+        "puntoEncuentro": "Salida Marunouchi North Exit (Estación de Tokio) a las 9:00 AM",
+        "descripcion": "Escapa con nosotros del ruido de la megalópolis y adéntrate en la ciudad que fue el centro del poder samurái durante más de un siglo. Este tour de una mañana está diseñado para quien quiere lo esencial de Kamakura y sentir el peso de la historia, y comprender por qué este pequeño rincón costero cambió para siempre el destino de Japón.<br><br><strong>Itinerario:</strong><br>Saldremos a las 9:00 AM desde la estación de Tokio para llegar a la ciudad. Comenzaremos en Hase-dera, el templo de la diosa Kannon. Desde allí nos trasladaremos al Kotoku-in para encontrarnos cara a cara con el Gran Buda, el Daibutsu. Cerraremos el recorrido en el Tsurugaoka Hachiman-gu, el gran santuario shintoísta que durante siglos fue el corazón espiritual y político del shogunato. Para la hora de la comida, la calle Komachi-dori nos espera con sus puestos, dulces tradicionales y pequeños restaurantes; el lugar perfecto para acabar el tour.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante el tour privado",
+            "Explicaciones históricas de los puntos visitados",
+            "Entradas a dos templos incluidas"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-todo-en-un-dia",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Tokio todo en un día",
+        "imagen": "Recursos/Tokioundia.jpg",
+        "galeria": [
+            "Recursos/Tokioundia.jpg",
+            "Recursos/tokioundia2.jpg",
+            "Recursos/tokioundia3.jpg",
+            "Recursos/tokioundia4.jpg",
+            "Recursos/tokioundia5.jpg",
+            "Recursos/tokioundia6.jpg"
+        ],
+        "duracion": "8 horas",
+        "precio": "120 € (Adultos)",
+        "puntoEncuentro": "Al lado del edificio de información turística de Asakusa a las 9:00 AM",
+        "descripcion": "Descubre con nosotros la ciudad que nunca deja de sorprender. Este tour de un día está diseñado para quien quiere entender Tokio, no solo verla, sino sentirla y comprender por qué millones de personas la consideran la ciudad más fascinante del planeta.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 9:00 AM en Asakusa, el último barrio que conserva el alma de Tokio. Pasearemos por el Nakamise, hasta llegar al Senso-ji, el templo budista que lleva más de mil años recibiendo peregrinos. Desde allí nos trasladaremos al histórico Santuario Meiji. A pocos pasos, cruzaremos al otro lado del espejo: Harajuku y su calle Takeshita. Haremos una pausa de una hora para comer al mediodía y luego iremos a Shibuya, el cruce más fotografiado del mundo. Terminaremos en Shinjuku, donde Tokio se despide a lo grande.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado, protección solar y sombrero/gorra.",
+        "incluye": [
+            "Guía en español durante todo el tour privado",
+            "Explicaciones históricas y culturales de los puntos visitados"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos (se da 1 hora libre para comer)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-vice",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Tokio Vice (Tour Nocturno)",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "galeria": [
+            "Recursos/Tokiovicerojo.jpg",
+            "Recursos/Tokiovicerojo2.jpg",
+            "Recursos/Tokiovicerojo3.jpg",
+            "Recursos/Tokiovicerojo4.jpg",
+            "Recursos/Tokiovicerojo5.jpg",
+            "Recursos/Tokiovicerojo6.jpg"
+        ],
+        "duracion": "2.5 o 3.5 horas (según opción de cena)",
+        "precio": "60 € (Sin cena) / 80 € (Con cena)",
+        "puntoEncuentro": "Parque Umayamichi, salida Este (Estación de Yoyogi) a las 18:00 horas",
+        "descripcion": "Adéntrate con nosotros en el lado más crudo y fascinante de Tokio con este tour nocturno inspirado en artículos y series como Tokyo Vice. Exploraremos juntos el distrito de Shinjuku y su cara más enigmática: Kabukicho, el barrio que nunca duerme.<br><br><strong>Itinerario:</strong><br>Comenzaremos a las 18:00 en el parque Umayamichi a pocos pasos de la estación de Yoyogi. Desde aquí nos adentraremos en un recorrido que nos permitirá comprender cómo funciona realmente el mundo nocturno japonés: sus códigos no escritos, sus luces de neón y las estructuras sociales que operan en la sombra. Analizamos la evolución histórica del barrio tras la posguerra en Omoide Yokocho, su transformación en epicentro del entretenimiento adulto en las principales avenidas de Kabukicho y la influencia de la yakuza, la mafia japonesa. Visitaremos lugares emblemáticos como el gato gigante de Shinjuku, el mismísimo Godzilla y lugares a los que solo los tokiotas más locales saben llegar.<br><br><strong>Opción con cena:</strong><br>Shinjuku es conocido como el lugar donde los trabajadores japoneses vienen a desestresarse después de una larga jornada laboral. Iremos a un restaurante típico izakaya donde podréis probar variedades de yakitori, brochetas de pollo, karaage, gyoza entre muchos. En caso de elegir tour con cena, la finalización del tour será a las 21:00 horas.<br><br><strong>Aviso importante:</strong><br>Dado que por los temas que tratarán durante este tour y que se visitará el barrio rojo, este tour <strong>no es recomendado para menores de 18 años</strong>.<br><br><strong>Accesibilidad y Recomendaciones:</strong><br>Este tour es accesible para todo el mundo ya que no hay cuestas excesivas o pavimento irregular. Se recomienda traer ropa cómoda, bebida para mantenerse hidratado y protección.",
+        "incluye": [
+            "Guía en español durante todo el recorrido nocturno",
+            "Explicaciones históricas y culturales de los puntos visitados",
+            "Cena en restaurante típico Izakaya (Solo si se reserva la opción de 80 €)"
+        ],
+        "noIncluye": [
+            "Bebidas ni alimentos durante el tour (la cena es al finalizar)",
+            "Recogida en el hotel"
+        ],
+        "fechasDisponibles": []
+    },
+    {
         "id": "tour-kyoto-3h",
         "ciudad": "Kyoto",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Kyoto Beyond the Ordinary (3 Hours)",
         "imagen": "Recursos/kYOTO.jpg",
         "galeria": [
@@ -29,7 +114,7 @@
     {
         "id": "tour-kyoto-8h",
         "ciudad": "Kyoto",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "The ABC of Kyoto (8 Hours)",
         "imagen": "Recursos/kYOTO.jpg",
         "galeria": [
@@ -55,7 +140,7 @@
     {
         "id": "tour-osaka-3h",
         "ciudad": "Osaka",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Feel the Energy of Osaka (3 Hours)",
         "imagen": "Recursos/osaka2.jpg",
         "galeria": [
@@ -82,7 +167,7 @@
     {
         "id": "tour-osaka-8h",
         "ciudad": "Osaka",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Osaka Full Day Experience (8 Hours)",
         "imagen": "Recursos/osaka4.jpg",
         "galeria": [
@@ -108,7 +193,7 @@
     {
         "id": "tour-kobe-3h",
         "ciudad": "Kobe",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Kobe: A City of Taste and Trade (3 Hours)",
         "imagen": "Recursos/kobe2.jpg",
         "galeria": [
@@ -135,7 +220,7 @@
     {
         "id": "tour-kobe-8h",
         "ciudad": "Kobe",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Kobe Full Day Experience (8 Hours)",
         "imagen": "Recursos/kobe1.jpg",
         "galeria": [
@@ -161,11 +246,11 @@
     {
         "id": "tour-himeji-3h",
         "ciudad": "Himeji",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Himeji Highlights (3 Hours)",
         "imagen": "Recursos/HIJI2.jpg",
         "galeria": [
-            "Recursos/HIJI.jpg",
+            "Recursos/HIJI1.jpg",
             "Recursos/HIJI2.jpg",
             "Recursos/HIJI3.jpg"
         ],
@@ -187,11 +272,11 @@
     {
         "id": "tour-himeji-kobe-8h",
         "ciudad": "Himeji",
-        "tematica": "Gastronomy",
+        "tematica": "Tour Privado",
         "titulo": "Himeji & Kobe Full Day (8 Hours)",
-        "imagen": "Recursos/HIJI.jpg",
+        "imagen": "Recursos/HIJI1.jpg",
         "galeria": [
-            "Recursos/HIJI.jpg",
+            "Recursos/HIJI1.jpg",
             "Recursos/HIJI2.jpg",
             "Recursos/HIJI3.jpg"
         ],
@@ -213,9 +298,9 @@
     {
         "id": "tour-nara-3h",
         "ciudad": "Nara",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Nara: The Soul of Japan (3 Hours)",
-        "imagen": "Recursos/NARA2.jpg",
+        "imagen": "Recursos/NARA3.jpg",
         "galeria": [
             "Recursos/Nara1.jpg",
             "Recursos/NARA2.jpg",
@@ -240,9 +325,9 @@
     {
         "id": "tour-nara-uji-8h",
         "ciudad": "Nara",
-        "tematica": "Art and Culture",
+        "tematica": "Tour Privado",
         "titulo": "Nara & Uji: The Origins of Matcha (8 Hours)",
-        "imagen": "Recursos/NARA.jpg",
+        "imagen": "Recursos/NARA4.jpg",
         "galeria": [
             "Recursos/Nara1.jpg",
             "Recursos/NARA2.jpg",

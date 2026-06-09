@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>ArigaTours - Descubre el auténtico Japón</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Free Walking Tours - ArigaTours</title>
     <link rel="icon" href="Recursos/arigaLOGO.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Tipo de filtro: define el universo de tours que se renderizan -->
+    <script>window.ARIGA_FILTRO_TIPO = 'free';</script>
 </head>
-
-
 <body>
 
     <header class="navbar">
@@ -19,7 +19,7 @@
 
         <nav class="nav-main" id="nav-main">
             <ul class="nav-links">
-                <li><a href="index.html" class="active" data-i18n="nav-home">Inicio</a></li>
+                <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
 
                 <li class="nav-item-dropdown">
                     <button class="nav-dropdown-btn" type="button">
@@ -38,7 +38,7 @@
                 </li>
 
                 <li class="nav-item-dropdown">
-                    <button class="nav-dropdown-btn" type="button">
+                    <button class="nav-dropdown-btn active" type="button">
                         Free Walking Tours <span class="nav-caret">&#9660;</span>
                     </button>
                     <div class="nav-dropdown-menu">
@@ -85,68 +85,38 @@
     </header>
     <div class="nav-overlay" id="nav-overlay"></div>
 
-    <section class="hero carousel-container">
-        <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Recursos/kYOTO.jpg');">
-            <div class="hero-content">
-                <h1 data-i18n="hero-title">Explora Japón a tu manera</h1>
-                <p data-i18n="hero-subtitle">Tours guiados y experiencias inolvidables en tu idioma.</p>
-                <a href="tours.html" class="btn-primary" data-i18n="nav-dest">Ver Destinos</a>
-            </div>
-        </div>
-
-        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Recursos/Tokioundia.jpg');">
-            <div class="hero-content">
-                <h2 data-i18n="exp-title">Experiencias Viajeros</h2>
-                <p data-i18n="exp-subtitle">Descubre Japón a partir de las experiencias y recomendaciones de otros viajeros.</p>
-                <a href="Vlogs.html" class="btn-primary" data-i18n="nav-blog">Ver Blogs</a>
-            </div>
-        </div>
-
-        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Recursos/osaka.jpg');">
-            <div class="hero-content">
-                <h2 data-i18n="nat-title">Naturaleza y Tradición</h2>
-                <p data-i18n="nat-subtitle">Sumérgete en la cultura milenaria y paisajes asombrosos.</p>
-                <a href="tours.html" class="btn-primary" data-i18n="feat-btn">Descubrir más</a>
-            </div>
-        </div>
-
-        <button class="carousel-btn prev-btn">&#10094;</button>
-        <button class="carousel-btn next-btn">&#10095;</button>
-
-        <div class="carousel-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
+    <section class="page-header" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Recursos/kYOTO4.jpg');">
+        <h1 data-i18n="free-title">Free Walking Tours</h1>
+        <p data-i18n="free-subtitle"></p>
     </section>
 
+    <main class="tours-page">
+        <!-- Grilla streaming: bdtours.js inyecta aquí las tarjetas filtradas -->
+        <div id="contenedor-grilla-tours"></div>
 
-
-    <section class="tours-destacados-section" style="padding: 4rem 5%; background: #fdfdfd;">
-        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-            <h2 style="font-size: 2.5rem; color: #222;" data-i18n="feat-title">Experiencias Destacadas</h2>
-            <p style="color: #666; font-size: 1.1rem;" data-i18n="feat-subtitle">Deslizá hacia abajo en el recuadro para descubrir nuestras aventuras.</p>
+        <!-- Panel de detalle del tour seleccionado -->
+        <div class="tour-details-container" id="zona-detalles">
+            <div class="tour-detail-content active" id="mensaje-default">
+                <h2 data-i18n="dest-sel">Seleccion&#225; un tour arriba</h2>
+                <p data-i18n="dest-click">Hac&#233; clic en cualquiera de nuestras opciones para ver los detalles.</p>
+            </div>
+            <div id="detalle-dinamico"></div>
         </div>
-        <div id="contenedor-tours-inicio" class="tours-vertical-scroller"></div>
-        <div style="text-align: center; margin-top: 2rem; color: #888; font-size: 0.9rem;">
-            <i class="fas fa-chevron-down"></i> <span data-i18n="feat-more">Sigue deslizando para ver más</span> <i class="fas fa-chevron-down"></i>
-        </div>
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="tours.html" class="btn-primary" data-i18n="feat-btn">Ver todos los destinos completos</a>
-        </div>
-    </section>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>ArigaTours</h4>
-                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el auténtico Japón en tu idioma. Experiencias únicas guiadas por expertos.</p>
+                <p data-i18n="footer-desc">Tu agencia de confianza para descubrir el aut&#233;ntico Jap&#243;n en tu idioma. Experiencias &#250;nicas guiadas por expertos.</p>
             </div>
             <div class="footer-section">
-                <h4 data-i18n="footer-links">Enlaces Rápidos</h4>
+                <h4 data-i18n="footer-links">Enlaces R&#225;pidos</h4>
                 <ul>
                     <li><a href="index.html" data-i18n="nav-home">Inicio</a></li>
                     <li><a href="tours.html" data-i18n="nav-dest">Destinos</a></li>
+                    <li><a href="free-walking-tours.html">Free Walking Tours</a></li>
+                    <li><a href="tours-privados.html">Tours Privados</a></li>
                     <li><a href="contacto.html" data-i18n="nav-contact">Contacto</a></li>
                 </ul>
             </div>
@@ -157,12 +127,13 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p data-i18n="footer-copy">© 2026 ArigaTours. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copy">&#169; 2026 ArigaTours. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="JS/i18n.js" defer></script>
     <script src="JS/main.js" defer></script>
     <script src="JS/Java.js" defer></script>
+    <script src="JS/bdtours.js" defer></script>
 </body>
 </html>

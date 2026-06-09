@@ -47,7 +47,11 @@ const traduccionesAriga = {
         "about-p6": "En ArigaTours valoramos la atención personalizada, la cercanía y la confianza. Queremos que nuestros viajeros se sientan acompañados antes, durante y después de su viaje. Por ello, ofrecemos un servicio flexible y humano, adaptándonos a las necesidades de cada persona para garantizar una experiencia cómoda, enriquecedora y memorable.",
         "about-p7": "Nuestra misión es acercar Japón al mundo a través de experiencias auténticas que permitan a cada visitante descubrir la verdadera esencia del país. No buscamos simplemente mostrar Japón; buscamos ayudar a vivirlo.",
         "about-p8": "Porque para nosotros, cada viaje es una oportunidad para crear conexiones, descubrir nuevas perspectivas y construir recuerdos que acompañarán a nuestros viajeros toda la vida.",
-        "about-p9": "Bienvenido a ArigaTours. Descubre Japón de una forma auténtica, personal e inolvidable. 🇯🇵🌸🐱"
+        "about-p9": "Bienvenido a ArigaTours. Descubre Japón de una forma auténtica, personal e inolvidable. 🇯🇵🌸🐱",
+        "free-title": "Free Walking Tours",
+        "free-subtitle": "Recorridos gratuitos por las ciudades más emblemáticas de Japón",
+        "priv-title": "Tours Privados",
+        "priv-subtitle": "Experiencias personalizadas y exclusivas diseñadas a tu medida"
     },
     en: {
         "nav-home": "Home",
@@ -97,7 +101,11 @@ const traduccionesAriga = {
         "about-p6": "At ArigaTours we value personalized attention, closeness, and trust. We want our travelers to feel supported before, during, and after their trip. Therefore, we offer a flexible and human service, adapting to each person's needs to guarantee a comfortable, enriching, and memorable experience.",
         "about-p7": "Our mission is to bring Japan closer to the world through authentic experiences that allow every visitor to discover the true essence of the country. We do not simply seek to show Japan; we seek to help people live it.",
         "about-p8": "Because for us, every trip is an opportunity to create connections, discover new perspectives, and build memories that will accompany our travelers for a lifetime.",
-        "about-p9": "Welcome to ArigaTours. Discover Japan in an authentic, personal, and unforgettable way. 🇯🇵🌸🐱"
+        "about-p9": "Welcome to ArigaTours. Discover Japan in an authentic, personal, and unforgettable way. 🇯🇵🌸🐱",
+        "free-title": "Free Walking Tours",
+        "free-subtitle": "Free guided walks through Japan's most iconic cities",
+        "priv-title": "Private Tours",
+        "priv-subtitle": "Exclusive, fully personalized experiences tailored just for you"
     },
     ja: {
         "nav-home": "ホーム",
@@ -147,7 +155,11 @@ const traduccionesAriga = {
         "about-p6": "ArigaToursでは、きめ細やかな対応・親しみやすさ・信頼を大切にしています。旅行の前・中・後を通じて旅行者に寄り添いたいと考えています。そのため、一人ひとりのニーズに合わせた柔軟で人間味あふれるサービスを提供し、快適で豊かな忘れられない体験を保証します。",
         "about-p7": "私たちのミッションは、すべての訪問者が国の本当の本質を発見できる本物の体験を通じて、日本を世界に近づけることです。日本を見せるだけでなく、日本を生きることを助けたいのです。",
         "about-p8": "私たちにとって、すべての旅はつながりを作り、新しい視点を発見し、旅行者の人生を通じて寄り添う思い出を築く機会です。",
-        "about-p9": "ArigaToursへようこそ。本物で、個人的で、忘れられない方法で日本を発見してください。🇯🇵🌸🐱"
+        "about-p9": "ArigaToursへようこそ。本物で、個人的で、忘れられない方法で日本を発見してください。🇯🇵🌸🐱",
+        "free-title": "フリーウォーキングツアー",
+        "free-subtitle": "日本の主要都市を巡る無料ガイドウォーク",
+        "priv-title": "プライベートツアー",
+        "priv-subtitle": "あなただけのために設計された専用プライベート体験"
     }
 };
 

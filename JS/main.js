@@ -11,33 +11,59 @@ document.addEventListener('DOMContentLoaded', () => {
    // iniciarLluviaJapon();
 });
 
-// --- LÓGICA DEL MENÚ HAMBURGUESA ---
+// --- LÓGICA DEL MENÚ HAMBURGUESA (Drawer + Acordeón) ---
 function initMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const headerActions = document.querySelector('.header-actions'); // Seleccionamos redes/idioma
+    const hamburger  = document.getElementById('hamburger-btn');
+    const navMain    = document.getElementById('nav-main');
+    const overlay    = document.getElementById('nav-overlay');
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            // Abrimos/cerramos el menú principal
-            navLinks.classList.toggle('nav-active');
+    if (!hamburger || !navMain) return;
 
-            // Abrimos/cerramos las redes e idioma
-            if (headerActions) {
-                headerActions.classList.toggle('nav-active');
-            }
-
-            // Cambiamos el icono de hamburguesa a una "X"
-            const icon = hamburger.querySelector('i');
-            if (icon) {
-                if (icon.classList.contains('fa-bars')) {
-                    icon.classList.replace('fa-bars', 'fa-times');
-                } else {
-                    icon.classList.replace('fa-times', 'fa-bars');
-                }
-            }
-        });
+    function openMenu() {
+        navMain.classList.add('nav-active');
+        if (overlay) overlay.classList.add('active');
+        const icon = hamburger.querySelector('i');
+        if (icon) { icon.classList.replace('fa-bars', 'fa-times'); }
+        hamburger.setAttribute('aria-expanded', 'true');
     }
+
+    function closeMenu() {
+        navMain.classList.remove('nav-active');
+        if (overlay) overlay.classList.remove('active');
+        const icon = hamburger.querySelector('i');
+        if (icon) { icon.classList.replace('fa-times', 'fa-bars'); }
+        hamburger.setAttribute('aria-expanded', 'false');
+        // Cerrar todos los acordeones
+        document.querySelectorAll('.nav-item-dropdown.open').forEach(el => el.classList.remove('open'));
+    }
+
+    hamburger.addEventListener('click', () => {
+        navMain.classList.contains('nav-active') ? closeMenu() : openMenu();
+    });
+
+    if (overlay) overlay.addEventListener('click', closeMenu);
+
+    // ── Acordeón mobile: toggle en click de .nav-dropdown-btn ──
+    document.querySelectorAll('.nav-dropdown-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Solo en mobile (nav-main como drawer visible o breakpoint <= 992)
+            if (window.innerWidth > 992) return;
+            e.preventDefault();
+            const li = btn.closest('.nav-item-dropdown');
+            if (!li) return;
+            const isOpen = li.classList.contains('open');
+            // Cerrar todos los demás
+            document.querySelectorAll('.nav-item-dropdown.open').forEach(el => {
+                if (el !== li) el.classList.remove('open');
+            });
+            li.classList.toggle('open', !isOpen);
+        });
+    });
+
+    // Cerrar al hacer resize a desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 992) closeMenu();
+    });
 }
 
 // --- LÓGICA DE LAS PESTAÑAS DEL MEGA MENÚ ---

@@ -64,7 +64,7 @@ async function cargarToursDesdeAPI() {
     }
 
     try {
-        const respuesta = await fetch(TOURS_API_URL);
+        const respuesta = await fetch(`${TOURS_API_URL}?lang=${idiomaActual}`);
 
         if (!respuesta.ok) {
             throw new Error(`Error HTTP ${respuesta.status}`);
@@ -85,10 +85,7 @@ async function cargarToursDesdeAPI() {
 
 function procesarToursCargados() {
     poblarFiltros(todosLosTours);
-    const langActual = localStorage.getItem('idiomaAriga') || 'es';
-    precargarTraduccion('en');
-    precargarTraduccion('ja');
-    renderizarGrilla(obtenerToursTraducidos(langActual));
+    renderizarGrilla(todosLosTours);
 
     const urlParams = new URLSearchParams(window.location.search);
     const tourSolicitado = urlParams.get('tour');

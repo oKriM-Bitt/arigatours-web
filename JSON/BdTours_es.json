@@ -85,33 +85,6 @@
         "fechasDisponibles": []
     },
     {
-        "id": "tour-osaka-presentation",
-        "ciudad": "Osaka",
-        "tematica": "Arte y cultura",
-        "titulo": "Osaka Presentation",
-        "imagen": "Recursos/osaka.jpg",
-        "galeria": [
-            "Recursos/osaka.jpg",
-            "Recursos/osaka1.jpg",
-            "Recursos/osaka4.jpg",
-            "Recursos/osaka2.jpg"
-        ],
-        "duracion": "3 horas",
-        "precio": "60 € (Adultos)",
-        "puntoEncuentro": "Estatua de Izumo no Okuni (Estación Gion-shijo) a las 9:30 AM",
-        "descripcion": "Descubre la energía única de Osaka, una ciudad famosa por su vibrante vida urbana, su deliciosa gastronomía y su ambiente acogedor.<br><br>Comenzaremos nuestro recorrido en Shinsaibashi, una de las zonas comerciales más populares de la ciudad, donde se mezclan las últimas tendencias con la cultura local. Continuaremos hacia America Mura (Amerikamura), el corazón de la cultura juvenil de Osaka, conocido por su ambiente creativo, arte urbano, boutiques independientes y espíritu alternativo que lo convierten en uno de los barrios más dinámicos de Japón.<br><br>Después llegaremos a Dotonbori, el distrito más emblemático de Osaka, famoso por sus enormes carteles luminosos, sus animadas calles y la inconfundible atmósfera que ha convertido a esta zona en uno de los lugares más fotografiados del país.<br><br>A pocos pasos visitaremos el histórico Templo Hozenji, un rincón de tranquilidad que conserva el encanto del Osaka tradicional y ofrece un contraste fascinante con el bullicio de las calles cercanas.<br><br>Finalizaremos nuestra experiencia en el famoso Mercado Kuromon, conocido como la \"Cocina de Osaka\", donde podrás descubrir productos locales, mariscos frescos, dulces japoneses y algunas de las especialidades gastronómicas más representativas de la ciudad.<br><br>Una experiencia perfecta para quienes desean conocer la esencia de Osaka a través de su cultura, su gastronomía y su vibrante vida urbana. 🍜✨🏮🇯🇵",
-        "incluye": [
-            "Guía en español durante el tour",
-            "Explicaciones históricas de los puntos visitados"
-        ],
-        "noIncluye": [
-            "Bebidas ni alimentos",
-            "Entradas a lugares que lo requieran",
-            "Recogida en el hotel (disponible por tarifa agregada)"
-        ],
-        "fechasDisponibles": []
-    },
-    {
         "id": "tour-kioto-historico",
         "ciudad": "Kioto",
         "tematica": "Arte y cultura",

@@ -1,9 +1,55 @@
 import pool from '../config/db.js';
 
-const TOUR_FIELDS = `
-  id, ciudad, tematica, titulo, imagen, galeria, duracion, precio,
-  punto_encuentro, descripcion, incluye, no_incluye, fechas_disponibles
-`;
+// Campos compartidos entre idiomas (no se traducen)
+const SHARED_FIELDS = `id, imagen, galeria, fechas_disponibles`;
+
+/**
+ * Devuelve el SELECT con los campos traducibles aliaseados al nombre canónico.
+ * Para ES usa las columnas base; para EN/JA usa COALESCE(col_lang, col_es)
+ * como fallback si la traducción es NULL.
+ */
+function getLangFields(lang) {
+  if (lang === 'en') {
+    return `
+      ${SHARED_FIELDS},
+      COALESCE(ciudad_en,         ciudad)         AS ciudad,
+      COALESCE(tematica_en,       tematica)       AS tematica,
+      COALESCE(titulo_en,         titulo)         AS titulo,
+      COALESCE(descripcion_en,    descripcion)    AS descripcion,
+      COALESCE(duracion_en,       duracion)       AS duracion,
+      COALESCE(precio_en,         precio)         AS precio,
+      COALESCE(punto_encuentro_en, punto_encuentro) AS punto_encuentro,
+      COALESCE(incluye_en,        incluye)        AS incluye,
+      COALESCE(no_incluye_en,     no_incluye)     AS no_incluye
+    `;
+  }
+  if (lang === 'ja') {
+    return `
+      ${SHARED_FIELDS},
+      COALESCE(ciudad_ja,         ciudad)         AS ciudad,
+      COALESCE(tematica_ja,       tematica)       AS tematica,
+      COALESCE(titulo_ja,         titulo)         AS titulo,
+      COALESCE(descripcion_ja,    descripcion)    AS descripcion,
+      COALESCE(duracion_ja,       duracion)       AS duracion,
+      COALESCE(precio_ja,         precio)         AS precio,
+      COALESCE(punto_encuentro_ja, punto_encuentro) AS punto_encuentro,
+      COALESCE(incluye_ja,        incluye)        AS incluye,
+      COALESCE(no_incluye_ja,     no_incluye)     AS no_incluye
+    `;
+  }
+  // Idioma por defecto: español (columnas base)
+  return `
+    ${SHARED_FIELDS},
+    ciudad, tematica, titulo, descripcion, duracion, precio,
+    punto_encuentro, incluye, no_incluye
+  `;
+}
+
+/** Normaliza un idioma recibido por query string. Devuelve 'es', 'en' o 'ja'. */
+export function normalizeLang(lang) {
+  const l = (lang ?? 'es').toLowerCase();
+  return ['es', 'en', 'ja'].includes(l) ? l : 'es';
+}
 
 function formatTour(row) {
   if (!row) return null;
@@ -47,16 +93,18 @@ export async function createTable() {
   `);
 }
 
-export async function findAll() {
+export async function findAll(lang = 'es') {
+  const fields = getLangFields(normalizeLang(lang));
   const { rows } = await pool.query(
-    `SELECT ${TOUR_FIELDS} FROM tours ORDER BY titulo ASC`
+    `SELECT ${fields} FROM tours ORDER BY titulo ASC`
   );
   return rows.map(formatTour);
 }
 
-export async function findById(id) {
+export async function findById(id, lang = 'es') {
+  const fields = getLangFields(normalizeLang(lang));
   const { rows } = await pool.query(
-    `SELECT ${TOUR_FIELDS} FROM tours WHERE id = $1`,
+    `SELECT ${fields} FROM tours WHERE id = $1`,
     [id]
   );
   return formatTour(rows[0]);

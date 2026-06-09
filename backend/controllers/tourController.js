@@ -1,4 +1,5 @@
 import * as Tour from '../models/Tour.js';
+import { normalizeLang } from '../models/Tour.js';
 
 const REQUIRED_FIELDS = [
   'id', 'ciudad', 'tematica', 'titulo', 'imagen', 'duracion',
@@ -47,9 +48,10 @@ function validateTourBody(body, { requireId = true } = {}) {
   return null;
 }
 
-export async function getAll(_req, res) {
+export async function getAll(req, res) {
   try {
-    const tours = await Tour.findAll();
+    const lang = normalizeLang(req.query.lang);
+    const tours = await Tour.findAll(lang);
     res.json(tours);
   } catch (error) {
     console.error('Error al listar tours:', error);
@@ -59,7 +61,8 @@ export async function getAll(_req, res) {
 
 export async function getById(req, res) {
   try {
-    const tour = await Tour.findById(req.params.id);
+    const lang = normalizeLang(req.query.lang);
+    const tour = await Tour.findById(req.params.id, lang);
 
     if (!tour) {
       return res.status(404).json({ error: 'Tour no encontrado' });

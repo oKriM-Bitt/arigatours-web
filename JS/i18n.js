@@ -51,7 +51,10 @@ const traduccionesAriga = {
         "free-title": "Free Walking Tours",
         "free-subtitle": "Recorridos gratuitos por las ciudades más emblemáticas de Japón",
         "priv-title": "Tours Privados",
-        "priv-subtitle": "Experiencias personalizadas y exclusivas diseñadas a tu medida"
+        "priv-subtitle": "Experiencias personalizadas y exclusivas diseñadas a tu medida",
+        "nav-cities": "Ciudades",
+        "nav-free-tours": "Free Walking Tours",
+        "nav-priv-tours": "Tour Privado"
     },
     en: {
         "nav-home": "Home",
@@ -105,7 +108,10 @@ const traduccionesAriga = {
         "free-title": "Free Walking Tours",
         "free-subtitle": "Free guided walks through Japan's most iconic cities",
         "priv-title": "Private Tours",
-        "priv-subtitle": "Exclusive, fully personalized experiences tailored just for you"
+        "priv-subtitle": "Exclusive, fully personalized experiences tailored just for you",
+        "nav-cities": "Cities",
+        "nav-free-tours": "Free Walking Tours",
+        "nav-priv-tours": "Private Tours"
     },
     ja: {
         "nav-home": "ホーム",
@@ -159,7 +165,10 @@ const traduccionesAriga = {
         "free-title": "フリーウォーキングツアー",
         "free-subtitle": "日本の主要都市を巡る無料ガイドウォーク",
         "priv-title": "プライベートツアー",
-        "priv-subtitle": "あなただけのために設計された専用プライベート体験"
+        "priv-subtitle": "あなただけのために設計された専用プライベート体験",
+        "nav-cities": "都市",
+        "nav-free-tours": "フリーウォーキングツアー",
+        "nav-priv-tours": "プライベートツアー"
     }
 };
 

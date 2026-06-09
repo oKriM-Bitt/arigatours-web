@@ -1,57 +1,82 @@
-import * as Tour from '../models/Tour.js';
-import { normalizeLang } from '../models/Tour.js';
+/**
+ * tourController.js  —  MODO JSON LOCAL (sin Neon)
+ *
+ * Lee los archivos BdTours_es.json / BdTours_en.json / BdTours_ja.json
+ * una sola vez al arrancar el servidor (cache en memoria) y sirve las
+ * respuestas desde ahí.  El formato de cada objeto es idéntico al que
+ * devolvía el modelo con Neon, por lo que el frontend no necesita ningún
+ * cambio.
+ *
+ * Operaciones de escritura (POST / PUT / DELETE) devuelven 503 mientras
+ * la BD esté offline.
+ *
+ * Para volver a Neon: reemplazar este archivo por la versión con Tour.js.
+ */
 
-const REQUIRED_FIELDS = [
-  'id', 'ciudad', 'tematica', 'titulo', 'imagen', 'duracion',
-  'precio', 'puntoEncuentro', 'descripcion',
-];
+import { readFileSync } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const JSON_DIR  = path.join(__dirname, '..', '..', 'JSON');
+
+// ─── Cache en memoria ────────────────────────────────────────────────────────
+// Los tres JSON se leen UNA sola vez cuando Node carga el módulo.
+// Ningún request posterior toca el disco.
+
+function loadJson(filename) {
+  return JSON.parse(readFileSync(path.join(JSON_DIR, filename), 'utf-8'));
+}
+
+const TOURS = {
+  es: loadJson('BdTours_es.json'),
+  en: loadJson('BdTours_en.json'),
+  ja: loadJson('BdTours_ja.json'),
+};
+
+// Índice id → tour para búsquedas O(1) en getById
+const INDEX = {
+  es: Object.fromEntries(TOURS.es.map((t) => [t.id, t])),
+  en: Object.fromEntries(TOURS.en.map((t) => [t.id, t])),
+  ja: Object.fromEntries(TOURS.ja.map((t) => [t.id, t])),
+};
+
+console.log(
+  `[tourController] JSON cargado — ES: ${TOURS.es.length} | EN: ${TOURS.en.length} | JA: ${TOURS.ja.length} tours`
+);
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+function normalizeLang(lang) {
+  const l = (lang ?? 'es').toLowerCase();
+  return ['es', 'en', 'ja'].includes(l) ? l : 'es';
+}
 
 /**
- * Resolve the imagen value: uploaded file takes priority over manual text path.
- * Returns a URL-safe path like "uploads/filename.jpg" or the raw text path.
+ * Lista completa en el idioma pedido.
+ * Itera el ES como fuente master (14 tours) y usa la versión traducida
+ * cuando existe; si no, devuelve el tour en ES como fallback.
+ * Esto replica el comportamiento COALESCE que teníamos en Neon.
  */
-function resolveImagen(body, files) {
-  const uploaded = files?.imagenFile?.[0];
-  if (uploaded) return `uploads/${uploaded.filename}`;
-  return (body.imagen ?? '').trim();
+function resolveAll(lang) {
+  if (lang === 'es') return TOURS.es;
+  return TOURS.es.map((tour) => INDEX[lang][tour.id] ?? tour);
 }
 
 /**
- * Resolve galería: uploaded files take priority; otherwise split textarea lines.
+ * Tour individual en el idioma pedido, con fallback a ES.
+ * Devuelve null si el id no existe en ningún idioma.
  */
-function resolveGaleria(body, files) {
-  const uploadedGaleria = files?.galeriaFiles ?? [];
-  if (uploadedGaleria.length > 0) {
-    return uploadedGaleria.map((f) => `uploads/${f.filename}`);
-  }
-  const raw = body.galeria ?? '';
-  if (Array.isArray(raw)) return raw.filter(Boolean);
-  return raw.split('\n').map((l) => l.trim()).filter(Boolean);
+function resolveOne(id, lang) {
+  return INDEX[lang][id] ?? INDEX.es[id] ?? null;
 }
 
-function parseLines(value) {
-  if (!value) return [];
-  if (Array.isArray(value)) return value.filter(Boolean);
-  return value.split('\n').map((l) => l.trim()).filter(Boolean);
-}
+// ─── Handlers de lectura ─────────────────────────────────────────────────────
 
-function validateTourBody(body, { requireId = true } = {}) {
-  const missing = REQUIRED_FIELDS.filter((field) => {
-    if (!requireId && field === 'id') return false;
-    return body[field] === undefined || body[field] === null || body[field] === '';
-  });
-
-  if (missing.length > 0) {
-    return `Campos obligatorios faltantes: ${missing.join(', ')}`;
-  }
-
-  return null;
-}
-
-export async function getAll(req, res) {
+export function getAll(req, res) {
   try {
-    const lang = normalizeLang(req.query.lang);
-    const tours = await Tour.findAll(lang);
+    const lang  = normalizeLang(req.query.lang);
+    const tours = resolveAll(lang);
     res.json(tours);
   } catch (error) {
     console.error('Error al listar tours:', error);
@@ -59,10 +84,10 @@ export async function getAll(req, res) {
   }
 }
 
-export async function getById(req, res) {
+export function getById(req, res) {
   try {
     const lang = normalizeLang(req.query.lang);
-    const tour = await Tour.findById(req.params.id, lang);
+    const tour = resolveOne(req.params.id, lang);
 
     if (!tour) {
       return res.status(404).json({ error: 'Tour no encontrado' });
@@ -75,84 +100,22 @@ export async function getById(req, res) {
   }
 }
 
-export async function create(req, res) {
-  try {
-    const files = req.files ?? {};
+// ─── Handlers de escritura (deshabilitados temporalmente) ────────────────────
+// La BD está offline. Se devuelve 503 para que el panel de admin muestre
+// el error en lugar de colgarse en silencio.
 
-    // Enrich body with resolved file paths before validation
-    const imagen = resolveImagen(req.body, files);
-    const galeria = resolveGaleria(req.body, files);
+const DB_OFFLINE = {
+  error: 'Base de datos temporalmente desconectada. Las operaciones de escritura no están disponibles.',
+};
 
-    const data = {
-      ...req.body,
-      imagen,
-      galeria,
-      incluye: parseLines(req.body.incluye),
-      noIncluye: parseLines(req.body.noIncluye),
-      fechasDisponibles: [],
-    };
-
-    const validationError = validateTourBody(data);
-    if (validationError) {
-      return res.status(400).json({ error: validationError });
-    }
-
-    const existing = await Tour.findById(data.id);
-    if (existing) {
-      return res.status(409).json({ error: 'Ya existe un tour con ese id' });
-    }
-
-    const tour = await Tour.create(data);
-    res.status(201).json(tour);
-  } catch (error) {
-    console.error('Error al crear tour:', error);
-    res.status(500).json({ error: 'Error interno del servidor' });
-  }
+export function create(_req, res) {
+  res.status(503).json(DB_OFFLINE);
 }
 
-export async function update(req, res) {
-  try {
-    const files = req.files ?? {};
-
-    const imagen = resolveImagen(req.body, files);
-    const galeria = resolveGaleria(req.body, files);
-
-    const data = {
-      ...req.body,
-      imagen,
-      galeria,
-      incluye: parseLines(req.body.incluye),
-      noIncluye: parseLines(req.body.noIncluye),
-    };
-
-    const validationError = validateTourBody(data, { requireId: false });
-    if (validationError) {
-      return res.status(400).json({ error: validationError });
-    }
-
-    const tour = await Tour.update(req.params.id, data);
-    if (!tour) {
-      return res.status(404).json({ error: 'Tour no encontrado' });
-    }
-
-    res.json(tour);
-  } catch (error) {
-    console.error('Error al actualizar tour:', error);
-    res.status(500).json({ error: 'Error interno del servidor' });
-  }
+export function update(_req, res) {
+  res.status(503).json(DB_OFFLINE);
 }
 
-export async function remove(req, res) {
-  try {
-    const deleted = await Tour.remove(req.params.id);
-
-    if (!deleted) {
-      return res.status(404).json({ error: 'Tour no encontrado' });
-    }
-
-    res.status(204).send();
-  } catch (error) {
-    console.error('Error al eliminar tour:', error);
-    res.status(500).json({ error: 'Error interno del servidor' });
-  }
+export function remove(_req, res) {
+  res.status(503).json(DB_OFFLINE);
 }

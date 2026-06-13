@@ -337,11 +337,46 @@ function renderizarGrilla(tours) {
             fila.appendChild(card);
         });
 
+        secuenciarDragScroll(fila);
         section.appendChild(fila);
         wrapper.appendChild(section);
     });
 
     contenedor.appendChild(wrapper);
+}
+
+// ── Mouse Drag-to-Scroll para .streaming-row (desktop) ───────────────────────
+function secuenciarDragScroll(fila) {
+    let arrastrandO  = false;
+    let startX       = 0;
+    let scrollIzq    = 0;
+
+    fila.addEventListener('mousedown', (e) => {
+        // Solo botón izquierdo y no sobre botones/links
+        if (e.button !== 0) return;
+        arrastrandO = true;
+        startX      = e.pageX - fila.offsetLeft;
+        scrollIzq   = fila.scrollLeft;
+        fila.classList.add('drag-active');
+        e.preventDefault(); // evita selección de texto
+    });
+
+    fila.addEventListener('mouseleave', () => {
+        arrastrandO = false;
+        fila.classList.remove('drag-active');
+    });
+
+    fila.addEventListener('mouseup', () => {
+        arrastrandO = false;
+        fila.classList.remove('drag-active');
+    });
+
+    fila.addEventListener('mousemove', (e) => {
+        if (!arrastrandO) return;
+        const x = e.pageX - fila.offsetLeft;
+        const distancia = (x - startX) * 1.4; // factor de velocidad
+        fila.scrollLeft = scrollIzq - distancia;
+    });
 }
 
 // Variable global para controlar la galería activa en el Lightbox

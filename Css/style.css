@@ -530,6 +530,35 @@ body { top: 0px !important; }
 }
 .streaming-row::-webkit-scrollbar { display: none; }
 
+/* ── Desktop: scrollbar fina + cursor drag ──────────────────────────────── */
+@media (hover: hover) and (pointer: fine) {
+    .streaming-row {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(180,180,180,0.55) transparent;
+        cursor: grab;
+    }
+    .streaming-row.drag-active {
+        cursor: grabbing;
+        scroll-snap-type: none;
+        user-select: none;
+    }
+    .streaming-row::-webkit-scrollbar {
+        display: block;
+        height: 4px;
+    }
+    .streaming-row::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 0 5%;
+    }
+    .streaming-row::-webkit-scrollbar-thumb {
+        background: rgba(180,180,180,0.55);
+        border-radius: 2px;
+    }
+    .streaming-row::-webkit-scrollbar-thumb:hover {
+        background: rgba(120,120,120,0.8);
+    }
+}
+
 /* Tarjeta individual */
 .stream-card {
     flex-shrink: 0;

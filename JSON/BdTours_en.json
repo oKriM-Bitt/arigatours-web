@@ -32,9 +32,9 @@
         "ciudad": "Tokio",
         "tematica": "Free Walking Tour",
         "titulo": "Tokyo, Lights and Shadows (Free Walking Tour)",
-        "imagen": "Recursos/Tokio1.jpg",
+        "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
-            "Recursos/Tokio1.jpg"
+            "Recursos/Tokioundia.jpg"
         ],
         "duracion": "Variable",
         "precio": "Basado en propina",
@@ -57,9 +57,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Tokyo, Lights and Shadows (3 Hours)",
-        "imagen": "Recursos/Tokio2.jpg",
+        "imagen": "Recursos/tokioundia2.jpg",
         "galeria": [
-            "Recursos/Tokio2.jpg"
+            "Recursos/tokioundia2.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥25.000 por 2 personas",
@@ -82,9 +82,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Tokyo, Lights and Shadows (8 Hours)",
-        "imagen": "Recursos/Tokio3.jpg",
+        "imagen": "Recursos/tokioundia3.jpg",
         "galeria": [
-            "Recursos/Tokio3.jpg"
+            "Recursos/tokioundia3.jpg"
         ],
         "duracion": "8 horas",
         "precio": "¥45.000 por 2 personas",
@@ -107,9 +107,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "The Otaku Heart of Japan",
-        "imagen": "Recursos/Tokio4.jpg",
+        "imagen": "Recursos/tokioundia4.jpg",
         "galeria": [
-            "Recursos/Tokio4.jpg"
+            "Recursos/tokioundia4.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥30.000 por 2 personas",
@@ -132,9 +132,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Historic Tokyo by Night",
-        "imagen": "Recursos/Tokio5.jpg",
+        "imagen": "Recursos/tokioundia5.jpg",
         "galeria": [
-            "Recursos/Tokio5.jpg"
+            "Recursos/tokioundia5.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥30.000 por 2 personas",
@@ -156,9 +156,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Night in Shinjuku",
-        "imagen": "Recursos/Tokio6.jpg",
+        "imagen": "Recursos/tokioundia6.jpg",
         "galeria": [
-            "Recursos/Tokio6.jpg"
+            "Recursos/tokioundia6.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥30.000 por 2 personas",
@@ -180,9 +180,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "The Way of the Samurai",
-        "imagen": "Recursos/Tokio7.jpg",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
         "galeria": [
-            "Recursos/Tokio7.jpg"
+            "Recursos/Tokiovicerojo.jpg"
         ],
         "duracion": "1 hora",
         "precio": "¥15.000 por persona",
@@ -205,9 +205,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "The Art of Japanese Sushi",
-        "imagen": "Recursos/Tokio8.jpg",
+        "imagen": "Recursos/Tokiovicerojo2.jpg",
         "galeria": [
-            "Recursos/Tokio8.jpg"
+            "Recursos/Tokiovicerojo2.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥20.000 por persona",
@@ -230,9 +230,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Kawaii Maid Café",
-        "imagen": "Recursos/Tokio9.jpg",
+        "imagen": "Recursos/Tokiovicerojo3.jpg",
         "galeria": [
-            "Recursos/Tokio9.jpg"
+            "Recursos/Tokiovicerojo3.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥20.000 por persona",
@@ -255,9 +255,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Secrets of the Tokyo Night",
-        "imagen": "Recursos/Tokio10.jpg",
+        "imagen": "Recursos/Tokiovicerojo4.jpg",
         "galeria": [
-            "Recursos/Tokio10.jpg"
+            "Recursos/Tokiovicerojo4.jpg"
         ],
         "duracion": "2 horas",
         "precio": "¥25.000 por 2 personas",
@@ -279,9 +279,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Among Izakayas and Lanterns of Ueno",
-        "imagen": "Recursos/Tokio11.jpg",
+        "imagen": "Recursos/Tokiovicerojo5.jpg",
         "galeria": [
-            "Recursos/Tokio11.jpg"
+            "Recursos/Tokiovicerojo5.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥20.000 por persona",
@@ -303,9 +303,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "DRIFT: Fast and Furious",
-        "imagen": "Recursos/Tokio12.jpg",
+        "imagen": "Recursos/Tokiovicerojo6.jpg",
         "galeria": [
-            "Recursos/Tokio12.jpg"
+            "Recursos/Tokiovicerojo6.jpg"
         ],
         "duracion": "3 horas",
         "precio": "¥80.000 por persona",
@@ -327,9 +327,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Fast and Furious Japan",
-        "imagen": "Recursos/Tokio13.jpg",
+        "imagen": "Recursos/Tokioundia.jpg",
         "galeria": [
-            "Recursos/Tokio13.jpg"
+            "Recursos/Tokioundia.jpg"
         ],
         "duracion": "5 horas",
         "precio": "¥60.000 por persona",
@@ -351,9 +351,9 @@
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
         "titulo": "Sumo Wrestling Experience",
-        "imagen": "Recursos/Tokio14.jpg",
+        "imagen": "Recursos/Tokiovicerojo.jpg",
         "galeria": [
-            "Recursos/Tokio14.jpg"
+            "Recursos/Tokiovicerojo.jpg"
         ],
         "duracion": "2 horas",
         "precio": "¥60.000 por persona",
@@ -375,13 +375,13 @@
         "ciudad": "Kyoto",
         "tematica": "Tour Privado",
         "titulo": "Kyoto Beyond the Ordinary (3 Hours)",
-        "imagen": "Recursos/Kioto 1.jpg",
+        "imagen": "Recursos/Kioto_1.jpg",
         "galeria": [
-            "Recursos/Kioto 1.jpg",
-            "Recursos/Kioto 2.jpg",
-            "Recursos/Kioto 3.jpg",
-            "Recursos/Kioto 4.jpg",
-            "Recursos/Kioto 5.jpg"
+            "Recursos/Kioto_1.jpg",
+            "Recursos/Kioto_2.jpg",
+            "Recursos/Kioto_3.jpg",
+            "Recursos/Kioto_4.jpg",
+            "Recursos/Kioto_5.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -403,13 +403,13 @@
         "ciudad": "Kyoto",
         "tematica": "Tour Privado",
         "titulo": "The ABC of Kyoto (8 Hours)",
-        "imagen": "Recursos/Kioto 1.jpg",
+        "imagen": "Recursos/Kioto_1.jpg",
         "galeria": [
-            "Recursos/Kioto 1.jpg",
-            "Recursos/Kioto 2.jpg",
-            "Recursos/Kioto 3.jpg",
-            "Recursos/Kioto 4.jpg",
-            "Recursos/Kioto 5.jpg"
+            "Recursos/Kioto_1.jpg",
+            "Recursos/Kioto_2.jpg",
+            "Recursos/Kioto_3.jpg",
+            "Recursos/Kioto_4.jpg",
+            "Recursos/Kioto_5.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",

@@ -28,59 +28,345 @@
         "fechasDisponibles": []
     },
     {
-        "id": "tour-tokio-todo-en-un-dia",
+        "id": "tour-tokio-luces-sombras-free",
         "ciudad": "Tokio",
-        "tematica": "Tour Privado",
-        "titulo": "Tokyo in a Day",
-        "imagen": "Recursos/Tokioundia.jpg",
+        "tematica": "Free Walking Tour",
+        "titulo": "Tokyo, Lights and Shadows (Free Walking Tour)",
+        "imagen": "Recursos/Tokio1.jpg",
         "galeria": [
-            "Recursos/Tokioundia.jpg",
-            "Recursos/tokioundia2.jpg",
-            "Recursos/tokioundia3.jpg",
-            "Recursos/tokioundia4.jpg",
-            "Recursos/tokioundia5.jpg",
-            "Recursos/tokioundia6.jpg"
+            "Recursos/Tokio1.jpg"
         ],
-        "duracion": "8 hours",
-        "precio": "120 € (Adults)",
-        "puntoEncuentro": "Next to the Asakusa tourist information building at 9:00 AM",
-        "descripcion": "Discover with us the city that never stops surprising. This full-day tour is designed for those who want to understand Tokyo — not just see it, but feel it and grasp why millions of people consider it the most fascinating city on the planet.<br><br><strong>Itinerary:</strong><br>We will begin at 9:00 AM in Asakusa, the last neighbourhood that preserves the soul of old Tokyo. We will stroll through the Nakamise shopping street all the way to Senso-ji, the Buddhist temple that has welcomed pilgrims for over a thousand years. From there, we will head to the historic Meiji Shrine. Just a few steps away, we will cross into the other side of the mirror: Harajuku and its famous Takeshita Street. We will take a one-hour lunch break at midday, then head to Shibuya, the most photographed crossing in the world. We will finish in Shinjuku, where Tokyo bids a grand farewell.<br><br><strong>Accessibility and Recommendations:</strong><br>This tour is accessible to everyone as there are no steep slopes or uneven pavements. We recommend wearing comfortable clothing, bringing water to stay hydrated, sun protection, and a hat.",
+        "duracion": "Variable",
+        "precio": "Basado en propina",
+        "puntoEncuentro": "Asakusa Tourist Information Building",
+        "descripcion": "Experience Tokyo from the inside on this Free Walking Tour through the historic heart of Asakusa. Together we'll explore the most authentic corners of the neighbourhood while uncovering its history, legends, and unique energy.<br><br><strong>Itinerary:</strong><br>We begin at the iconic Senso-ji Temple, Tokyo's oldest Buddhist temple. We'll walk the lively Nakamise-dori shopping street with its traditional stalls, visit Asakusa Shrine, and finish at the historic Rokku Broadway, the old popular entertainment district of Tokyo.<br><br><strong>Note:</strong> This is a Free Walking Tour based on tips. At the end, please contribute whatever you feel the experience was worth.",
         "incluye": [
-            "Spanish-speaking guide throughout the entire private tour",
-            "Historical and cultural explanations of the sites visited"
+            "Spanish-speaking guide",
+            "Walking tour through Asakusa",
+            "Historical and cultural explanations"
         ],
         "noIncluye": [
-            "Food and beverages (1 hour free time for lunch is included)",
-            "Hotel pick-up"
+            "Tip (voluntary at the end)",
+            "Food and beverages",
+            "Entrance fees"
         ],
         "fechasDisponibles": []
     },
     {
-        "id": "tour-tokio-vice",
+        "id": "tour-tokio-luces-sombras-3h",
         "ciudad": "Tokio",
         "tematica": "Tour Privado",
-        "titulo": "Tokyo Vice (Night Tour)",
-        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "titulo": "Tokyo, Lights and Shadows (3 Hours)",
+        "imagen": "Recursos/Tokio2.jpg",
         "galeria": [
-            "Recursos/Tokiovicerojo.jpg",
-            "Recursos/Tokiovicerojo2.jpg",
-            "Recursos/Tokiovicerojo3.jpg",
-            "Recursos/Tokiovicerojo4.jpg",
-            "Recursos/Tokiovicerojo5.jpg",
-            "Recursos/Tokiovicerojo6.jpg"
+            "Recursos/Tokio2.jpg"
         ],
-        "duracion": "2.5 or 3.5 hours (depending on dinner option)",
-        "precio": "60 € (Without dinner) / 80 € (With dinner)",
-        "puntoEncuentro": "Umayamichi Park, East Exit (Yoyogi Station) at 18:00",
-        "descripcion": "Venture with us into the rawest and most fascinating side of Tokyo on this night tour inspired by articles and series such as Tokyo Vice. Together we will explore the Shinjuku district and its most enigmatic face: Kabukicho, the neighbourhood that never sleeps.<br><br><strong>Itinerary:</strong><br>We will begin at 18:00 at Umayamichi Park, just a short walk from Yoyogi Station. From here we will embark on a tour that reveals how Tokyo's nightlife truly operates: its unwritten codes, its neon lights, and the social structures that work in the shadows. We will analyse the neighbourhood's post-war historical evolution in Omoide Yokocho, its transformation into the epicentre of adult entertainment along the main avenues of Kabukicho, and the influence of the yakuza, Japan's organised crime syndicate. We will visit iconic landmarks such as the giant cat of Shinjuku, Godzilla himself, and places that only the most local of Tokyoites know how to reach.<br><br><strong>Dinner option:</strong><br>Shinjuku is known as the place where Japanese workers come to unwind after a long day. We will visit a typical izakaya restaurant where you can sample yakitori, chicken skewers, karaage, gyoza, and much more. If you choose the tour with dinner, it will conclude at 21:00.<br><br><strong>Important notice:</strong><br>Due to the subjects covered during this tour and the fact that the red-light district will be visited, this tour is <strong>not recommended for anyone under 18 years of age</strong>.<br><br><strong>Accessibility and Recommendations:</strong><br>This tour is accessible to everyone as there are no steep slopes or uneven pavements. We recommend wearing comfortable clothing, bringing water to stay hydrated, and sun protection.",
+        "duracion": "3 horas",
+        "precio": "¥25.000 por 2 personas",
+        "puntoEncuentro": "Asakusa Tourist Information Building",
+        "descripcion": "Discover the historic soul of Tokyo on this 3-hour private tour through Asakusa. An intimate and personalised journey through the most fascinating contrasts of the Japanese capital.<br><br><strong>Itinerary:</strong><br>We'll visit the iconic Senso-ji Temple, the spiritual heart of Asakusa. We'll continue along Nakamise-dori with its artisan shops, Asakusa Shrine, and the legendary Rokku Broadway, where theatres once told the story of a different Tokyo.",
         "incluye": [
-            "Spanish-speaking guide throughout the entire night tour",
-            "Historical and cultural explanations of the sites visited",
-            "Dinner at a typical Izakaya restaurant (only when the 80 € option is booked)"
+            "Private Spanish-speaking guide",
+            "Walking tour through Asakusa",
+            "Historical explanations of the sites visited"
         ],
         "noIncluye": [
-            "Food and beverages during the tour (dinner is served at the end)",
-            "Hotel pick-up"
+            "Entrance fees",
+            "Food and beverages",
+            "Transport"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-luces-sombras-8h",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Tokyo, Lights and Shadows (8 Hours)",
+        "imagen": "Recursos/Tokio3.jpg",
+        "galeria": [
+            "Recursos/Tokio3.jpg"
+        ],
+        "duracion": "8 horas",
+        "precio": "¥45.000 por 2 personas",
+        "puntoEncuentro": "Hotel pick-up",
+        "descripcion": "A full day to discover Tokyo's most iconic neighbourhoods. From the electronic Tokyo of Akihabara to the glamour of Shibuya, through the fashion of Harajuku and the fascinating chaos of Shinjuku.<br><br><strong>Itinerary:</strong><br>We start with a hotel pick-up. We'll visit Akihabara, paradise of technology and otaku culture. We continue to Shibuya and its famous pedestrian crossing, Harajuku and Takeshita Street, and end the day in the endless Shinjuku, travelling by public transport throughout.",
+        "incluye": [
+            "Private Spanish-speaking guide for 8 hours",
+            "Hotel pick-up",
+            "Transfers by public transport"
+        ],
+        "noIncluye": [
+            "Transport cards (Suica or Pasmo)",
+            "Food and beverages",
+            "Entrance fees to attractions"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-otaku",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "The Otaku Heart of Japan",
+        "imagen": "Recursos/Tokio4.jpg",
+        "galeria": [
+            "Recursos/Tokio4.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "Akihabara",
+        "descripcion": "Immerse yourself in the world epicentre of otaku culture on this tour through Akihabara. A unique journey designed for fans of anime, manga, and video games.<br><br><strong>Itinerary:</strong><br>We'll explore the most iconic anime and manga stores, from large specialist retailers to small second-hand shops packed with vintage gems. We'll visit the best Japanese arcades, the world of gachapon and retro gaming, and learn about Japanese otaku culture and its impact on contemporary society.",
+        "incluye": [
+            "Expert guide in otaku culture",
+            "Walking tour through Akihabara",
+            "Explanation of anime, manga, and Japanese otaku culture"
+        ],
+        "noIncluye": [
+            "Shopping and collectibles",
+            "Food and beverages",
+            "Arcade credits"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-historico-nocturno",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Historic Tokyo by Night",
+        "imagen": "Recursos/Tokio5.jpg",
+        "galeria": [
+            "Recursos/Tokio5.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "Asakusa",
+        "descripcion": "Discover the magic of Asakusa after dark. When night falls, the temples and streets take on a mysterious atmosphere deeply evocative of Japan from another era.<br><br><strong>Itinerary:</strong><br>We set off from Asakusa and venture into its illuminated historic streets. We'll visit the majestic Kaminarimon Gate with its imposing red lantern, Senso-ji Temple bathed in night light, and stroll alongside the Sumida River. The combination of traditional architecture and the reflection of lights on the water creates an unforgettable visual experience.",
+        "incluye": [
+            "Private Spanish-speaking guide",
+            "Night walking tour through Asakusa",
+            "Historical explanations"
+        ],
+        "noIncluye": [
+            "Food and beverages",
+            "Transport"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-noche-shinjuku",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Night in Shinjuku",
+        "imagen": "Recursos/Tokio6.jpg",
+        "galeria": [
+            "Recursos/Tokio6.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "Shinjuku",
+        "descripcion": "A unique evening experience in the heart of Shinjuku. This tour combines the culture of the Japanese bar with an authentic immersion into the nightlife of one of Tokyo's most vibrant districts.<br><br><strong>Itinerary:</strong><br>We'll venture into Shinjuku's most iconic alleyways to discover the local bar scene that tourists rarely get to know. The tour includes exclusive entry to 3 carefully selected bars, with 1 drink included at each. We'll learn about the culture of nomikai (Japanese group drinking outings) and the neighbourhood izakayas that make Shinjuku an unrivalled nightlife destination.",
+        "incluye": [
+            "Private Spanish-speaking guide",
+            "Exclusive entry to 3 bars",
+            "1 drink included per bar"
+        ],
+        "noIncluye": [
+            "Additional drinks",
+            "Food"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-samurai",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "The Way of the Samurai",
+        "imagen": "Recursos/Tokio7.jpg",
+        "galeria": [
+            "Recursos/Tokio7.jpg"
+        ],
+        "duracion": "1 hora",
+        "precio": "¥15.000 por persona",
+        "puntoEncuentro": "To be confirmed upon booking",
+        "descripcion": "An immersive experience in the world of Japan's most legendary warriors. A guided and exclusive visit to Tokyo's Samurai Museum, with an impressive collection of authentic traditional armour, swords, and equipment.<br><br><strong>Itinerary:</strong><br>We'll visit the Samurai Museum with entrance included. Our guide will explain the history of bushido — the warrior's code — and the influence of samurai and ninja culture on contemporary Japan. A perfect experience for those passionate about Japanese history.",
+        "incluye": [
+            "Entrance to the Samurai Museum",
+            "Spanish-speaking guide",
+            "Explanation of traditional armour and swords",
+            "Samurai and ninja history"
+        ],
+        "noIncluye": [
+            "Transport to the museum",
+            "Professional photographs"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-sushi",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "The Art of Japanese Sushi",
+        "imagen": "Recursos/Tokio8.jpg",
+        "galeria": [
+            "Recursos/Tokio8.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "To be confirmed upon booking",
+        "descripcion": "Learn the secrets of authentic Japanese sushi in this unique gastronomic experience. More than a cooking class, it's an immersion into Japanese culinary philosophy, where precision, respect for ingredients, and presentation are just as important as flavour.<br><br><strong>Itinerary:</strong><br>Cultural introduction to the origins and evolution of sushi in Japan. We'll learn traditional preparation techniques using fresh seasonal Japanese ingredients, and finish with a tasting of the day's creations.",
+        "incluye": [
+            "Traditional sushi class",
+            "Fresh Japanese ingredients",
+            "Cultural explanation",
+            "Tasting included"
+        ],
+        "noIncluye": [
+            "Transport",
+            "Additional drinks"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-maid-cafe",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Kawaii Maid Café",
+        "imagen": "Recursos/Tokio9.jpg",
+        "galeria": [
+            "Recursos/Tokio9.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "Shinjuku",
+        "descripcion": "Step into the most authentic kawaii universe in Japan at a Tokyo maid café. A tour that combines a guided visit to the café with a full introduction to otaku culture and Japanese kawaii aesthetics.<br><br><strong>Itinerary:</strong><br>We begin with an introduction to the kawaii world: its history, its icons, and its cultural impact. We continue with a visit to the maid café, entrance included, where we'll enjoy photos, exclusive performances, and the unique atmosphere of this cultural phenomenon that has conquered the world.",
+        "incluye": [
+            "Entrance to the maid café",
+            "Spanish-speaking guide",
+            "Photos and performance",
+            "Introduction to the otaku and kawaii world"
+        ],
+        "noIncluye": [
+            "Café consumptions",
+            "Additional paid photographs"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-secretos-noche",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Secrets of the Tokyo Night",
+        "imagen": "Recursos/Tokio10.jpg",
+        "galeria": [
+            "Recursos/Tokio10.jpg"
+        ],
+        "duracion": "2 horas",
+        "precio": "¥25.000 por 2 personas",
+        "puntoEncuentro": "Shinjuku",
+        "descripcion": "Discover the most authentic and unknown side of Tokyo's nightlife. An experience for those who want to go beyond tourist spots and live Tokyo like a local.<br><br><strong>Itinerary:</strong><br>We'll explore the hidden alleyways and local bars of Shinjuku that rarely appear in travel guides. We'll discover the authentic atmosphere of Japanese nightlife, visit neighbourhood bars where Tokyoites unwind, and learn the unwritten codes of the Tokyo night.",
+        "incluye": [
+            "Private Spanish-speaking guide",
+            "Visit to selected local bars",
+            "Access to hidden alleyways and corners"
+        ],
+        "noIncluye": [
+            "Drinks",
+            "Transport"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-izakayas-ueno",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Among Izakayas and Lanterns of Ueno",
+        "imagen": "Recursos/Tokio11.jpg",
+        "galeria": [
+            "Recursos/Tokio11.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "Shinjuku",
+        "descripcion": "A night experience among izakayas, lanterns, and traditional streets in the most authentic neighbourhoods of Tokyo. A tour that captures the essence of everyday Japanese night life, far from mass tourism.<br><br><strong>Itinerary:</strong><br>We'll explore the bustling Ameyoko Street, one of Tokyo's most famous open-air markets. We'll visit a local izakaya where we'll sample authentic Japanese neighbourhood cuisine, and stroll through traditional streets lit by lanterns, immersed in the city's most authentic nocturnal atmosphere.",
+        "incluye": [
+            "Private Spanish-speaking guide",
+            "Visit to a local izakaya",
+            "Tour of Ameyoko and traditional streets"
+        ],
+        "noIncluye": [
+            "Izakaya consumptions",
+            "Transport"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-drift",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "DRIFT: Fast and Furious",
+        "imagen": "Recursos/Tokio12.jpg",
+        "galeria": [
+            "Recursos/Tokio12.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥80.000 por persona",
+        "puntoEncuentro": "Location specified upon booking",
+        "descripcion": "Experience pure adrenaline in this exclusive experience inspired by the Fast & Furious franchise, right on the streets of Tokyo. For lovers of sports cars and speed, this is the ultimate experience in Japan.<br><br><strong>Itinerary:</strong><br>A 3-hour drive in an exclusive sports car with a professional driver. We'll venture into the most iconic routes of Japanese car meet culture, discovering the settings that inspired the famous film franchise.",
+        "incluye": [
+            "3-hour ride in an exclusive sports car",
+            "Professional driver",
+            "Supervised drift experience"
+        ],
+        "noIncluye": [
+            "Optional additional insurance",
+            "Professional photographs of the route"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-rapidos-furiosos",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Fast and Furious Japan",
+        "imagen": "Recursos/Tokio13.jpg",
+        "galeria": [
+            "Recursos/Tokio13.jpg"
+        ],
+        "duracion": "5 horas",
+        "precio": "¥60.000 por persona",
+        "puntoEncuentro": "To be confirmed upon booking",
+        "descripcion": "A unique experience at Japan's most famous car meet scene. Visit Daikoku Parking Area, the legendary nocturnal gathering point for Japanese sports car enthusiasts that inspired the creators of the Fast & Furious franchise.<br><br><strong>Itinerary:</strong><br>Private transport to Daikoku PA, the iconic car park where hundreds of modified and unique sports vehicles gather every night. With our Spanish-speaking guide, we'll learn about the history of Japanese car meets, the most iconic models, and Bosozoku culture. Photo session included in an unrivalled setting.",
+        "incluye": [
+            "Private transport to Daikoku",
+            "Spanish-speaking guide",
+            "Photo session included"
+        ],
+        "noIncluye": [
+            "Food and beverages",
+            "Additional entrance fees"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-sumo",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "Sumo Wrestling Experience",
+        "imagen": "Recursos/Tokio14.jpg",
+        "galeria": [
+            "Recursos/Tokio14.jpg"
+        ],
+        "duracion": "2 horas",
+        "precio": "¥60.000 por persona",
+        "puntoEncuentro": "To be confirmed upon booking",
+        "descripcion": "Get up close to Japan's most ancient national sport in this exclusive experience with a professional sumo wrestler. Far more than a spectacle, it's a privileged window into the most hermetic and fascinating world of Japanese sporting culture.<br><br><strong>Itinerary:</strong><br>The experience includes a personal interview with the sumo wrestler, where we'll learn about their life, training, and the traditions of Japan's most ritual sport. We'll finish with a traditional sumo meal (chankonabe), the nutritious stew of the wrestlers' daily diet, with a photo session included.",
+        "incluye": [
+            "Interview with a Sumo wrestler",
+            "Traditional Sumo meal (chankonabe) included",
+            "Photo session"
+        ],
+        "noIncluye": [
+            "Transport",
+            "Additional drinks"
         ],
         "fechasDisponibles": []
     },
@@ -89,12 +375,13 @@
         "ciudad": "Kyoto",
         "tematica": "Tour Privado",
         "titulo": "Kyoto Beyond the Ordinary (3 Hours)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/Kioto 1.jpg",
         "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
+            "Recursos/Kioto 1.jpg",
+            "Recursos/Kioto 2.jpg",
+            "Recursos/Kioto 3.jpg",
+            "Recursos/Kioto 4.jpg",
+            "Recursos/Kioto 5.jpg"
         ],
         "duracion": "3 hours",
         "precio": "$175 USD (Base 2 pax) + $35 USD per additional person",
@@ -116,12 +403,13 @@
         "ciudad": "Kyoto",
         "tematica": "Tour Privado",
         "titulo": "The ABC of Kyoto (8 Hours)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/Kioto 1.jpg",
         "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
+            "Recursos/Kioto 1.jpg",
+            "Recursos/Kioto 2.jpg",
+            "Recursos/Kioto 3.jpg",
+            "Recursos/Kioto 4.jpg",
+            "Recursos/Kioto 5.jpg"
         ],
         "duracion": "8 hours",
         "precio": "$315 USD (Base 2 pax) + $42 USD per additional person",

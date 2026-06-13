@@ -28,59 +28,345 @@
         "fechasDisponibles": []
     },
     {
-        "id": "tour-tokio-todo-en-un-dia",
-        "ciudad": "東京",
-        "tematica": "Tour Privado",
-        "titulo": "東京1日満喫ツアー",
-        "imagen": "Recursos/Tokioundia.jpg",
+        "id": "tour-tokio-luces-sombras-free",
+        "ciudad": "Tokio",
+        "tematica": "Free Walking Tour",
+        "titulo": "東京、光と影（無料ウォーキングツアー）",
+        "imagen": "Recursos/Tokio1.jpg",
         "galeria": [
-            "Recursos/Tokioundia.jpg",
-            "Recursos/tokioundia2.jpg",
-            "Recursos/tokioundia3.jpg",
-            "Recursos/tokioundia4.jpg",
-            "Recursos/tokioundia5.jpg",
-            "Recursos/tokioundia6.jpg"
+            "Recursos/Tokio1.jpg"
         ],
-        "duracion": "8時間",
-        "precio": "120 € (大人)",
-        "puntoEncuentro": "午前9時に浅草文化観光センターの隣",
-        "descripcion": "常に驚きに満ちたこの街を一緒に発見しましょう。この1日ツアーは、東京を見るだけでなく、感じ、なぜ何百万人もの人々がこの街を地球上で最も魅力的な都市だと考えているのかを理解したい方向けに設計されています。<br><br><strong>旅程：</strong><br>午前9時に、東京の魂を今も残す街、浅草からスタートします。仲見世通りを歩き、千年以上前から巡礼者を迎えてきた仏教寺院、浅草寺に向かいます。そこから歴史ある明治神宮へ移動します。数歩歩けば、鏡の向こう側、原宿と竹下通りへと足を踏み入れます。正午に1時間の昼食休憩を取り、その後、世界で最も写真に撮られる交差点がある渋谷へ向かいます。最後は、東京が壮大に別れを告げる新宿で締めくくります。<br><br><strong>アクセシビリティと推奨事項：</strong><br>急な坂やでこぼこした道はないため、どなたでも参加しやすいツアーです。歩きやすい服装、水分補給のための飲み物、日焼け止め、帽子を持参することをお勧めします。",
+        "duracion": "Variable",
+        "precio": "Basado en propina",
+        "puntoEncuentro": "浅草観光情報センター",
+        "descripcion": "この無料ウォーキングツアーで、浅草の歴史的な中心部を歩きながら東京を内側から体験しましょう。地元の方々と同じ目線で、このエリアの歴史、伝説、独特のエネルギーを発見します。<br><br><strong>行程：</strong><br>東京最古の仏教寺院である象徴的な浅草寺からスタートします。伝統的な店が立ち並ぶ活気あふれる仲見世通りを歩き、浅草神社を訪れ、東京の大衆娯楽の旧地区である六区ブロードウェイで締めくくります。<br><br><strong>ご注意：</strong>これはチップ制の無料ウォーキングツアーです。ツアー終了後、体験に見合うと思われる金額をご寄付ください。",
         "incluye": [
-            "プライベートツアー中のスペイン語ガイド",
-            "訪問先の歴史的および文化的解説"
+            "スペイン語ガイド",
+            "浅草徒歩ツアー",
+            "歴史・文化の解説"
         ],
         "noIncluye": [
-            "飲食代（昼食のための1時間の自由時間があります）",
-            "ホテルへの送迎"
+            "チップ（終了後に任意で）",
+            "飲食費",
+            "入場料"
         ],
         "fechasDisponibles": []
     },
     {
-        "id": "tour-tokio-vice",
-        "ciudad": "東京",
+        "id": "tour-tokio-luces-sombras-3h",
+        "ciudad": "Tokio",
         "tematica": "Tour Privado",
-        "titulo": "トウキョウ・バイス (ナイトツアー)",
-        "imagen": "Recursos/Tokiovicerojo.jpg",
+        "titulo": "東京、光と影（3時間）",
+        "imagen": "Recursos/Tokio2.jpg",
         "galeria": [
-            "Recursos/Tokiovicerojo.jpg",
-            "Recursos/Tokiovicerojo2.jpg",
-            "Recursos/Tokiovicerojo3.jpg",
-            "Recursos/Tokiovicerojo4.jpg",
-            "Recursos/Tokiovicerojo5.jpg",
-            "Recursos/Tokiovicerojo6.jpg"
+            "Recursos/Tokio2.jpg"
         ],
-        "duracion": "2.5時間 または 3.5時間 (夕食オプションによる)",
-        "precio": "60 € (夕食なし) / 80 € (夕食付き)",
-        "puntoEncuentro": "午後6時に代々木駅東口の厩道公園",
-        "descripcion": "「TOKYO VICE」のような記事やドラマにインスピレーションを得たこのナイトツアーで、東京の最も生々しく魅力的な側面に足を踏み入れましょう。新宿地区とその最も謎めいた顔、眠らない街・歌舞伎町を一緒に探索します。<br><br><strong>旅程：</strong><br>午後6時に代々木駅から徒歩数分の厩道公園からスタートします。ここから、日本の夜の世界が実際にどのように機能しているのか、その暗黙のルール、ネオンライト、そして影で機能する社会構造を理解できるルートに入ります。思い出横丁で戦後の街の歴史的変遷を分析し、歌舞伎町の主要な通りで大人のエンターテイメントの中心地へと変貌を遂げた様子、そして日本のマフィアであるヤクザの影響について学びます。新宿の巨大な猫、ゴジラ、そして地元の東京っ子しか知らないような場所を訪れます。<br><br><strong>夕食オプション：</strong><br>新宿は、日本のサラリーマンが長い一日の労働の後にストレスを発散しに来る場所として知られています。焼き鳥、唐揚げ、餃子など様々な料理を味わえる典型的な居酒屋に行きます。夕食付きツアーを選択した場合、ツアーは午後9時に終了します。<br><br><strong>重要な注意事項：</strong><br>このツアーで扱うテーマと歓楽街を訪れるという性質上、<strong>18歳未満の方には推奨されません</strong>。<br><br><strong>アクセシビリティと推奨事項：</strong><br>急な坂やでこぼこした道はないため、どなたでも参加しやすいツアーです。歩きやすい服装、水分補給のための飲み物、身の回りの安全対策をお勧めします。",
+        "duracion": "3 horas",
+        "precio": "¥25.000 por 2 personas",
+        "puntoEncuentro": "浅草観光情報センター",
+        "descripcion": "3時間のプライベートツアーで浅草を歩きながら、東京の歴史的な魂を発見しましょう。日本の首都が持つ最も魅力的なコントラストを巡る、親密でパーソナルな旅です。<br><br><strong>行程：</strong><br>浅草の精神的中心である象徴的な浅草寺を訪れます。職人の店が並ぶ仲見世通りや浅草神社を経由し、かつて劇場が別の時代の東京を語っていた伝説の六区ブロードウェイへと進みます。",
         "incluye": [
-            "ナイトツアー中のスペイン語ガイド",
-            "訪問先の歴史的および文化的解説",
-            "典型的な居酒屋での夕食（80 €オプションを予約した場合のみ）"
+            "プライベートスペイン語ガイド",
+            "浅草徒歩ツアー",
+            "訪問地の歴史解説"
         ],
         "noIncluye": [
-            "ツアー中の飲食代（夕食は最後になります）",
-            "ホテルへの送迎"
+            "入場料",
+            "飲食費",
+            "交通費"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-luces-sombras-8h",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "東京、光と影（8時間）",
+        "imagen": "Recursos/Tokio3.jpg",
+        "galeria": [
+            "Recursos/Tokio3.jpg"
+        ],
+        "duracion": "8 horas",
+        "precio": "¥45.000 por 2 personas",
+        "puntoEncuentro": "ホテルお迎え",
+        "descripcion": "東京を代表するエリアを丸一日かけて巡ります。電気の街・秋葉原から渋谷のグラマラスな雰囲気、原宿のファッション、そして新宿の魅力的な喧騒まで。<br><br><strong>行程：</strong><br>ホテルのお迎えからスタートします。テクノロジーとオタク文化の聖地・秋葉原を訪問。渋谷とそのスクランブル交差点、原宿の竹下通りを経て、飽きることのない新宿で締めくくります。終日、公共交通機関を使って移動します。",
+        "incluye": [
+            "8時間プライベートスペイン語ガイド",
+            "ホテルお迎え",
+            "公共交通機関による移動"
+        ],
+        "noIncluye": [
+            "交通系ICカード（SuicaまたはPasmo）",
+            "飲食費",
+            "施設入場料"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-otaku",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "日本のオタクの聖地",
+        "imagen": "Recursos/Tokio4.jpg",
+        "galeria": [
+            "Recursos/Tokio4.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "秋葉原",
+        "descripcion": "秋葉原ツアーで、オタク文化の世界的メッカに飛び込みましょう。アニメ、マンガ、ゲームのファンのために特別に設計されたユニークなツアーです。<br><br><strong>行程：</strong><br>大型専門店からビンテージの掘り出し物が詰まった小さな中古ショップまで、最も象徴的なアニメ・マンガショップを探索します。日本最高のゲームセンター、ガチャポンの世界、レトロゲームを体験し、日本のオタク文化と現代社会への影響について学びます。",
+        "incluye": [
+            "オタク文化の専門ガイド",
+            "秋葉原徒歩ツアー",
+            "アニメ・マンガと日本のオタク文化の解説"
+        ],
+        "noIncluye": [
+            "お買い物・コレクターズアイテム",
+            "飲食費",
+            "ゲームセンターのクレジット"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-historico-nocturno",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "夜の歴史的な東京",
+        "imagen": "Recursos/Tokio5.jpg",
+        "galeria": [
+            "Recursos/Tokio5.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "浅草",
+        "descripcion": "夜の浅草の魔法を体験しましょう。日が暮れると、寺院や街並みは往年の日本を彷彿とさせる神秘的な雰囲気を帯びます。<br><br><strong>行程：</strong><br>浅草を出発し、灯りに照らされた歴史的な街並みへと分け入ります。巨大な赤提灯が印象的な雷門、夜の光に浮かぶ浅草寺、そして隅田川沿いをそぞろ歩きます。伝統的な建築と水面に映る光が織りなす光景は、忘れられない視覚体験です。",
+        "incluye": [
+            "プライベートスペイン語ガイド",
+            "浅草夜間徒歩ツアー",
+            "歴史解説"
+        ],
+        "noIncluye": [
+            "飲食費",
+            "交通費"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-noche-shinjuku",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "新宿の夜",
+        "imagen": "Recursos/Tokio6.jpg",
+        "galeria": [
+            "Recursos/Tokio6.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥30.000 por 2 personas",
+        "puntoEncuentro": "新宿",
+        "descripcion": "新宿の中心部でユニークな夜の体験を。このツアーは日本のバー文化と、東京で最も活気あるエリアのひとつでの本格的な夜の生活への没入を組み合わせています。<br><br><strong>行程：</strong><br>観光客がほとんど知らないローカルバーシーンを発見するため、新宿の最も象徴的な路地へと入り込みます。厳選された3軒のバーへの特別入場と、各店で1杯のドリンクが含まれています。飲み会（日本式グループ飲み）の文化と、新宿を類まれな夜遊びスポットにしている地元の居酒屋について学びます。",
+        "incluye": [
+            "プライベートスペイン語ガイド",
+            "3軒のバーへの特別入場",
+            "1店舗につきドリンク1杯"
+        ],
+        "noIncluye": [
+            "追加ドリンク",
+            "食事"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-samurai",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "侍の道",
+        "imagen": "Recursos/Tokio7.jpg",
+        "galeria": [
+            "Recursos/Tokio7.jpg"
+        ],
+        "duracion": "1 hora",
+        "precio": "¥15.000 por persona",
+        "puntoEncuentro": "ご予約時にご確認ください",
+        "descripcion": "日本が誇る最も伝説的な武士の世界への没入体験。本物の甲冑、刀、伝統的な武具の見事なコレクションを誇る、東京の刀剣博物館へのプライベートガイド付き見学です。<br><br><strong>行程：</strong><br>入場料込みで刀剣博物館を見学します。ガイドが武士道——武士の倫理規範——の歴史と、現代日本における侍・忍者文化の影響について解説します。日本の歴史に情熱を持つ方に最適な体験です。",
+        "incluye": [
+            "刀剣博物館入場料",
+            "スペイン語ガイド",
+            "伝統的な甲冑・刀の解説",
+            "侍・忍者の歴史"
+        ],
+        "noIncluye": [
+            "博物館までの交通費",
+            "プロの写真撮影"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-sushi",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "日本の寿司の芸術",
+        "imagen": "Recursos/Tokio8.jpg",
+        "galeria": [
+            "Recursos/Tokio8.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "ご予約時にご確認ください",
+        "descripcion": "このユニークな食の体験で、本格的な日本の寿司の秘密を学びましょう。単なる料理教室を超え、日本の食哲学への没入体験です。精確さ、食材への敬意、そして盛り付けが味と同じくらい重要とされる世界です。<br><br><strong>行程：</strong><br>日本における寿司の起源と発展に関する文化的なイントロダクションから始まります。旬の新鮮な日本の食材を使った伝統的な調理技術を学び、その日の作品の試食で締めくくります。",
+        "incluye": [
+            "伝統的な寿司クラス",
+            "新鮮な日本の食材",
+            "文化的な解説",
+            "試食付き"
+        ],
+        "noIncluye": [
+            "交通費",
+            "追加ドリンク"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-maid-cafe",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "かわいいメイドカフェ",
+        "imagen": "Recursos/Tokio9.jpg",
+        "galeria": [
+            "Recursos/Tokio9.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "新宿",
+        "descripcion": "東京のメイドカフェで、日本で最も本格的なかわいいユニバースに飛び込みましょう。カフェへのガイド付き訪問と、オタク文化および日本のかわいい美学の完全紹介を組み合わせたツアーです。<br><br><strong>行程：</strong><br>かわいいの世界のイントロダクションから始めます：その歴史、アイコン、そして文化的インパクトについて。続いて入場料込みでメイドカフェを訪問し、写真撮影、限定パフォーマンス、そして世界中を魅了したこの文化現象のユニークな雰囲気を楽しみます。",
+        "incluye": [
+            "メイドカフェ入場料",
+            "スペイン語ガイド",
+            "写真撮影とパフォーマンス",
+            "オタク・かわいいの世界のイントロダクション"
+        ],
+        "noIncluye": [
+            "カフェでの飲食",
+            "追加の有料写真撮影"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-secretos-noche",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "東京の夜の秘密",
+        "imagen": "Recursos/Tokio10.jpg",
+        "galeria": [
+            "Recursos/Tokio10.jpg"
+        ],
+        "duracion": "2 horas",
+        "precio": "¥25.000 por 2 personas",
+        "puntoEncuentro": "新宿",
+        "descripcion": "東京のナイトライフの最も本物らしく知られていない側面を発見しましょう。観光スポットを超え、地元の人のように東京を体験したい方のための体験です。<br><br><strong>行程：</strong><br>旅行ガイドにほとんど登場しない新宿の隠れた路地やローカルバーを探索します。日本のナイトライフの本物の雰囲気を発見し、東京の人々がくつろぐ地元のバーを訪れ、東京の夜の不文律を学びます。",
+        "incluye": [
+            "プライベートスペイン語ガイド",
+            "厳選されたローカルバーの訪問",
+            "隠れた路地や穴場へのアクセス"
+        ],
+        "noIncluye": [
+            "飲み物",
+            "交通費"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-izakayas-ueno",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "上野の居酒屋と提灯のあいだで",
+        "imagen": "Recursos/Tokio11.jpg",
+        "galeria": [
+            "Recursos/Tokio11.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥20.000 por persona",
+        "puntoEncuentro": "新宿",
+        "descripcion": "東京で最も本物らしいエリアの居酒屋、提灯、伝統的な街並みを巡る夜の体験。大衆観光から離れ、日本の日常的な夜の暮らしの本質を捉えたツアーです。<br><br><strong>行程：</strong><br>東京で最も有名な屋外市場のひとつ、活気ある上野アメ横商店街を探索します。本物の日本の下町グルメを味わえる地元の居酒屋を訪れ、提灯に照らされた伝統的な街並みを散策しながら、街で最も本物らしい夜の雰囲気に浸ります。",
+        "incluye": [
+            "プライベートスペイン語ガイド",
+            "地元の居酒屋訪問",
+            "アメ横と伝統的な街並みの散策"
+        ],
+        "noIncluye": [
+            "居酒屋での飲食費",
+            "交通費"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-drift",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "DRIFT：ワイルド・スピード",
+        "imagen": "Recursos/Tokio12.jpg",
+        "galeria": [
+            "Recursos/Tokio12.jpg"
+        ],
+        "duracion": "3 horas",
+        "precio": "¥80.000 por persona",
+        "puntoEncuentro": "ご予約時に指定された場所",
+        "descripcion": "映画「ワイルド・スピード」にインスパイアされた、東京の街を舞台にしたスリル満点の特別体験で純粋なアドレナリンを体験しましょう。スポーツカーとスピードを愛する方のための、日本最高の体験です。<br><br><strong>行程：</strong><br>プロのドライバーとともに高級スポーツカーで3時間のドライブ。有名な映画シリーズにインスピレーションを与えた舞台を発見しながら、日本のカーミート文化で最も象徴的なルートを走ります。",
+        "incluye": [
+            "高級スポーツカーでの3時間ライド",
+            "プロのドライバー",
+            "監督付きドリフト体験"
+        ],
+        "noIncluye": [
+            "任意の追加保険",
+            "ルートのプロ写真撮影"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-rapidos-furiosos",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "ワイルド・スピード ジャパン",
+        "imagen": "Recursos/Tokio13.jpg",
+        "galeria": [
+            "Recursos/Tokio13.jpg"
+        ],
+        "duracion": "5 horas",
+        "precio": "¥60.000 por persona",
+        "puntoEncuentro": "ご予約時にご確認ください",
+        "descripcion": "日本で最も有名なカーミートシーンでのユニークな体験。映画「ワイルド・スピード」の制作陣にインスピレーションを与えた、日本のスポーツカー愛好家たちの伝説的な夜間集合場所、大黒パーキングエリアを訪れましょう。<br><br><strong>行程：</strong><br>毎夜何百台ものカスタマイズ車やユニークなスポーツカーが集まる伝説の駐車場、大黒PAへのプライベート送迎。スペイン語ガイドとともに、日本のカーミートの歴史、最も象徴的な車種、走り屋文化について学びます。またとない環境でのフォトセッション付き。",
+        "incluye": [
+            "大黒へのプライベート送迎",
+            "スペイン語ガイド",
+            "フォトセッション付き"
+        ],
+        "noIncluye": [
+            "飲食費",
+            "追加入場料"
+        ],
+        "fechasDisponibles": []
+    },
+    {
+        "id": "tour-tokio-sumo",
+        "ciudad": "Tokio",
+        "tematica": "Tour Privado",
+        "titulo": "相撲体験",
+        "imagen": "Recursos/Tokio14.jpg",
+        "galeria": [
+            "Recursos/Tokio14.jpg"
+        ],
+        "duracion": "2 horas",
+        "precio": "¥60.000 por persona",
+        "puntoEncuentro": "ご予約時にご確認ください",
+        "descripcion": "プロの相撲力士とのこの特別体験で、日本最古の国技を間近で体験しましょう。単なるショーではなく、日本のスポーツ文化の中で最も閉ざされた魅力的な世界への特別な窓口です。<br><br><strong>行程：</strong><br>相撲力士との個人インタビューが含まれ、その生活、稽古、そして日本で最も儀式的なスポーツの伝統について学びます。力士の毎日の食事である栄養満点のちゃんこ鍋の夕食で締めくくり、フォトセッションも含まれています。",
+        "incluye": [
+            "相撲力士へのインタビュー",
+            "相撲の伝統食（ちゃんこ鍋）付き",
+            "フォトセッション"
+        ],
+        "noIncluye": [
+            "交通費",
+            "追加ドリンク"
         ],
         "fechasDisponibles": []
     },
@@ -89,12 +375,13 @@
         "ciudad": "京都",
         "tematica": "Tour Privado",
         "titulo": "京都の真髄を巡る (3時間)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/Kioto 1.jpg",
         "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
+            "Recursos/Kioto 1.jpg",
+            "Recursos/Kioto 2.jpg",
+            "Recursos/Kioto 3.jpg",
+            "Recursos/Kioto 4.jpg",
+            "Recursos/Kioto 5.jpg"
         ],
         "duracion": "3時間",
         "precio": "$175 USD (基本2名) + 追加1名につき $35 USD",
@@ -116,12 +403,13 @@
         "ciudad": "京都",
         "tematica": "Tour Privado",
         "titulo": "京都のABC (8時間)",
-        "imagen": "Recursos/kYOTO.jpg",
+        "imagen": "Recursos/Kioto 1.jpg",
         "galeria": [
-            "Recursos/kYOTO.jpg",
-            "Recursos/kYOTO2.jpg",
-            "Recursos/kYOTO3.jpg",
-            "Recursos/kYOTO4.jpg"
+            "Recursos/Kioto 1.jpg",
+            "Recursos/Kioto 2.jpg",
+            "Recursos/Kioto 3.jpg",
+            "Recursos/Kioto 4.jpg",
+            "Recursos/Kioto 5.jpg"
         ],
         "duracion": "8時間",
         "precio": "$315 USD (基本2名) + 追加1名につき $42 USD",

@@ -21,7 +21,9 @@ function esTourGratuito(tour) {
         const lower = p.toLowerCase().trim();
         return ['0', '0 €', '0€', 'gratis', 'free'].includes(lower)
             || lower.includes('propina')
-            || lower.includes('voluntari');
+            || lower.includes('voluntari')
+            || lower.includes('tip')       // EN: "based on tips"
+            || lower.includes('チップ');    // JA: "チップ制"
     }
     return false;
 }
@@ -235,6 +237,7 @@ function obtenerToursTraducidos(lang) {
             descripcion:    tr.descripcion    || t.descripcion,
             tematica:       tr.tematica       || t.tematica,
             ciudad:         tr.ciudad         || t.ciudad,
+            precio:         tr.precio         || t.precio,
             puntoEncuentro: tr.puntoEncuentro || t.puntoEncuentro,
             incluye:        Array.isArray(tr.incluye)    ? tr.incluye    : t.incluye,
             noIncluye:      Array.isArray(tr.noIncluye)  ? tr.noIncluye  : t.noIncluye,

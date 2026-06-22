@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="tour-scroll-content">
                         <div class="tour-scroll-encabezado">
                             <h3>${tour.titulo}</h3>
-                            <span>${tour.precio ? tour.precio.split(' ')[0] + ' €' : ''}</span>
+                            <span>${tour.precio || ''}</span>
                         </div>
                         <p style="color: #666; font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">${resumenCorto}</p>
                         <div>
